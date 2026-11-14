@@ -10,5 +10,6 @@ Capturas de vistas de artefactos locales y verificaciones ejecutadas en esta com
 | 04-prueba-extrapolacion.png | Salida real del modelo matemático local |
 | 05-reporte-tecnico.png | Reporte con resultados reales pendientes |
 | 06-validacion-local.png | Prueba Agones aislada, compilación Python y JSON válido |
+| 07-plan-terraform.png | Terraform validado; plan AWS de solo lectura, 54 recursos por crear |
 
-Pendiente: evidencia de publicación en GitHub, ejecución verde de Actions, infraestructura AWS aplicada, Grafana conectado y pruebas Locust contra EKS. No hay aún cuenta/sesión autenticada de AWS ni GitHub en este entorno; estas vistas locales no sustituyen esas pruebas.
+Pendiente: ejecución verde de despliegue en Actions, infraestructura AWS aplicada, Grafana conectado y pruebas Locust contra EKS. Las capturas son vistas locales de los artefactos y del plan; no son fotos de recursos desplegados.

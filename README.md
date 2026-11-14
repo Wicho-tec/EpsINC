@@ -124,13 +124,12 @@ Los perfiles apuntan a localhost por defecto. Para un entorno desplegado, agrega
 
 ## Despliegue AWS
 
-1. Crea el repositorio GitHub epsinc y un rol IAM con proveedor OIDC de GitHub. Limita el trust a repo:OWNER/epsinc:ref:refs/heads/main y audiencia sts.amazonaws.com.
-2. Permite al rol subir imágenes a epsinc/server en ECR y describir el clúster EKS epsinc. El rol necesita acceso Kubernetes para instalar Agones/Prometheus y actualizar recursos; Terraform le asigna ClusterAdmin si se establece github_actions_role_arn.
-3. Copia infra/terraform.tfvars.example a infra/terraform.tfvars y agrega el ARN del rol GitHub. El endpoint IAM de EKS acepta cualquier IP para compatibilidad con los runners públicos; restringe admin_cidrs al usar un runner con IP fija.
-4. Desde infra/, ejecuta terraform init, revisa terraform plan y luego terraform apply. EKS, nodos, balanceador y transferencia generan cobros.
-5. Añade el ARN del rol como secreto de Actions AWS_ROLE_ARN. Publica la rama main y revisa el resultado de Actions.
+1. Copia `infra/terraform.tfvars.example` a `infra/terraform.tfvars`; limita `admin_cidrs` si usarás runner con IP fija. Los runners GitHub públicos requieren endpoint EKS accesible por IP pública.
+2. Desde `infra/`, ejecuta `terraform init`, revisa `terraform plan` y `terraform apply`. El plan crea ECR, VPC, EKS, roles OIDC y el grupo de nodos; AWS cobra por clúster, EC2, discos, balanceador y transferencia.
+3. Copia el ARN de `terraform output -raw github_actions_role_arn` a **Settings → Secrets and variables → Actions → New repository secret** con nombre `AWS_ROLE_ARN`. Hasta agregarlo, Actions ejecuta pruebas y omite publicación/despliegue.
+4. Publica la rama `main` y revisa Actions. El workflow prueba y publica la imagen, instala Agones, Cluster Autoscaler y monitoreo, y actualiza la flota.
 
-Terraform no instala autoescalado de nodos. Agones escala GameServers dentro de la capacidad existente; agrega y valida un autoescalador de nodos antes de afirmar que EKS escala capacidad automáticamente.
+El trust OIDC limita el rol a los IDs inmutables de `Wicho-tec/EpsINC` y a `main`. Cluster Autoscaler usa IRSA y permisos de cambio de capacidad limitados a los Auto Scaling Groups etiquetados para EpsInc. Agones escala GameServers y Cluster Autoscaler amplía los nodos hasta ocho.
 
 ---
 

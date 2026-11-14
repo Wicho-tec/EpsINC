@@ -18,9 +18,9 @@ GitHub Actions → OIDC → AWS ECR → EKS/Agones
 EKS → Prometheus Operator → Grafana + dashboard JSON  
 Cliente → API HTTPS → API Gateway → Lambda leaderboard
 
-Terraform crea una VPC con dos subredes públicas, un clúster EKS, un grupo administrado de nodos y un repositorio ECR. El endpoint de Kubernetes requiere autenticación IAM; por defecto acepta tráfico de cualquier IP para que GitHub-hosted runners puedan alcanzarlo. Esto es un valor de demostración. En producción, usa un runner con IP fija y limita admin_cidrs. Los nodos reciben conexiones de juego TCP/UDP en los puertos 7000–8000. La configuración omite NAT Gateway para evitar ese cargo fijo, por lo que los nodos usan direcciones públicas.
+Terraform crea una VPC con dos subredes públicas, un clúster EKS, un grupo administrado de nodos, un repositorio ECR y roles OIDC para GitHub Actions y Cluster Autoscaler. El endpoint de Kubernetes requiere autenticación IAM; por defecto acepta tráfico de cualquier IP para que GitHub-hosted runners puedan alcanzarlo. Esto es un valor de demostración. En producción, usa un runner con IP fija y limita admin_cidrs. Los nodos reciben conexiones de juego TCP/UDP en los puertos 7000–8000. La configuración omite NAT Gateway para evitar ese cargo fijo, por lo que los nodos usan direcciones públicas.
 
-En cada push a main, Actions instala dependencias, ejecuta pruebas, construye la imagen con el SHA del commit y la publica en ECR. Luego asume el rol AWS por OIDC, instala Agones y kube-prometheus-stack, aplica Fleet y monitores, y espera el rollout. La confianza IAM debe limitarse al repositorio y a refs/heads/main; se usa el secreto AWS_ROLE_ARN.
+En cada push a main, Actions instala dependencias, ejecuta pruebas, construye la imagen con el SHA del commit y la publica en ECR. Luego asume el rol AWS por OIDC, instala Agones, Cluster Autoscaler y kube-prometheus-stack, aplica Fleet y monitores, y espera el rollout. El rol de GitHub restringe OIDC al ID inmutable del repositorio y a refs/heads/main; se usa el secreto AWS_ROLE_ARN.
 
 El servidor llama el REST SDK local de Agones al iniciar, envía pings de salud y reporta apagado. En modo local, sin AGONES_SDK_HTTP_PORT, esas llamadas se omiten.
 
@@ -34,7 +34,7 @@ El p99 solo será significativo después de recopilar muestras. Agones y Kuberne
 
 loadtest/ramp_test.conf define una rampa a 1,000 jugadores en cinco minutos; spike_test.conf define el pico a 1,000 en 15 segundos; spectator_test.conf define 500 espectadores. Cada perfil selecciona su clase Locust para evitar mezclar jugadores y espectadores. Los perfiles guardan HTML/CSV al ejecutarse.
 
-No se ejecutaron estas pruebas: esta máquina no tiene Locust ni las dependencias del servidor instaladas, Docker está detenido y no existe endpoint desplegado. La prueba aislada de integración Agones, compilación Python y validación JSON sí pasaron. Por tanto, latencia p99, tasa de error, capacidad máxima y reacción del escalado siguen **pendientes de medir**. No se atribuyen resultados sintéticos a infraestructura real.
+No se ejecutaron perfiles Locust: no hay endpoint desplegado para medir. La suite completa del servidor pasó **17/17 pruebas** con las dependencias del proyecto. Terraform `validate` pasó y el plan de solo lectura calculó 54 recursos por crear. Docker no está disponible para construir localmente. Por tanto, latencia p99, tasa de error, capacidad máxima y reacción del escalado siguen **pendientes de medir**. No se atribuyen resultados sintéticos a infraestructura real.
 
 loadtest/extrapolation_analysis.py aplica estas hipótesis:
 
@@ -65,7 +65,7 @@ Con los valores por defecto de Terraform, el piso de cómputo es:
 | EC2 m7i.large | 2 × 0.1008 | 0.2016 |
 | **Piso estimado** | Sin almacenamiento, LoadBalancer, egreso ni impuestos | **0.3016** |
 
-Con un solo nodo el piso baja a USD 0.2008/h; durante el escalado, cada nodo m7i.large agrega alrededor de USD 0.1008/h. EKS factura por clúster-hora. El balanceador, volúmenes, transferencia, direcciones IP públicas, CloudWatch y Lambda pueden elevar el total.
+Con un solo nodo el piso baja a USD 0.2008/h; durante el escalado, cada nodo m7i.large agrega alrededor de USD 0.1008/h. El máximo configurado de ocho nodos daría un piso de USD 0.9064/h (USD 661.67 por 730 h), antes de almacenamiento, LoadBalancer, egress, CloudWatch y otros cargos. EKS factura por clúster-hora; el gasto real puede superar este cálculo.
 
 El precio estimado de salida a Internet es USD 0.09/GB después del nivel gratuito mensual global aplicable. A 20,000 espectadores y el snapshot supuesto, el egreso bruto ronda **USD 231.74/h**. El costo final por jugador-hora debe calcularse con bytes observados y factura real:
 
@@ -78,12 +78,12 @@ Precios cambian por región, descuentos, uso y nivel de soporte. Revisar [EKS pr
 | Entregable | Estado comprobable |
 |---|---|
 | Código y carpetas infra/, server/, k8s/, serverless/, loadtest/ | Presentes localmente |
-| Terraform para AWS | Escrito; falta terraform init/validate/plan |
-| CI/CD real | Workflow preparado; falta repositorio, rol OIDC y ejecución verde |
+| Terraform para AWS | Inicializado, validado y plan de solo lectura: 51 recursos por crear |
+| CI/CD real | Workflow y roles OIDC preparados; falta aplicar Terraform, guardar AWS_ROLE_ARN como secreto y obtener ejecución de despliegue verde |
 | Grafana | Dashboard y PodMonitor preparados; falta despliegue y captura |
 | Carga 1,000/500 | Perfiles listos; ejecución pendiente |
 | Extrapolación 20,000 | Modelo matemático reproducible; hipótesis pendientes de medir |
-| Validación local | Prueba Agones aislada, compilación Python y JSON pasaron |
+| Validación local | 17/17 pruebas Python; Terraform validate; plan 54 crear/0 cambiar/0 destruir |
 | Capacidad/latencia/costo reales | Pendientes de datos de nube |
 
 Antes de usarlo: corregir enrutamiento y asignación de salas; validar permisos IAM del workflow; configurar infra/terraform.tfvars con el CIDR público del operador; revisar el plan y el costo; desplegar; ejecutar pruebas progresivas; exportar CSV/HTML y capturar Grafana con datos. Destruir los recursos de práctica cuando termine la actividad.

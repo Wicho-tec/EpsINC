@@ -2,4 +2,4 @@ region                  = "us-east-1"
 capacity_type           = "ON_DEMAND"
 min_nodes               = 1
 desired_nodes           = 2
-max_nodes               = 6
+max_nodes               = 8

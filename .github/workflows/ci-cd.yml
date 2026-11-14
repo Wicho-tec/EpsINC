@@ -25,10 +25,27 @@ jobs:
       - run: python -m pip install -r server/requirements.txt
       - run: python run_tests.py
 
+  aws-ready:
+    name: Comprobar configuración AWS
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.check.outputs.enabled }}
+    steps:
+      - id: check
+        env:
+          AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}
+        run: |
+          if [[ -n "$AWS_ROLE_ARN" ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "AWS_ROLE_ARN aún no está configurado; despliegue queda en espera de Terraform."
+          fi
+
   build:
     name: Crear y publicar imagen
-    needs: test
-    if: github.event_name != 'pull_request'
+    needs: [test, aws-ready]
+    if: github.event_name != 'pull_request' && needs.aws-ready.outputs.enabled == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -73,9 +90,13 @@ jobs:
         run: |
           helm repo add agones https://agones.dev/chart/stable
           helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+          helm repo add autoscaler https://kubernetes.github.io/autoscaler
           helm repo update
           helm upgrade --install agones agones/agones --version 1.60.0 --namespace agones-system --create-namespace --wait
           helm upgrade --install epsinc-monitoring prometheus-community/kube-prometheus-stack --version 92.21.2 --namespace monitoring --create-namespace --wait
+          aws_account_id=$(aws sts get-caller-identity --query Account --output text)
+          sed "s|__AWS_ACCOUNT_ID__|$aws_account_id|g" k8s/cluster_autoscaler_service_account.yaml | kubectl apply -f -
+          helm upgrade --install cluster-autoscaler autoscaler/cluster-autoscaler --version 9.51.0 --namespace kube-system --set cloudProvider=aws --set awsRegion="$AWS_REGION" --set autoDiscovery.clusterName="$EKS_CLUSTER" --set image.tag=v1.34.6 --set rbac.serviceAccount.create=false --set rbac.serviceAccount.name=cluster-autoscaler --wait
           kubectl create configmap epsinc-dashboard --namespace monitoring --from-file=epsinc_dashboard.json=grafana/epsinc_dashboard.json --dry-run=client -o yaml | kubectl apply -f -
           kubectl label configmap epsinc-dashboard grafana_dashboard=1 --namespace monitoring --overwrite
       - name: Publish image to fleet

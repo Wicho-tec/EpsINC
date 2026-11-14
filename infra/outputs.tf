@@ -8,6 +8,16 @@ output "cluster_endpoint" {
   value       = module.eks.cluster_endpoint
 }
 
+output "github_actions_role_arn" {
+  description = "ARN to store as the GitHub Actions AWS_ROLE_ARN secret"
+  value       = aws_iam_role.github_actions.arn
+}
+
+output "cluster_autoscaler_role_arn" {
+  description = "IAM role used by Cluster Autoscaler through EKS IRSA"
+  value       = aws_iam_role.cluster_autoscaler.arn
+}
+
 output "image_repository_url" {
   description = "Private ECR repository for the game server"
   value       = aws_ecr_repository.epsinc.repository_url

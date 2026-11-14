@@ -16,10 +16,28 @@ variable "admin_cidrs" {
   default     = ["0.0.0.0/0"]
 }
 
-variable "github_actions_role_arn" {
-  description = "Optional IAM role ARN used by the GitHub Actions deployment"
+variable "github_owner" {
+  description = "GitHub repository owner"
   type        = string
-  default     = null
+  default     = "Wicho-tec"
+}
+
+variable "github_owner_id" {
+  description = "Immutable GitHub owner ID used by the OIDC trust policy"
+  type        = string
+  default     = "243614440"
+}
+
+variable "github_repository" {
+  description = "GitHub repository name"
+  type        = string
+  default     = "EpsINC"
+}
+
+variable "github_repository_id" {
+  description = "Immutable GitHub repository ID used by the OIDC trust policy"
+  type        = string
+  default     = "1458250764"
 }
 
 variable "instance_types" {
@@ -47,7 +65,7 @@ variable "min_nodes" {
 variable "max_nodes" {
   description = "Maximum EC2 nodes"
   type        = number
-  default     = 6
+  default     = 8
 }
 
 variable "desired_nodes" {

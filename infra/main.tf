@@ -20,6 +20,130 @@ resource "aws_ecr_repository" "epsinc" {
   }
 }
 
+resource "aws_iam_openid_connect_provider" "github" {
+  url            = "https://token.actions.githubusercontent.com"
+  client_id_list = ["sts.amazonaws.com"]
+}
+
+resource "aws_iam_role" "github_actions" {
+  name = "epsinc-github-actions"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Effect = "Allow"
+      Principal = {
+        Federated = aws_iam_openid_connect_provider.github.arn
+      }
+      Action = "sts:AssumeRoleWithWebIdentity"
+      Condition = {
+        StringEquals = {
+          "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
+          "token.actions.githubusercontent.com:sub" = "repo:${var.github_owner}@${var.github_owner_id}/${var.github_repository}@${var.github_repository_id}:ref:refs/heads/main"
+        }
+      }
+    }]
+  })
+}
+
+resource "aws_iam_policy" "github_actions" {
+  name = "epsinc-github-actions"
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect   = "Allow"
+        Action   = "ecr:GetAuthorizationToken"
+        Resource = "*"
+      },
+      {
+        Effect = "Allow"
+        Action = [
+          "ecr:BatchCheckLayerAvailability",
+          "ecr:CompleteLayerUpload",
+          "ecr:InitiateLayerUpload",
+          "ecr:PutImage",
+          "ecr:UploadLayerPart"
+        ]
+        Resource = aws_ecr_repository.epsinc.arn
+      },
+      {
+        Effect   = "Allow"
+        Action   = "eks:DescribeCluster"
+        Resource = module.eks.cluster_arn
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "github_actions" {
+  role       = aws_iam_role.github_actions.name
+  policy_arn = aws_iam_policy.github_actions.arn
+}
+
+resource "aws_iam_role" "cluster_autoscaler" {
+  name = "epsinc-cluster-autoscaler"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Effect = "Allow"
+      Principal = {
+        Federated = module.eks.oidc_provider_arn
+      }
+      Action = "sts:AssumeRoleWithWebIdentity"
+      Condition = {
+        StringEquals = {
+          "${module.eks.oidc_provider}:aud" = "sts.amazonaws.com"
+          "${module.eks.oidc_provider}:sub" = "system:serviceaccount:kube-system:cluster-autoscaler"
+        }
+      }
+    }]
+  })
+}
+
+resource "aws_iam_policy" "cluster_autoscaler" {
+  name = "epsinc-cluster-autoscaler"
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "autoscaling:SetDesiredCapacity",
+          "autoscaling:TerminateInstanceInAutoScalingGroup"
+        ]
+        Resource = "*"
+        Condition = {
+          StringEquals = {
+            "aws:ResourceTag/k8s.io/cluster-autoscaler/enabled" = "true"
+            "aws:ResourceTag/k8s.io/cluster-autoscaler/epsinc"  = "owned"
+          }
+        }
+      },
+      {
+        Effect = "Allow"
+        Action = [
+          "autoscaling:DescribeAutoScalingGroups",
+          "autoscaling:DescribeAutoScalingInstances",
+          "autoscaling:DescribeLaunchConfigurations",
+          "autoscaling:DescribeScalingActivities",
+          "autoscaling:DescribeTags",
+          "ec2:DescribeImages",
+          "ec2:DescribeInstanceTypes",
+          "ec2:DescribeLaunchTemplateVersions",
+          "ec2:GetInstanceTypesFromInstanceRequirements",
+          "eks:DescribeNodegroup"
+        ]
+        Resource = "*"
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "cluster_autoscaler" {
+  role       = aws_iam_role.cluster_autoscaler.name
+  policy_arn = aws_iam_policy.cluster_autoscaler.arn
+}
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "6.7.3"
@@ -28,11 +152,11 @@ module "vpc" {
   cidr = "10.0.0.0/16"
   azs  = slice(data.aws_availability_zones.available.names, 0, 2)
 
-  public_subnets                 = ["10.0.1.0/24", "10.0.2.0/24"]
-  map_public_ip_on_launch        = true
-  enable_nat_gateway             = false
-  enable_dns_hostnames           = true
-  enable_dns_support             = true
+  public_subnets          = ["10.0.1.0/24", "10.0.2.0/24"]
+  map_public_ip_on_launch = true
+  enable_nat_gateway      = false
+  enable_dns_hostnames    = true
+  enable_dns_support      = true
   public_subnet_tags = {
     "kubernetes.io/role/elb" = "1"
   }
@@ -46,8 +170,8 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "21.29.0"
 
-  name                         = "epsinc"
-  kubernetes_version           = var.kubernetes_version
+  name               = "epsinc"
+  kubernetes_version = var.kubernetes_version
   # GitHub-hosted runners have no stable egress IP; IAM authentication still gates API access.
   endpoint_public_access       = true
   endpoint_public_access_cidrs = var.admin_cidrs
@@ -56,9 +180,9 @@ module "eks" {
   vpc_id     = module.vpc.vpc_id
   subnet_ids = module.vpc.public_subnets
 
-  access_entries = var.github_actions_role_arn == null ? {} : {
+  access_entries = {
     github_actions = {
-      principal_arn = var.github_actions_role_arn
+      principal_arn = aws_iam_role.github_actions.arn
       policy_associations = {
         admin = {
           policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
