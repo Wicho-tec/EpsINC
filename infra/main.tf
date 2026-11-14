@@ -20,9 +20,8 @@ resource "aws_ecr_repository" "epsinc" {
   }
 }
 
-resource "aws_iam_openid_connect_provider" "github" {
-  url            = "https://token.actions.githubusercontent.com"
-  client_id_list = ["sts.amazonaws.com"]
+data "aws_iam_openid_connect_provider" "github" {
+  url = "https://token.actions.githubusercontent.com"
 }
 
 resource "aws_iam_role" "github_actions" {
@@ -32,7 +31,7 @@ resource "aws_iam_role" "github_actions" {
     Statement = [{
       Effect = "Allow"
       Principal = {
-        Federated = aws_iam_openid_connect_provider.github.arn
+        Federated = data.aws_iam_openid_connect_provider.github.arn
       }
       Action = "sts:AssumeRoleWithWebIdentity"
       Condition = {
@@ -59,7 +58,9 @@ resource "aws_iam_policy" "github_actions" {
         Effect = "Allow"
         Action = [
           "ecr:BatchCheckLayerAvailability",
+          "ecr:BatchGetImage",
           "ecr:CompleteLayerUpload",
+          "ecr:GetDownloadUrlForLayer",
           "ecr:InitiateLayerUpload",
           "ecr:PutImage",
           "ecr:UploadLayerPart"
@@ -173,9 +174,16 @@ module "eks" {
   name               = "epsinc"
   kubernetes_version = var.kubernetes_version
   # GitHub-hosted runners have no stable egress IP; IAM authentication still gates API access.
-  endpoint_public_access       = true
-  endpoint_public_access_cidrs = var.admin_cidrs
-  enable_irsa                  = true
+  endpoint_public_access                   = true
+  endpoint_public_access_cidrs             = var.admin_cidrs
+  enable_irsa                              = true
+  enable_cluster_creator_admin_permissions = true
+
+  addons = {
+    vpc-cni    = { before_compute = true, addon_version = "v1.22.4-eksbuild.14" }
+    kube-proxy = { before_compute = true, addon_version = "v1.34.6-eksbuild.69" }
+    coredns    = { before_compute = true, addon_version = "v1.12.4-eksbuild.82" }
+  }
 
   vpc_id     = module.vpc.vpc_id
   subnet_ids = module.vpc.public_subnets
