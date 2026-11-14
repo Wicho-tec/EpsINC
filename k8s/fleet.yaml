@@ -1,0 +1,61 @@
+apiVersion: "agones.dev/v1"
+kind: Fleet
+metadata:
+  name: epsinc-fleet
+  namespace: default
+  labels:
+    app: epsinc
+    tier: game-server
+spec:
+  replicas: 5
+  scheduling: Packed # Pack onto nodes to maximize cost savings and scale-down efficiency
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app: epsinc
+        tier: game-server
+    spec:
+      ports:
+        - name: default
+          containerPort: 8080
+          portPolicy: Dynamic
+          protocol: TCP
+      health:
+        initialDelaySeconds: 10
+        periodSeconds: 5
+        failureThreshold: 3
+      template:
+        spec:
+          containers:
+            - name: epsinc-server
+              image: __EPSINC_IMAGE__
+              imagePullPolicy: IfNotPresent
+              resources:
+                requests:
+                  memory: "256Mi"
+                  cpu: "250m"
+                limits:
+                  memory: "512Mi"
+                  cpu: "1000m"
+              env:
+                - name: PORT
+                  value: "8080"
+                - name: EPSINC_ENV
+                  value: "production"
+              livenessProbe:
+                httpGet:
+                  path: /health
+                  port: 8080
+                initialDelaySeconds: 15
+                periodSeconds: 10
+              readinessProbe:
+                httpGet:
+                  path: /health
+                  port: 8080
+                initialDelaySeconds: 5
+                periodSeconds: 5

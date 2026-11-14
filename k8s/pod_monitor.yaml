@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: epsinc-pod-monitor
+  namespace: default
+  labels:
+    app: epsinc
+    release: epsinc-monitoring
+spec:
+  selector:
+    matchLabels:
+      app: epsinc
+      tier: game-server
+  podMetricsEndpoints:
+    - port: default
+      path: /metrics
+      interval: 5s
+      scrapeTimeout: 3s

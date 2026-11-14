@@ -1,0 +1,493 @@
+/* =========================================================
+   EpsInc - Global Lightweight LEGO Stylesheet
+   Ultra-optimized: Zero backdrop-filter, zero composite lag
+   ========================================================= */
+
+:root {
+    --lego-red: #E52521;
+    --lego-blue: #0055BF;
+    --lego-yellow: #F6D000;
+    --lego-green: #009640;
+    --lego-orange: #FF6B00;
+    --lego-purple: #9B30FF;
+    --lego-cyan: #00C3E3;
+    --lego-dark: #101522;
+    --lego-card-bg: #18233C;
+    --lego-text-light: #F4F7FB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Fredoka', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--lego-dark);
+    color: var(--lego-text-light);
+}
+
+.lego-bg-pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #101522;
+    z-index: 0;
+}
+
+#game-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* ---------------- LOBBY SCREEN ---------------- */
+#lobby-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: rgba(10, 14, 26, 0.9);
+}
+
+.lobby-card {
+    background: var(--lego-card-bg);
+    border: 3px solid var(--lego-yellow);
+    border-radius: 20px;
+    padding: 28px;
+    width: 90%;
+    max-width: 780px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.logo-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-title {
+    font-size: 46px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #FECA57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo-subtitle {
+    font-size: 15px;
+    color: #94A3B8;
+    margin-top: 4px;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 720px) {
+    .form-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #CBD5E0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type="text"] {
+    background: #0F172A;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: var(--lego-cyan);
+}
+
+.color-palette {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.color-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color-dot.active {
+    border-color: white;
+    transform: scale(1.15);
+}
+
+.rooms-container {
+    margin-bottom: 20px;
+}
+
+.rooms-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.room-card {
+    background: #1E293B;
+    border: 2px solid #334155;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room-card:hover {
+    border-color: var(--lego-yellow);
+}
+
+.room-card.selected {
+    border-color: var(--lego-cyan);
+    background: #132742;
+}
+
+.room-title {
+    font-weight: 800;
+    font-size: 15px;
+    color: #F8FAFC;
+}
+
+.room-meta {
+    font-size: 11px;
+    color: #94A3B8;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.badge-tag {
+    background: #0F172A;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.btn-lego {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-play {
+    background: var(--lego-green);
+    color: white;
+    flex: 2;
+}
+
+.btn-spectate {
+    background: var(--lego-blue);
+    color: white;
+    flex: 1;
+}
+
+.action-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+/* ---------------- HUD IN-GAME ---------------- */
+#hud-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
+    display: none;
+}
+
+.hud-element {
+    pointer-events: auto;
+}
+
+.hud-top-bar {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.leaderboard-box {
+    background: #18233C;
+    border: 2px solid var(--lego-yellow);
+    border-radius: 12px;
+    padding: 10px 14px;
+    min-width: 240px;
+}
+
+.lb-title {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--lego-yellow);
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lb-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.lb-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.lb-item.dead {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+.lb-item.me {
+    background: #1E3A5F;
+    border-left: 3px solid var(--lego-cyan);
+}
+
+.power-hud {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #18233C;
+    border: 2px solid var(--lego-cyan);
+    border-radius: 16px;
+    padding: 8px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.power-hud.hidden {
+    display: none;
+}
+
+.power-icon {
+    font-size: 24px;
+}
+
+.power-name {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.power-sub {
+    font-size: 11px;
+    color: #94A3B8;
+}
+
+.kill-feed {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 300px;
+}
+
+.kill-msg {
+    background: rgba(15, 23, 42, 0.9);
+    border-left: 3px solid var(--lego-red);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.host-controls {
+    background: #18233C;
+    border: 2px solid #334155;
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.host-btn {
+    background: #1E293B;
+    border: 1px solid #475569;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Floating Clean Streak Banner */
+#announcement-banner {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    pointer-events: none;
+    z-index: 200;
+    text-align: center;
+}
+
+.streak-text {
+    font-size: 54px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #FFFA65;
+    text-shadow: 0 4px 0 rgba(0,0,0,0.8);
+}
+
+/* ---------------- 1-LIFE CLEAN TEXT OVERLAYS ---------------- */
+/* EPSLOSE: Sleek overlay text showing when you die, allowing you to spectate */
+#epslose-overlay {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    pointer-events: none;
+    z-index: 250;
+}
+
+.epslose-text {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: #E52521;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.9), 0 0 20px rgba(229, 37, 33, 0.6);
+}
+
+.spectating-text {
+    font-size: 18px;
+    font-weight: 800;
+    color: #F8FAFC;
+    background: rgba(15, 23, 42, 0.85);
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #475569;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+/* EPSWIN: Grand victory banner for last man standing */
+#epswin-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    z-index: 300;
+    pointer-events: auto;
+    background: rgba(18, 24, 38, 0.95);
+    border: 4px solid var(--lego-yellow);
+    border-radius: 24px;
+    padding: 32px 48px;
+}
+
+.epswin-text {
+    font-size: 84px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: #F6D000;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.9), 0 0 25px rgba(246, 208, 0, 0.6);
+    margin-bottom: 8px;
+}
+
+.epswin-sub {
+    font-size: 20px;
+    font-weight: 800;
+    color: #E2E8F0;
+    margin-bottom: 24px;
+}
+
+.spectator-hud {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 85, 191, 0.9);
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 6px 16px;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}

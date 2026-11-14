@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpsInc — Biberones de Combate LEGO 2D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Phaser 3 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+    <script src="/static/audio_synth.js"></script>
+</head>
+<body>
+    <div class="lego-bg-pattern"></div>
+    <div id="game-container"></div>
+
+    <!-- ==================== LOBBY SCREEN ==================== -->
+    <div id="lobby-screen">
+        <div class="lobby-card">
+            <div class="logo-header">
+                <div class="logo-title">
+                    <span>🍼</span> EPSINC <span>🧱</span>
+                </div>
+                <div class="logo-subtitle">
+                    Guerra de Biberones LEGO — Modo 1 Vida (Supervivencia)
+                </div>
+            </div>
+
+            <!-- Player Profile Setup -->
+            <div class="form-section">
+                <div class="input-group">
+                    <label for="player-name">Tu Apodo de Biberón</label>
+                    <input type="text" id="player-name" value="BiberonPro" maxlength="16" placeholder="Escribe tu apodo...">
+                </div>
+
+                <div class="input-group">
+                    <label>Color de tu Biberón</label>
+                    <div class="color-palette" id="color-palette"></div>
+                </div>
+            </div>
+
+            <!-- Arenas & Maps Selection -->
+            <div class="rooms-container">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <label>Selecciona una Arena</label>
+                    <span id="room-refresh" style="font-size:12px; color:var(--lego-cyan); cursor:pointer;">🔄 Actualizar</span>
+                </div>
+                <div class="rooms-list" id="rooms-list"></div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="action-row">
+                <button class="btn-lego btn-play" id="btn-play">
+                    <span>🎮</span> JUGAR AHORA
+                </button>
+                <button class="btn-lego btn-spectate" id="btn-spectate">
+                    <span>👁️</span> ESPECTADOR
+                </button>
+            </div>
+            
+            <div style="margin-top: 12px; text-align: center; font-size: 13px; color: #94A3B8;">
+                Reglas: <strong>1 sola vida</strong>. Si te eliminan, pasarás a espectar a tu atacante. ¡El último en pie gana!
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== IN-GAME HUD ==================== -->
+    <div id="hud-overlay">
+        <!-- Top Navigation & Leaderboard -->
+        <div class="hud-top-bar">
+            <!-- Room Info & Controls -->
+            <div class="hud-element host-controls">
+                <div style="font-weight: 800; font-size: 14px;" id="hud-room-name">Arena</div>
+                <button class="host-btn" id="btn-toggle-bots">🤖 Bots: ON</button>
+                <button class="host-btn" id="btn-mute">🔊 Sonido</button>
+                <button class="host-btn" id="btn-leave">🚪 Salir</button>
+            </div>
+
+            <!-- Real-time Leaderboard -->
+            <div class="hud-element leaderboard-box">
+                <div class="lb-title">
+                    <span>🏆 Supervivientes</span>
+                    <span id="player-count-badge" style="color:#94A3B8;">0/20</span>
+                </div>
+                <div class="lb-list" id="leaderboard-items"></div>
+            </div>
+        </div>
+
+        <!-- Spectator Banner -->
+        <div id="spectator-banner" class="spectator-hud" style="display:none;">
+            👁️ MODO ESPECTADOR
+        </div>
+
+        <!-- PowerUp Active Bar -->
+        <div class="hud-element power-hud hidden" id="power-hud">
+            <div class="power-icon" id="power-icon">⚡</div>
+            <div class="power-info">
+                <div class="power-name" id="power-name">Poder Activo</div>
+                <div class="power-sub" id="power-desc">Efecto especial</div>
+            </div>
+        </div>
+
+        <!-- Kill Feed -->
+        <div class="kill-feed" id="kill-feed"></div>
+
+        <!-- Floating Streak Announcement -->
+        <div id="announcement-banner">
+            <div class="streak-text" id="announcement-text">EPSTAKILL x3</div>
+        </div>
+
+        <!-- Clean Text Overlays (Requested by User) -->
+        <!-- EPSLOSE: When eliminated, shows text and spectates killer -->
+        <div id="epslose-overlay">
+            <div class="epslose-text">EPSLOSE</div>
+            <div class="spectating-text" id="spectating-label">Espectando al asesino...</div>
+        </div>
+
+        <!-- EPSWIN: When you or last survivor wins -->
+        <div id="epswin-overlay">
+            <div class="epswin-text" id="epswin-title">EPSWIN</div>
+            <div class="epswin-sub" id="epswin-subtitle">¡Eres el último superviviente en pie!</div>
+            <button class="btn-lego btn-play" id="btn-play-again" style="width: 100%;">
+                🔄 JUGAR OTRA RONDA
+            </button>
+        </div>
+    </div>
+
+    <script src="/static/game.js"></script>
+</body>
+</html>

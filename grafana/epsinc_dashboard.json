@@ -1,0 +1,202 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": true,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 0 },
+      "id": 100,
+      "title": "Métricas Principales de Juego (EpsInc)",
+      "type": "row"
+    },
+    {
+      "id": 1,
+      "title": "CCU — Jugadores Concurrentes Totales",
+      "type": "stat",
+      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 1 },
+      "targets": [
+        {
+          "expr": "sum(epsinc_connected_players{type=\"human\"})",
+          "legendFormat": "Humanos",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(epsinc_connected_players{type=\"bot\"})",
+          "legendFormat": "Bots IA",
+          "refId": "B"
+        },
+        {
+          "expr": "sum(epsinc_connected_players{type=\"spectator\"})",
+          "legendFormat": "Espectadores",
+          "refId": "C"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "yellow", "value": 500 },
+              { "color": "red", "value": 900 }
+            ]
+          },
+          "unit": "short"
+        }
+      },
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Latencia p99 (Física & Cálculo de Tick)",
+      "type": "gauge",
+      "gridPos": { "h": 5, "w": 6, "x": 6, "y": 1 },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.99, sum(rate(epsinc_tick_duration_seconds_bucket[1m])) by (le)) * 1000",
+          "legendFormat": "Tick p99 (ms)",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "max": 50,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "yellow", "value": 15 },
+              { "color": "red", "value": 33 }
+            ]
+          },
+          "unit": "ms"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Servidores por Estado (Agones Fleet)",
+      "type": "piechart",
+      "gridPos": { "h": 5, "w": 6, "x": 12, "y": 1 },
+      "targets": [
+        {
+          "expr": "sum by (state) (agones_gameservers_count{fleet=\"epsinc-fleet\"})",
+          "legendFormat": "{{state}}",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "legend": { "displayMode": "list", "placement": "right" },
+        "pieType": "donut"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Nodos EKS Activos",
+      "type": "stat",
+      "gridPos": { "h": 5, "w": 6, "x": 18, "y": 1 },
+      "targets": [
+        {
+          "expr": "count(kube_node_info)",
+          "legendFormat": "Nodos EKS",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "blue", "value": null },
+              { "color": "orange", "value": 8 }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 6 },
+      "id": 101,
+      "title": "Autoescalado y Capacidad de Cómputo",
+      "type": "row"
+    },
+    {
+      "id": 5,
+      "title": "Estado de las Réplicas (FleetAutoscaler Buffer vs Allocated)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 7 },
+      "targets": [
+        {
+          "expr": "agones_fleets_replicas_count{fleet=\"epsinc-fleet\", type=\"allocated\"}",
+          "legendFormat": "Asignadas (En Partida)",
+          "refId": "A"
+        },
+        {
+          "expr": "agones_fleets_replicas_count{fleet=\"epsinc-fleet\", type=\"ready\"}",
+          "legendFormat": "Ready (Buffer En Espera)",
+          "refId": "B"
+        },
+        {
+          "expr": "agones_fleets_replicas_count{fleet=\"epsinc-fleet\", type=\"total\"}",
+          "legendFormat": "Total Réplicas",
+          "refId": "C"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Métricas de Carga y Throughput de Red",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 7 },
+      "targets": [
+        {
+          "expr": "sum(rate(epsinc_ws_messages_total[1m]))",
+          "legendFormat": "Mensajes WebSocket / seg",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(rate(epsinc_total_kills[1m]))",
+          "legendFormat": "Bajas / seg",
+          "refId": "B"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": ["epsinc", "gaming", "agones", "kubernetes"],
+  "time": { "from": "now-30m", "to": "now" },
+  "timepicker": { "refresh_intervals": ["5s", "10s", "30s", "1m"] },
+  "timezone": "browser",
+  "title": "EpsInc — Tablero Operativo de Servidores de Juego",
+  "uid": "epsinc-prod-overview",
+  "version": 1
+}

@@ -1,0 +1,87 @@
+name: EpsInc CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  AWS_REGION: us-east-1
+  EKS_CLUSTER: epsinc
+
+jobs:
+  test:
+    name: Pruebas del servidor
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: server/requirements.txt
+      - run: python -m pip install -r server/requirements.txt
+      - run: python run_tests.py
+
+  build:
+    name: Crear y publicar imagen
+    needs: test
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    outputs:
+      image: ${{ steps.registry.outputs.registry }}/epsinc/server:${{ github.sha }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+      - id: registry
+        uses: aws-actions/amazon-ecr-login@v2
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./server/Dockerfile
+          push: true
+          tags: ${{ steps.registry.outputs.registry }}/epsinc/server:${{ github.sha }}
+
+  deploy:
+    name: Actualizar Agones en EKS
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+      - uses: azure/setup-kubectl@v4
+      - uses: azure/setup-helm@v4
+      - name: Configure EKS access
+        run: aws eks update-kubeconfig --region "$AWS_REGION" --name "$EKS_CLUSTER"
+      - name: Install Agones and monitoring
+        run: |
+          helm repo add agones https://agones.dev/chart/stable
+          helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+          helm repo update
+          helm upgrade --install agones agones/agones --version 1.60.0 --namespace agones-system --create-namespace --wait
+          helm upgrade --install epsinc-monitoring prometheus-community/kube-prometheus-stack --version 92.21.2 --namespace monitoring --create-namespace --wait
+          kubectl create configmap epsinc-dashboard --namespace monitoring --from-file=epsinc_dashboard.json=grafana/epsinc_dashboard.json --dry-run=client -o yaml | kubectl apply -f -
+          kubectl label configmap epsinc-dashboard grafana_dashboard=1 --namespace monitoring --overwrite
+      - name: Publish image to fleet
+        env:
+          IMAGE_URI: ${{ needs.build.outputs.image }}
+        run: |
+          sed -i "s|__EPSINC_IMAGE__|$IMAGE_URI|g" k8s/fleet.yaml
+          kubectl apply -f k8s/
+          kubectl rollout status fleet/epsinc-fleet --timeout=180s
