@@ -217,6 +217,14 @@ module "eks" {
   }
 
   node_security_group_additional_rules = {
+    agones_webhook = {
+      description                   = "Agones admission webhook from EKS control plane"
+      protocol                      = "tcp"
+      from_port                     = 8081
+      to_port                       = 8081
+      type                          = "ingress"
+      source_cluster_security_group = true
+    }
     game_tcp = {
       description = "Agones allocated game server TCP ports"
       protocol    = "tcp"
