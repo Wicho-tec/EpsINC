@@ -9,8 +9,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: epsinc
-      tier: game-server
+      agones.dev/role: gameserver
   podMetricsEndpoints:
     - port: default
       path: /metrics

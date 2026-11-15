@@ -8,8 +8,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: epsinc
-    tier: game-server
+    agones.dev/role: gameserver
   ports:
     - name: http-ws
       port: 80
