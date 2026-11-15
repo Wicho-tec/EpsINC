@@ -22,7 +22,7 @@ spec:
     spec:
       ports:
         - name: default
-          containerPort: 8080
+          containerPort: 8081
           portPolicy: Dynamic
           protocol: TCP
       health:
@@ -44,18 +44,18 @@ spec:
                   cpu: "1000m"
               env:
                 - name: PORT
-                  value: "8080"
+                  value: "8081"
                 - name: EPSINC_ENV
                   value: "production"
               livenessProbe:
                 httpGet:
                   path: /health
-                  port: 8080
+                  port: 8081
                 initialDelaySeconds: 15
                 periodSeconds: 10
               readinessProbe:
                 httpGet:
                   path: /health
-                  port: 8080
+                  port: 8081
                 initialDelaySeconds: 5
                 periodSeconds: 5
