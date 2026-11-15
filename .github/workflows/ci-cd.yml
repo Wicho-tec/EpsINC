@@ -105,4 +105,4 @@ jobs:
         run: |
           sed -i "s|__EPSINC_IMAGE__|$IMAGE_URI|g" k8s/fleet.yaml
           kubectl apply -f k8s/
-          kubectl rollout status fleet/epsinc-fleet --timeout=180s
+          kubectl wait --for=jsonpath='{.status.readyReplicas}'=3 fleet/epsinc-fleet --timeout=180s
