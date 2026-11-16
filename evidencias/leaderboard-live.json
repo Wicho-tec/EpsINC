@@ -1,0 +1,30 @@
+{
+  "top": {
+    "leaderboard": [
+      {
+        "updated_at": 1794797417,
+        "streak": 3,
+        "board": "main",
+        "score": 1420,
+        "name": "EpsINC demo",
+        "kills": 12,
+        "player_id": "evidencia_epsinc"
+      }
+    ],
+    "total_tracked": 1,
+    "generated_at": 1794797419
+  },
+  "capturedAt": "2026-11-15T20:49:13.3961773-06:00",
+  "submit": {
+    "status": "success",
+    "player": {
+      "board": "main",
+      "player_id": "evidencia_epsinc",
+      "name": "EpsINC demo",
+      "score": 1420,
+      "kills": 12,
+      "streak": 3,
+      "updated_at": 1794797417
+    }
+  }
+}

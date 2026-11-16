@@ -1,0 +1,22 @@
+{
+  "startedAt": "2026-11-15T21:22:18.5065301-06:00",
+  "finishedAt": "2026-11-15T21:22:28.4340756-06:00",
+  "elapsed_seconds": 9.9238786,
+  "node_scale_seconds": 30.05,
+  "node_scale_cause": "Pending load-generator CPU requests",
+  "before": {
+    "allocatedReplicas": 0,
+    "allocations": 0,
+    "readyReplicas": 3,
+    "replicas": 3,
+    "reservedReplicas": 0
+  },
+  "after": {
+    "allocatedReplicas": 1,
+    "allocations": 1,
+    "readyReplicas": 3,
+    "replicas": 4,
+    "reservedReplicas": 0
+  },
+  "allocation_state": "Allocated"
+}

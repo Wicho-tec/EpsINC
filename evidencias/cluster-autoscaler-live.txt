@@ -1,0 +1,883 @@
+W1116 02:46:56.260438       1 feature_gate.go:352] Setting GA feature gate DynamicResourceAllocation=false. It will be removed in a future release.
+I1116 02:46:56.260635       1 main.go:378] Cluster Autoscaler 1.34.6
+I1116 02:46:56.276015       1 leaderelection.go:257] attempting to acquire leader lease kube-system/cluster-autoscaler...
+I1116 02:46:56.288639       1 leaderelection.go:271] successfully acquired lease kube-system/cluster-autoscaler
+I1116 02:46:56.288913       1 event_sink_logging_wrapper.go:48] Event(v1.ObjectReference{Kind:"Lease", Namespace:"kube-system", Name:"cluster-autoscaler", UID:"ad4c6cdf-59b2-4473-acd4-f2fb517fca13", APIVersion:"coordination.k8s.io/v1", ResourceVersion:"3416", FieldPath:""}): type: 'Normal' reason: 'LeaderElection' cluster-autoscaler-aws-cluster-autoscaler-75fb4dd894-kfh5l became leader
+I1116 02:46:56.291101       1 framework.go:412] "the scheduler starts to work with those plugins" Plugins={"PreEnqueue":{"Enabled":[{"Name":"SchedulingGates","Weight":0},{"Name":"DefaultPreemption","Weight":0}],"Disabled":null},"QueueSort":{"Enabled":[{"Name":"PrioritySort","Weight":0}],"Disabled":null},"PreFilter":{"Enabled":[{"Name":"NodeAffinity","Weight":0},{"Name":"NodePorts","Weight":0},{"Name":"NodeResourcesFit","Weight":0},{"Name":"VolumeRestrictions","Weight":0},{"Name":"NodeVolumeLimits","Weight":0},{"Name":"VolumeBinding","Weight":0},{"Name":"VolumeZone","Weight":0},{"Name":"PodTopologySpread","Weight":0},{"Name":"InterPodAffinity","Weight":0}],"Disabled":null},"Filter":{"Enabled":[{"Name":"NodeUnschedulable","Weight":0},{"Name":"NodeName","Weight":0},{"Name":"TaintToleration","Weight":0},{"Name":"NodeAffinity","Weight":0},{"Name":"NodePorts","Weight":0},{"Name":"NodeResourcesFit","Weight":0},{"Name":"VolumeRestrictions","Weight":0},{"Name":"NodeVolumeLimits","Weight":0},{"Name":"VolumeBinding","Weight":0},{"Name":"VolumeZone","Weight":0},{"Name":"PodTopologySpread","Weight":0},{"Name":"InterPodAffinity","Weight":0}],"Disabled":null},"PostFilter":{"Enabled":[{"Name":"DefaultPreemption","Weight":0}],"Disabled":null},"PreScore":{"Enabled":[{"Name":"TaintToleration","Weight":0},{"Name":"NodeAffinity","Weight":0},{"Name":"NodeResourcesFit","Weight":0},{"Name":"VolumeBinding","Weight":0},{"Name":"PodTopologySpread","Weight":0},{"Name":"InterPodAffinity","Weight":0},{"Name":"NodeResourcesBalancedAllocation","Weight":0}],"Disabled":null},"Score":{"Enabled":[{"Name":"TaintToleration","Weight":3},{"Name":"NodeAffinity","Weight":2},{"Name":"NodeResourcesFit","Weight":1},{"Name":"VolumeBinding","Weight":1},{"Name":"PodTopologySpread","Weight":2},{"Name":"InterPodAffinity","Weight":2},{"Name":"NodeResourcesBalancedAllocation","Weight":1},{"Name":"ImageLocality","Weight":1}],"Disabled":null},"Reserve":{"Enabled":[{"Name":"VolumeBinding","Weight":0}],"Disabled":null},"Permit":{"Enabled":null,"Disabled":null},"PreBind":{"Enabled":[{"Name":"VolumeBinding","Weight":0}],"Disabled":null},"Bind":{"Enabled":[{"Name":"DefaultBinder","Weight":0}],"Disabled":null},"PostBind":{"Enabled":null,"Disabled":null},"MultiPoint":{"Enabled":null,"Disabled":null}}
+I1116 02:46:56.305738       1 cloud_provider_builder.go:30] Building aws cloud provider.
+I1116 02:46:57.762753       1 aws_cloud_provider.go:461] Using static instance type a1.large
+I1116 02:46:57.762785       1 aws_cloud_provider.go:461] Using static instance type f1.4xlarge
+I1116 02:46:57.762790       1 aws_cloud_provider.go:461] Using static instance type g4ad.8xlarge
+I1116 02:46:57.762804       1 aws_cloud_provider.go:461] Using static instance type dl1.24xlarge
+I1116 02:46:57.762812       1 aws_cloud_provider.go:461] Using static instance type a1.xlarge
+I1116 02:46:57.762815       1 aws_cloud_provider.go:461] Using static instance type p3.2xlarge
+I1116 02:46:57.762819       1 aws_cloud_provider.go:461] Using static instance type a1.medium
+I1116 02:46:57.762836       1 aws_cloud_provider.go:461] Using static instance type f1.2xlarge
+I1116 02:46:57.762843       1 aws_cloud_provider.go:461] Using static instance type f1.16xlarge
+I1116 02:46:57.762874       1 aws_cloud_provider.go:461] Using static instance type g4ad.16xlarge
+I1116 02:46:57.762879       1 aws_cloud_provider.go:461] Using static instance type g4ad.xlarge
+I1116 02:46:57.762901       1 aws_cloud_provider.go:461] Using static instance type p3.16xlarge
+I1116 02:46:57.762908       1 aws_cloud_provider.go:461] Using static instance type g4ad.4xlarge
+I1116 02:46:57.762932       1 aws_cloud_provider.go:461] Using static instance type p3.8xlarge
+I1116 02:46:57.762934       1 aws_cloud_provider.go:461] Using static instance type a1.metal
+I1116 02:46:57.762946       1 aws_cloud_provider.go:461] Using static instance type a1.2xlarge
+I1116 02:46:57.762962       1 aws_cloud_provider.go:461] Using static instance type g4ad.2xlarge
+I1116 02:46:57.762979       1 aws_cloud_provider.go:461] Using static instance type a1.4xlarge
+I1116 02:46:57.763014       1 aws_cloud_provider.go:471] Successfully load 1387 EC2 Instance Types [r6in.16xlarge r8idb.24xlarge c8in.24xlarge g6e.8xlarge t3a.medium x2idn.metal c8gb.24xlarge g7e.48xlarge c9gd.4xlarge m5a.8xlarge r9gd.xlarge x8i.16xlarge m6i.xlarge r6in.24xlarge g4ad.2xlarge c8id.xlarge r7gd.metal r8ib.metal-96xl c8a.16xlarge m3.xlarge m6i.metal m9gd.4xlarge r5.2xlarge r5ad.4xlarge r5ad.24xlarge r7i.metal-48xl c8i.metal-96xl d3en.2xlarge m6a.48xlarge r6gd.12xlarge r8gn.24xlarge f1.2xlarge c8a.4xlarge r5.xlarge r6id.24xlarge m5dn.xlarge m5d.24xlarge x1e.32xlarge c6gd.2xlarge c5.metal c7a.medium inf2.48xlarge m8g.2xlarge r8i.48xlarge c8gn.24xlarge c9gd.24xlarge r5n.4xlarge r8idn.8xlarge c5n.xlarge h1.2xlarge r5d.2xlarge r6in.8xlarge r6idn.metal r7g.2xlarge x8i.24xlarge c6in.12xlarge i8ge.metal-48xl m5n.xlarge m6idn.xlarge m8a.metal-48xl r9g.metal-48xl c8i-flex.16xlarge m5a.xlarge m6gd.4xlarge m8i-flex.8xlarge r8a.16xlarge r7gd.2xlarge dl1.24xlarge c6a.32xlarge c6a.4xlarge c6in.metal m8g.8xlarge r8i-flex.4xlarge t2.2xlarge c7i.metal-48xl c6in.large c8gn.12xlarge r6g.medium a1.2xlarge inf2.8xlarge m6in.2xlarge m7g.large m8idn.4xlarge r7gd.large r8g.24xlarge r8gd.24xlarge c7i.2xlarge c8i.metal-48xl m2.xlarge m7a.2xlarge m7a.xlarge m8ib.2xlarge r6idn.8xlarge r8i.2xlarge x1e.16xlarge c6g.8xlarge c8a.large x1e.8xlarge x8g.12xlarge z1d.2xlarge c6in.8xlarge c8a.12xlarge g5g.metal m5dn.8xlarge r8i.xlarge x2iedn.8xlarge c7gd.4xlarge d3.4xlarge m7g.16xlarge r5dn.2xlarge r6idn.32xlarge c5.12xlarge g4dn.2xlarge i4i.12xlarge i3.8xlarge m9gd.2xlarge c6g.medium i7ie.6xlarge inf1.2xlarge m5d.12xlarge m8id.2xlarge i3.2xlarge r5.metal r5d.large r7iz.2xlarge r8in.8xlarge t2.nano r9gd.large t2.micro m5d.2xlarge r5n.xlarge r7iz.8xlarge r7a.4xlarge r7gd.4xlarge c6gn.large m6g.xlarge m6id.metal m8gb.4xlarge m8gn.xlarge u-6tb1.56xlarge m8gn.8xlarge m8i.12xlarge p5en.48xlarge m7i-flex.8xlarge m6gd.metal r8a.4xlarge c5.24xlarge i7i.2xlarge m8gd.2xlarge m8in.xlarge t3a.2xlarge m5ad.24xlarge m7i.large m8gn.large m8idn.xlarge m9g.large r6gd.medium r6in.xlarge r8a.xlarge c5a.large c6g.2xlarge c8gd.metal-24xl m8i.24xlarge m8id.8xlarge r7g.16xlarge r8i.8xlarge c6g.metal c9gd.large g6.48xlarge i8ge.3xlarge m6id.32xlarge m8gn.metal-48xl m8in.large r8ib.16xlarge c8i.48xlarge g5.8xlarge m5a.large z1d.xlarge m5dn.16xlarge m9gd.xlarge m8ine.4xlarge r8idb.16xlarge c6gn.xlarge m6g.2xlarge m9gd.metal-48xl r5.4xlarge r8ib.large t8i.nano i7ie.metal-48xl g6f.xlarge i8g.8xlarge m6gd.medium m8azn.12xlarge c6in.16xlarge c8in.48xlarge r8gd.2xlarge r8in.2xlarge g7.48xlarge i7i.4xlarge m5n.8xlarge m8i.32xlarge r5ad.8xlarge c6a.large c7i-flex.8xlarge g7e.12xlarge m8ib.24xlarge r5ad.2xlarge r8i-flex.xlarge r8ib.12xlarge r8gd.12xlarge c6a.xlarge c8a.xlarge r7a.medium u7i-12tb.224xlarge c8ine.4xlarge r8gn.16xlarge u7i-8tb.112xlarge m5.12xlarge r4.16xlarge u7in-32tb.224xlarge c9gd.2xlarge m8idb.4xlarge r6gd.16xlarge x8g.xlarge a1.medium g5.16xlarge i4i.large m5a.12xlarge m8gd.4xlarge r7g.8xlarge x8g.metal-24xl x8g.metal-48xl c5d.2xlarge c8g.12xlarge r5b.16xlarge r7gd.8xlarge c8in.xlarge c8gn.metal-48xl g7.8xlarge m6i.2xlarge x2gd.metal c8id.4xlarge g7e.2xlarge c7i.48xlarge c8i.16xlarge m6in.16xlarge m9g.metal-48xl r7gd.16xlarge c6i.32xlarge c7gn.metal i7ie.24xlarge m6a.24xlarge m7a.8xlarge m8ib.4xlarge r6i.24xlarge r7i.xlarge i4g.2xlarge m8a.12xlarge m8idn.12xlarge r8i.4xlarge g7.12xlarge m6gd.xlarge m8i-flex.16xlarge mac2.metal x2idn.16xlarge c7a.12xlarge c8ine.2xlarge g6.4xlarge c7gn.large c7gn.4xlarge g6e.4xlarge m5dn.4xlarge x1e.2xlarge f1.16xlarge d3en.6xlarge g6.12xlarge i4i.xlarge m7gd.2xlarge m8i.48xlarge r5a.4xlarge r7iz.4xlarge c8gn.8xlarge r8ib.32xlarge c6g.large c7i-flex.16xlarge c8a.metal-48xl c8in.12xlarge g7e.8xlarge i4i.24xlarge m8in.12xlarge r5b.4xlarge r6id.xlarge r7iz.large t3.nano r8idn.2xlarge x8g.4xlarge f1.4xlarge c8i.24xlarge c9gd.48xlarge i7ie.large m8gd.large r5n.8xlarge x1.16xlarge c6i.4xlarge i2.xlarge m8gn.24xlarge m8idb.48xlarge r5a.16xlarge r6a.32xlarge r9gd.8xlarge c6i.12xlarge c7a.2xlarge g5g.4xlarge m5n.2xlarge m6g.4xlarge m7i.16xlarge m8gn.4xlarge r6gd.2xlarge c8a.2xlarge c8id.large r5a.2xlarge r8gb.xlarge t3.medium c8i-flex.xlarge m1.small m7i.metal-48xl m7g.2xlarge m8gn.12xlarge m8idb.32xlarge r8gb.4xlarge r8ib.4xlarge c9g.24xlarge m5dn.large m8a.2xlarge r3.8xlarge m8ine.12xlarge r4.4xlarge r5b.large r7i.4xlarge m8a.8xlarge m8azn.24xlarge m9gd.medium r6i.metal r7gd.12xlarge r6id.12xlarge r8gn.xlarge r8gb.48xlarge i3en.6xlarge r3.2xlarge r7iz.12xlarge x2idn.32xlarge x2gd.8xlarge c6i.metal c7gd.metal f2.6xlarge g5.24xlarge r5dn.large c1.xlarge c6in.xlarge c8id.12xlarge m8ib.8xlarge r3.xlarge r6g.16xlarge r8a.12xlarge r8ib.96xlarge c8in.metal-96xl c9g.48xlarge m8gd.48xlarge r6a.4xlarge t2.small m6gd.2xlarge m9gd.large m8id.96xlarge m8idb.8xlarge im4gn.4xlarge m8i.96xlarge r5ad.xlarge r5a.8xlarge r7g.4xlarge c7a.16xlarge i3en.3xlarge m6idn.8xlarge m7i-flex.16xlarge m7gd.xlarge m9gd.48xlarge r9g.4xlarge c8gn.4xlarge m8g.xlarge m8id.4xlarge c6gn.4xlarge c5d.24xlarge c8gb.4xlarge r4.large r8g.medium r8gn.12xlarge r8idb.12xlarge c6id.2xlarge c5n.large c7gn.16xlarge m6g.large r6idn.2xlarge x2iezn.2xlarge c7gd.xlarge m5zn.metal m7a.4xlarge m6idn.32xlarge r7a.12xlarge m6idn.24xlarge m6i.32xlarge r6gd.metal m8gb.large m9gd.8xlarge r6in.2xlarge i8g.2xlarge m5zn.6xlarge m6in.xlarge m8g.4xlarge m8idn.large r5n.metal c8in.96xlarge c8id.2xlarge m8g.24xlarge m8idn.96xlarge r5.8xlarge x2gd.large g5g.8xlarge m5.metal m6in.4xlarge m8i.xlarge m8gb.48xlarge r6i.32xlarge r8ib.xlarge t3a.nano g7e.4xlarge m7i-flex.4xlarge m7i-flex.12xlarge r8gd.xlarge x2iezn.6xlarge g4ad.8xlarge c5ad.4xlarge c7i-flex.xlarge m6gd.16xlarge m7gd.medium mac-m4pro.metal c6g.12xlarge g5.4xlarge m7a.16xlarge r5d.metal r7i.large r8g.metal-24xl t3a.large z1d.3xlarge c8g.medium c8gb.48xlarge m6a.xlarge m1.large m8a.medium r6id.metal m8a.48xlarge m6i.large p4de.24xlarge z1d.12xlarge x2iedn.metal c6a.metal c5a.xlarge r5n.large r6id.32xlarge t8i.medium t2.xlarge x8i.4xlarge c8i-flex.2xlarge g6f.2xlarge g4dn.metal m5a.4xlarge m8i.16xlarge r8i-flex.12xlarge x2iedn.2xlarge a1.xlarge c6gn.8xlarge i7i.12xlarge m8ib.large r6gd.large x8g.8xlarge c5.2xlarge i7i.48xlarge i3en.2xlarge i4g.4xlarge m8gb.metal-24xl m8gb.16xlarge r5d.16xlarge c6id.24xlarge i4i.4xlarge m6id.8xlarge m8idn.32xlarge r5a.24xlarge vt1.3xlarge x2gd.16xlarge c8gd.2xlarge x8g.large c8ib.2xlarge g6e.16xlarge im4gn.8xlarge r5dn.24xlarge r6idn.large r6idn.24xlarge r8i-flex.16xlarge u-6tb1.112xlarge c5ad.16xlarge c7g.12xlarge g5.12xlarge h1.8xlarge i7i.metal-24xl is4gen.medium m5dn.metal m8idb.16xlarge c8in.8xlarge mac2-m2pro.metal r5d.24xlarge t4g.micro r8idn.12xlarge x2idn.24xlarge c8i-flex.4xlarge m5dn.24xlarge m8azn.6xlarge m8idn.24xlarge m8idn.2xlarge r6a.2xlarge r7i.metal-24xl r8a.48xlarge c5.xlarge g5g.16xlarge r6in.large x2iedn.24xlarge c5a.4xlarge c8gb.medium c8gd.large g4dn.8xlarge i7ie.12xlarge i2.4xlarge m5zn.large r8a.24xlarge i3.4xlarge t3.small x2gd.xlarge g5g.xlarge c6a.2xlarge c7g.metal c9g.large c9g.12xlarge c9g.16xlarge r8idb.96xlarge r9g.8xlarge c8gd.4xlarge c8i-flex.12xlarge c8in.4xlarge c9g.metal-48xl m9g.16xlarge m8in.8xlarge t4g.small r9g.large c1.medium c6gd.medium c5a.2xlarge c6in.24xlarge g7e.24xlarge r5a.xlarge r7a.16xlarge r6idn.4xlarge i7i.16xlarge c7i-flex.12xlarge i2.8xlarge m5d.16xlarge m8a.xlarge r8gd.16xlarge r8idb.4xlarge t4g.large d3.2xlarge x8i.metal-96xl x8i.32xlarge c8gb.12xlarge g6f.large d3.xlarge c7a.metal-48xl c7i.16xlarge c8id.96xlarge is4gen.4xlarge m8i-flex.4xlarge c5d.18xlarge c5ad.large g6.24xlarge i4i.8xlarge m6a.large t4g.nano c5ad.24xlarge i7i.8xlarge m7gd.16xlarge m8idn.16xlarge m8idb.12xlarge r8g.2xlarge g4ad.xlarge c7g.2xlarge m4.xlarge r8idn.4xlarge c7a.4xlarge m7a.12xlarge r8gb.2xlarge r8idn.24xlarge x8i.large i8ge.18xlarge im4gn.xlarge m7i-flex.large r5a.12xlarge u7i-6tb.112xlarge c4.large c9gd.12xlarge r5.16xlarge r8gb.medium c6g.4xlarge i7i.xlarge i8ge.xlarge r3.4xlarge p3dn.24xlarge r5dn.xlarge r8gn.4xlarge c7g.large is4gen.2xlarge m8ib.16xlarge r7iz.metal-32xl r7i.12xlarge m6id.xlarge m8a.24xlarge m8gn.48xlarge m8azn.metal-12xl m8gb.2xlarge m8gd.24xlarge m8id.16xlarge r8id.xlarge c6a.8xlarge hpc7g.4xlarge r9gd.24xlarge t3a.small x8g.medium c6id.32xlarge c8ine.large inf2.24xlarge r5d.12xlarge x8i.xlarge x8g.24xlarge c9g.medium m1.medium m8idb.metal-48xl m8in.96xlarge r5n.16xlarge r5dn.12xlarge r8in.metal-48xl i7i.24xlarge m8ib.48xlarge m8gb.xlarge p5.4xlarge r6g.8xlarge c7gn.2xlarge c9g.xlarge m6in.24xlarge m7i.24xlarge m8gd.8xlarge c5.9xlarge c8gd.8xlarge i4g.8xlarge m4.16xlarge m6id.16xlarge m6i.4xlarge m8i.metal-48xl m8gn.2xlarge m8in.metal-48xl m8idn.metal-48xl m8ine.8xlarge r8g.metal-48xl trn1.32xlarge c6gn.12xlarge c6id.12xlarge c8ib.48xlarge m5.16xlarge m6i.24xlarge m9g.24xlarge m8idb.24xlarge c7gn.medium c7gd.2xlarge c8gd.24xlarge c8gb.2xlarge i8ge.6xlarge m8g.large r6g.2xlarge r8id.2xlarge g6e.12xlarge g6f.4xlarge i8g.xlarge i3en.xlarge m6gd.12xlarge r5dn.4xlarge r9gd.48xlarge c8g.4xlarge m7gd.12xlarge c7a.8xlarge m8g.metal-48xl m8i-flex.2xlarge m8gd.medium r6idn.16xlarge r8idn.metal-48xl c7i.metal-24xl c8g.2xlarge c7i-flex.2xlarge d3en.8xlarge r5b.xlarge g6.16xlarge r6a.large r5dn.8xlarge r8i.96xlarge r6a.12xlarge r8idb.32xlarge r8ib.8xlarge c7a.large c8gd.medium m7g.xlarge m7g.12xlarge m8ib.96xlarge m8gb.8xlarge r7a.large c3.large m8idn.metal-96xl r8gn.metal-24xl r8id.metal-48xl r8ib.2xlarge m8g.16xlarge m8id.12xlarge m8i.metal-96xl c5d.9xlarge c4.2xlarge m7i.2xlarge m6gd.8xlarge m8a.16xlarge m8ib.metal-48xl x8g.48xlarge c3.2xlarge c8i.96xlarge c6gn.16xlarge c8g.metal-48xl i3.16xlarge m6idn.16xlarge m7gd.large r8id.4xlarge r8in.4xlarge i7ie.48xlarge m5dn.2xlarge m8id.24xlarge r5d.8xlarge c7i.large g4dn.12xlarge h1.16xlarge i3.xlarge m8in.2xlarge r6g.xlarge x1e.4xlarge m3.medium m8gd.xlarge r8in.96xlarge m8gn.metal-24xl r6in.32xlarge c6i.xlarge c6in.2xlarge c8gn.2xlarge m5ad.xlarge m5d.metal m8gb.24xlarge r8gd.metal-48xl c4.xlarge c4.8xlarge c8i.xlarge m5n.12xlarge m9gd.12xlarge r8g.4xlarge t1.micro x2iedn.16xlarge c5n.9xlarge c7a.48xlarge c8gd.metal-48xl g7.4xlarge m7gd.4xlarge m8id.metal-96xl r6in.12xlarge r9gd.4xlarge c8ine.xlarge m4.2xlarge m6id.4xlarge m8ib.metal-96xl m9gd.16xlarge m9g.8xlarge m5ad.4xlarge m8g.metal-24xl m8in.24xlarge r8a.large r8gn.48xlarge r8gd.8xlarge r8idb.xlarge u7in-16tb.224xlarge c7a.24xlarge c7gd.12xlarge m6idn.2xlarge r8in.32xlarge x2iezn.12xlarge p3.2xlarge c6id.16xlarge c8id.24xlarge m5.24xlarge m4.10xlarge r7g.metal r8in.metal-96xl c5d.4xlarge m7g.4xlarge r3.large r4.8xlarge r8id.8xlarge c6gd.4xlarge c5.4xlarge c8i.32xlarge c8ib.8xlarge c8gb.8xlarge i8g.12xlarge m8azn.metal-24xl r7a.2xlarge c7a.32xlarge d3.8xlarge m6a.12xlarge r5dn.metal r6id.8xlarge r8i-flex.large r8idb.8xlarge r8gb.large c7gn.xlarge c7gn.8xlarge c8i-flex.large m5n.24xlarge m8id.xlarge mac1.metal r6a.48xlarge r8i.24xlarge c6id.8xlarge c6id.4xlarge c8in.large f2.12xlarge m5d.large m7i-flex.xlarge m8gd.12xlarge r8idb.metal-96xl m6a.8xlarge m8g.48xlarge r8a.2xlarge mac-m4max.metal r8idn.metal-96xl c7i.8xlarge f2.48xlarge g4dn.4xlarge c6a.24xlarge c7i-flex.4xlarge c8gn.16xlarge d2.xlarge r6id.4xlarge c8id.48xlarge inf1.xlarge i7ie.3xlarge m6id.12xlarge r6gd.xlarge r6id.16xlarge c5a.12xlarge c8a.24xlarge c8gb.16xlarge g5.2xlarge m5zn.12xlarge r7iz.metal-16xl m6g.16xlarge m6in.12xlarge c8gd.xlarge i8ge.large i8ge.48xlarge m1.xlarge mac-m4.metal p6-b200.48xlarge m9g.4xlarge r7i.16xlarge c7i.xlarge c8in.2xlarge c8gn.xlarge m6a.metal u-3tb1.56xlarge c8ib.12xlarge i4g.16xlarge m6id.large p5.48xlarge r7i.2xlarge r6i.xlarge r7g.large r8gn.large c6gn.2xlarge c8gb.metal-48xl c8ib.24xlarge inf1.24xlarge i7ie.xlarge r8ib.48xlarge r8ib.24xlarge d2.4xlarge g6e.2xlarge m7i.48xlarge m8ib.xlarge r8gd.metal-24xl t8i.micro m6g.metal m5d.xlarge m6in.large m8gb.12xlarge m8gd.metal-48xl r7iz.16xlarge r8id.24xlarge r8gb.metal-24xl h1.4xlarge i8ge.2xlarge m5n.16xlarge m7a.large r6g.large r7gd.xlarge t3.xlarge vt1.24xlarge c6i.16xlarge m6g.medium m4.large m6i.8xlarge r8idn.16xlarge c8ib.4xlarge r4.xlarge t3.micro x2gd.12xlarge c6gd.16xlarge c8ib.96xlarge m6id.2xlarge r8i.metal-96xl m5.large m7a.metal-48xl m8idb.metal-96xl m9g.medium r6a.8xlarge r8idn.48xlarge r9g.16xlarge p3.8xlarge c6a.16xlarge c8g.16xlarge c8gd.48xlarge d3en.xlarge g7.24xlarge m6a.4xlarge m6idn.large r8gb.24xlarge c3.8xlarge c5ad.xlarge c7gd.medium c8i-flex.8xlarge m9g.48xlarge t2.medium z1d.6xlarge c8gb.xlarge c8gn.medium i4i.metal i4i.2xlarge m5n.metal r8in.48xlarge r8idn.32xlarge c6i.2xlarge m6idn.metal m8gb.metal-48xl r6gd.4xlarge r7a.8xlarge a1.metal c5ad.2xlarge c8g.metal-24xl gr6.8xlarge i4g.xlarge m5ad.16xlarge m5a.2xlarge r7iz.xlarge c8ib.xlarge d3en.12xlarge is4gen.xlarge m6in.8xlarge r5n.12xlarge r8i.16xlarge c8ib.metal-96xl c8gd.16xlarge d3en.4xlarge g6.xlarge m7i.4xlarge m8idb.2xlarge r5b.8xlarge r6a.metal c6gd.large i7ie.2xlarge m8in.4xlarge r8i.large r9g.2xlarge r9g.medium c7g.8xlarge m5ad.2xlarge m6g.8xlarge r5b.24xlarge c7a.xlarge r9gd.metal-48xl x2gd.2xlarge c5d.12xlarge c7i.24xlarge c8gb.metal-24xl c8g.xlarge r8g.48xlarge r8gb.16xlarge c8g.large m8i-flex.xlarge m8gb.medium r6idn.xlarge r8i.32xlarge c6g.16xlarge c5a.24xlarge c6i.large m8id.metal-48xl r5d.4xlarge c8id.metal-48xl i4i.16xlarge m8ib.12xlarge m8idn.8xlarge m8in.metal-96xl r6i.12xlarge r8a.metal-48xl x2iedn.32xlarge c6a.48xlarge m8idb.96xlarge m5a.16xlarge m8gn.medium r6i.4xlarge c5d.xlarge c8ine.12xlarge i8g.48xlarge m8azn.3xlarge m8gd.metal-24xl c5d.metal c6i.8xlarge c8gb.large g4dn.xlarge i8g.16xlarge m7i-flex.2xlarge m8azn.medium x1e.xlarge m8g.12xlarge r8i.metal-48xl r8id.16xlarge g4ad.16xlarge c8id.16xlarge g5g.2xlarge m7i.8xlarge r5.24xlarge r8idb.large t8i.small c6in.4xlarge c8ib.large r6gd.8xlarge r6g.metal x2iedn.xlarge x8i.48xlarge m8i.large r8gd.4xlarge r8in.xlarge c5n.18xlarge c7gd.16xlarge c8ine.8xlarge r6a.16xlarge x8g.16xlarge c5a.8xlarge m7a.24xlarge m9g.12xlarge r9gd.12xlarge t3a.xlarge c9g.8xlarge r5n.24xlarge r6idn.12xlarge x2gd.medium m7i.xlarge r8gd.48xlarge c8g.24xlarge m7g.8xlarge m8ine.2xlarge r7gd.medium r8gn.8xlarge c6id.metal r6i.16xlarge trn1.2xlarge c8gd.12xlarge i3en.12xlarge is4gen.8xlarge m7gd.8xlarge r7g.12xlarge t2.large m7a.medium m7a.32xlarge m8a.4xlarge m8in.16xlarge c5ad.12xlarge c9gd.8xlarge m8i-flex.12xlarge x2gd.4xlarge c8i.large i8g.metal-48xl m5.8xlarge z1d.large hpc7g.8xlarge m7a.48xlarge mac2-m1ultra.metal r7a.32xlarge r6in.4xlarge r8gb.12xlarge r8i-flex.2xlarge x8i.metal-48xl i3en.24xlarge m5d.8xlarge m8azn.large m8i-flex.large c7g.4xlarge i4g.large m5.2xlarge t3.large c3.4xlarge m5zn.2xlarge r6id.large r8gb.8xlarge c7i.4xlarge m6a.32xlarge m5n.large m6in.metal r6a.24xlarge x8i.96xlarge m8in.32xlarge r7g.medium r8gd.large c8id.32xlarge c8gn.48xlarge gr6f.4xlarge d2.2xlarge i8g.large r8in.12xlarge r9gd.16xlarge i8ge.metal-24xl i7i.large i4i.32xlarge r7i.24xlarge c5a.16xlarge m5zn.xlarge m5ad.large mac-m3ultra.metal r8gb.metal-48xl c7g.xlarge c9g.4xlarge i7ie.18xlarge r5dn.16xlarge t4g.medium c7i.12xlarge c8i.2xlarge g6e.xlarge r8a.8xlarge r6in.metal r8gn.2xlarge x8g.2xlarge c8a.metal-24xl m8idn.48xlarge r5a.large t4g.xlarge c8ib.metal-48xl r7a.xlarge r7a.48xlarge r8ib.metal-48xl r8i-flex.8xlarge c7gd.8xlarge c8id.metal-96xl c8in.metal-48xl m8id.48xlarge r7iz.32xlarge c8ib.16xlarge i8ge.24xlarge i2.2xlarge m5ad.12xlarge m8id.large r9g.24xlarge c5n.4xlarge c6gd.8xlarge c8a.8xlarge c4.4xlarge c8a.medium m8id.32xlarge r6i.2xlarge r6g.12xlarge x8i.8xlarge z1d.metal c6gd.12xlarge c7g.medium m2.2xlarge r8id.12xlarge r8gn.medium x8i.12xlarge c5.18xlarge g6e.24xlarge i3.large m7gd.metal c7gn.12xlarge i8g.metal-24xl m6g.12xlarge r5ad.large i3en.large i8g.24xlarge i3en.metal m5a.24xlarge m8ine.xlarge r8g.16xlarge r9g.12xlarge r9gd.2xlarge g6.2xlarge g6.8xlarge m4.4xlarge m6a.2xlarge r6g.4xlarge r5ad.16xlarge r7a.24xlarge r8a.medium c8a.48xlarge is4gen.large m6gd.large r8g.xlarge r8in.large x2iedn.4xlarge c7g.16xlarge c8in.32xlarge gr6.4xlarge m8g.medium r8id.large g5.48xlarge a1.4xlarge m5dn.12xlarge m8gd.16xlarge m8i.2xlarge p6-b300.48xlarge r5.12xlarge r7i.8xlarge t3a.micro r9gd.medium m6a.16xlarge mac2-m2.metal r5.large r9g.xlarge x1.32xlarge x2iezn.8xlarge c5ad.8xlarge m8a.large r5n.2xlarge r8id.48xlarge r8in.24xlarge g7.2xlarge c5n.2xlarge c7gd.large c9gd.metal-48xl m7i.metal-24xl m8i.8xlarge m8ine.large r7a.metal-48xl c7i-flex.large c8g.8xlarge c5.large m8a.metal-24xl r8gd.medium r8idb.48xlarge g4ad.4xlarge trn1n.32xlarge r8idn.large t4g.2xlarge im4gn.2xlarge inf1.6xlarge r5ad.12xlarge r8id.96xlarge c6gd.metal c6id.xlarge m6id.24xlarge r6id.2xlarge r8id.metal-96xl x2iezn.4xlarge m5ad.8xlarge m5.4xlarge m9g.xlarge r8a.metal-24xl r8idb.metal-48xl p3.16xlarge d2.8xlarge m2.4xlarge m9g.2xlarge r5d.xlarge c6g.xlarge g6e.48xlarge im4gn.16xlarge m5n.4xlarge m8azn.xlarge r6a.xlarge r8gn.metal-48xl c6gd.xlarge r5b.2xlarge r5b.12xlarge r9g.48xlarge c9gd.16xlarge m7g.metal m6in.32xlarge m8ib.32xlarge m8gn.16xlarge r4.2xlarge r7g.xlarge x8i.64xlarge c6i.24xlarge g4dn.16xlarge g5.xlarge c9gd.xlarge m7g.medium r8g.12xlarge r8idb.2xlarge c6id.large c8ib.32xlarge c9g.2xlarge i7i.metal-48xl m9gd.24xlarge p4d.24xlarge vt1.6xlarge x2iezn.metal c8g.48xlarge m3.2xlarge m5zn.3xlarge m7i.12xlarge x8i.2xlarge a1.large c5n.metal c8i.12xlarge i8ge.12xlarge m3.large r8id.32xlarge r8idn.xlarge c8i.4xlarge m6i.16xlarge r7i.48xlarge r8g.large u7in-24tb.224xlarge r8in.16xlarge c6a.12xlarge c8i.8xlarge c9gd.medium m8in.48xlarge r5b.metal c8gn.metal-24xl m6idn.4xlarge r8idn.96xlarge c6gn.medium inf2.xlarge i8g.4xlarge m5d.4xlarge m5.xlarge m6i.12xlarge m8i.4xlarge m8idb.large c8gn.large hpc7g.16xlarge r6i.8xlarge r6i.large r8i.12xlarge t3.2xlarge c5d.large c6in.32xlarge i7ie.metal-24xl m6idn.12xlarge c3.xlarge c8id.8xlarge c8in.16xlarge im4gn.large m8idb.xlarge r8g.8xlarge]
+I1116 02:46:57.763226       1 aws_manager.go:79] AWS SDK Version: 1.48.7
+I1116 02:46:57.763302       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:46:57.763310       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:46:57.876791       1 auto_scaling_groups.go:165] Registering ASG eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc
+I1116 02:46:57.876831       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:46:57.876836       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:46:57.876842       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:46:57.876847       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:46:57.876852       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:46:57.876863       1 auto_scaling_groups.go:487] Extracted autoscaling options from "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc" ASG tags: map[]
+I1116 02:46:57.876874       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:47:57.876871225 +0000 UTC m=+61.643149258
+I1116 02:46:57.876966       1 static_autoscaler.go:146] Creating new static autoscaler with opts: {{0.5 0.5 10m0s 20m0s 15m0s false false false} 0 320000 0 6871947673600000 0 [] [asg:tag=k8s.io/cluster-autoscaler/enabled,k8s.io/cluster-autoscaler/epsinc] binpacking least-waste   false 600 [] 45 3 true false  aws [] false true true 10m0s 0s 3m0s false 30 0.1 50 30s <nil> 2m0s true cluster-autoscaler-status false kube-system  5m0s -10 false 0s 10 3s 2m0s [] [] [] [] false {1 5s  0x18891bd88eb8 false} {  application/vnd.kubernetes.protobuf 10 5} false true false true cluster-autoscaler 5m0s 30m0s 3h0m0s 10 1 false 1000 10s 5m0s 0s true true true 0 1h0m0s 5s {0.05 0.05 0.015} false map[] false false 1m0s 10m0s 1000 false 10 10s false false false 16  10m0s 15m0s false false :8085 false false 10s false 87600h0m0s false 5000 0s false false}
+I1116 02:46:57.877164       1 main.go:275] Initializing resource informers, blocking until caches are synced
+I1116 02:46:57.877221       1 reflector.go:358] "Starting reflector" type="*v1.CSINode" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877233       1 reflector.go:404] "Listing and watching" type="*v1.CSINode" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877264       1 reflector.go:358] "Starting reflector" type="*v1.Namespace" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877283       1 reflector.go:404] "Listing and watching" type="*v1.Namespace" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877449       1 reflector.go:358] "Starting reflector" type="*v1.ReplicaSet" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877456       1 reflector.go:404] "Listing and watching" type="*v1.ReplicaSet" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877580       1 reflector.go:358] "Starting reflector" type="*v1.Node" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877607       1 reflector.go:404] "Listing and watching" type="*v1.Node" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877709       1 reflector.go:358] "Starting reflector" type="*v1.CSIStorageCapacity" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877759       1 reflector.go:404] "Listing and watching" type="*v1.CSIStorageCapacity" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877779       1 reflector.go:358] "Starting reflector" type="*v1.VolumeAttachment" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877792       1 reflector.go:404] "Listing and watching" type="*v1.VolumeAttachment" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877889       1 reflector.go:358] "Starting reflector" type="*v1.Service" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.877922       1 reflector.go:404] "Listing and watching" type="*v1.Service" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878018       1 reflector.go:358] "Starting reflector" type="*v1.PersistentVolumeClaim" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878025       1 reflector.go:404] "Listing and watching" type="*v1.PersistentVolumeClaim" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878084       1 reflector.go:358] "Starting reflector" type="*v1.StatefulSet" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878100       1 reflector.go:404] "Listing and watching" type="*v1.StatefulSet" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878222       1 reflector.go:358] "Starting reflector" type="*v1.CSIDriver" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878253       1 reflector.go:404] "Listing and watching" type="*v1.CSIDriver" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878276       1 reflector.go:358] "Starting reflector" type="*v1.PersistentVolume" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878284       1 reflector.go:404] "Listing and watching" type="*v1.PersistentVolume" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878364       1 reflector.go:358] "Starting reflector" type="*v1.StorageClass" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878371       1 reflector.go:404] "Listing and watching" type="*v1.StorageClass" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878407       1 reflector.go:358] "Starting reflector" type="*v1.DaemonSet" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878413       1 reflector.go:404] "Listing and watching" type="*v1.DaemonSet" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878445       1 reflector.go:358] "Starting reflector" type="*v1.ReplicationController" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878450       1 reflector.go:404] "Listing and watching" type="*v1.ReplicationController" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878476       1 reflector.go:358] "Starting reflector" type="*v1.Pod" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878481       1 reflector.go:404] "Listing and watching" type="*v1.Pod" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878512       1 reflector.go:358] "Starting reflector" type="*v1.PodDisruptionBudget" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878518       1 reflector.go:404] "Listing and watching" type="*v1.PodDisruptionBudget" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878525       1 reflector.go:358] "Starting reflector" type="*v1.Job" resyncPeriod="0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.878530       1 reflector.go:404] "Listing and watching" type="*v1.Job" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.879371       1 reflector.go:439] "Caches populated" type="*v1.Namespace" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.884044       1 reflector.go:439] "Caches populated" type="*v1.CSINode" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.884768       1 reflector.go:439] "Caches populated" type="*v1.CSIStorageCapacity" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.890111       1 reflector.go:439] "Caches populated" type="*v1.PersistentVolumeClaim" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.890232       1 reflector.go:439] "Caches populated" type="*v1.Node" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.890334       1 reflector.go:439] "Caches populated" type="*v1.CSIDriver" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.890570       1 reflector.go:439] "Caches populated" type="*v1.Service" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.890740       1 reflector.go:439] "Caches populated" type="*v1.VolumeAttachment" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.891019       1 reflector.go:439] "Caches populated" type="*v1.ReplicaSet" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:57.891100       1 reflector.go:439] "Caches populated" type="*v1.StatefulSet" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:58.077925       1 request.go:683] "Waited before sending request" delay="199.536225ms" reason="client-side throttling, not priority and fairness" verb="GET" URL="https://172.20.0.1:443/api/v1/persistentvolumes?limit=500&resourceVersion=0"
+I1116 02:46:58.080946       1 reflector.go:439] "Caches populated" type="*v1.PersistentVolume" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:58.278057       1 request.go:683] "Waited before sending request" delay="399.594405ms" reason="client-side throttling, not priority and fairness" verb="GET" URL="https://172.20.0.1:443/apis/storage.k8s.io/v1/storageclasses?limit=500&resourceVersion=0"
+I1116 02:46:58.281162       1 reflector.go:439] "Caches populated" type="*v1.StorageClass" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:58.478285       1 request.go:683] "Waited before sending request" delay="599.816028ms" reason="client-side throttling, not priority and fairness" verb="GET" URL="https://172.20.0.1:443/apis/apps/v1/daemonsets?limit=500&resourceVersion=0"
+I1116 02:46:58.481268       1 reflector.go:439] "Caches populated" type="*v1.DaemonSet" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:58.678017       1 request.go:683] "Waited before sending request" delay="799.525926ms" reason="client-side throttling, not priority and fairness" verb="GET" URL="https://172.20.0.1:443/api/v1/replicationcontrollers?limit=500&resourceVersion=0"
+I1116 02:46:58.682323       1 reflector.go:439] "Caches populated" type="*v1.ReplicationController" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:58.877688       1 request.go:683] "Waited before sending request" delay="999.156653ms" reason="client-side throttling, not priority and fairness" verb="GET" URL="https://172.20.0.1:443/api/v1/pods?limit=500&resourceVersion=0"
+I1116 02:46:58.891228       1 reflector.go:439] "Caches populated" type="*v1.Pod" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:59.078397       1 request.go:683] "Waited before sending request" delay="1.199799883s" reason="client-side throttling, not priority and fairness" verb="GET" URL="https://172.20.0.1:443/apis/batch/v1/jobs?limit=500&resourceVersion=0"
+I1116 02:46:59.078430       1 request.go:752] "Waited before sending request" delay="1.199799883s" reason="client-side throttling, not priority and fairness" verb="GET" URL="https://172.20.0.1:443/apis/batch/v1/jobs?limit=500&resourceVersion=0"
+I1116 02:46:59.083763       1 reflector.go:439] "Caches populated" type="*v1.Job" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:59.278135       1 request.go:683] "Waited before sending request" delay="1.399533527s" reason="client-side throttling, not priority and fairness" verb="GET" URL="https://172.20.0.1:443/apis/policy/v1/poddisruptionbudgets?limit=500&resourceVersion=0"
+I1116 02:46:59.289949       1 reflector.go:439] "Caches populated" type="*v1.PodDisruptionBudget" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:59.379590       1 reflector.go:358] "Starting reflector" type="*v1.Pod" resyncPeriod="1h0m0s" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:59.379655       1 reflector.go:404] "Listing and watching" type="*v1.Pod" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:46:59.379628       1 main.go:90] Registered cleanup signal handler
+I1116 02:46:59.379690       1 node_instances_cache.go:156] Start refreshing cloud provider node instances cache
+I1116 02:46:59.379703       1 node_instances_cache.go:168] Refresh cloud provider node instances cache finished, refresh took 8.272µs
+I1116 02:46:59.385503       1 reflector.go:439] "Caches populated" type="*v1.Pod" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290"
+I1116 02:47:09.380168       1 static_autoscaler.go:270] Starting main loop
+I1116 02:47:09.380884       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+W1116 02:47:09.538039       1 clusterstate.go:493] AcceptableRanges have not been populated yet. Skip checking
+I1116 02:47:09.538164       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:47:09.538174       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:47:09.538230       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:47:09.538234       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:47:09.538251       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:47:09.538270       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:47:09.538405       1 klogx.go:87] Node ip-10-0-1-211.ec2.internal - cpu requested is 7.77202% of allocatable
+I1116 02:47:09.538448       1 klogx.go:87] Node ip-10-0-2-119.ec2.internal - cpu requested is 7.77202% of allocatable
+I1116 02:47:09.538513       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (51.2953% of allocatable) is above the scale-down utilization threshold
+I1116 02:47:09.538552       1 klogx.go:87] Node ip-10-0-1-148.ec2.internal - cpu requested is 18.1347% of allocatable
+I1116 02:47:09.538574       1 cluster.go:166] Simulating node ip-10-0-1-211.ec2.internal removal
+I1116 02:47:09.538598       1 cluster.go:170] Node ip-10-0-1-211.ec2.internal cannot be removed: pod with local storage present: agones-controller-5c6667d56f-kqptj
+I1116 02:47:09.538603       1 cluster.go:166] Simulating node ip-10-0-2-119.ec2.internal removal
+I1116 02:47:09.538618       1 cluster.go:170] Node ip-10-0-2-119.ec2.internal cannot be removed: pod with local storage present: prometheus-epsinc-monitoring-kube-pro-prometheus-0
+I1116 02:47:09.538621       1 cluster.go:166] Simulating node ip-10-0-1-148.ec2.internal removal
+I1116 02:47:09.538636       1 cluster.go:170] Node ip-10-0-1-148.ec2.internal cannot be removed: pod with local storage present: agones-extensions-855d755454-t45qq
+I1116 02:47:09.538646       1 planner.go:311] 3 nodes found to be unremovable in simulation, will re-check them at 2026-11-16 02:52:09.38004026 +0000 UTC m=+313.146318296
+I1116 02:47:09.538696       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:47:09.538741       1 static_autoscaler.go:629] Starting scale down
+I1116 02:47:19.555735       1 static_autoscaler.go:270] Starting main loop
+I1116 02:47:19.556483       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:47:19.556700       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:47:19.556711       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:47:19.556719       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:47:19.556724       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:47:19.556742       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:47:19.556759       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:47:19.556881       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (51.2953% of allocatable) is above the scale-down utilization threshold
+I1116 02:47:19.556894       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:47:19.556924       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:47:19.556959       1 static_autoscaler.go:629] Starting scale down
+I1116 02:47:29.583218       1 static_autoscaler.go:270] Starting main loop
+I1116 02:47:29.583866       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:47:29.584039       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:47:29.584048       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:47:29.584056       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:47:29.584060       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:47:29.584079       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:47:29.584095       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:47:29.584199       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (51.2953% of allocatable) is above the scale-down utilization threshold
+I1116 02:47:29.584210       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:47:29.584242       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:47:29.584272       1 static_autoscaler.go:629] Starting scale down
+I1116 02:47:39.600307       1 static_autoscaler.go:270] Starting main loop
+I1116 02:47:39.600913       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:47:39.601097       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:47:39.601128       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:47:39.601148       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:47:39.601152       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:47:39.601193       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:47:39.601211       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:47:39.601343       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (51.2953% of allocatable) is above the scale-down utilization threshold
+I1116 02:47:39.601362       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:47:39.601395       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:47:39.601434       1 static_autoscaler.go:629] Starting scale down
+I1116 02:47:49.616763       1 static_autoscaler.go:270] Starting main loop
+I1116 02:47:49.617441       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:47:49.617696       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:47:49.617706       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:47:49.617714       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:47:49.617720       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:47:49.617739       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:47:49.617758       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:47:49.617885       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (51.2953% of allocatable) is above the scale-down utilization threshold
+I1116 02:47:49.617897       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:47:49.617928       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:47:49.617965       1 static_autoscaler.go:629] Starting scale down
+I1116 02:47:59.645836       1 static_autoscaler.go:270] Starting main loop
+I1116 02:47:59.645910       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:47:59.645944       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:47:59.692097       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:47:59.692112       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:47:59.692117       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:47:59.692122       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:47:59.692150       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:47:59.692158       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:48:59.692154942 +0000 UTC m=+123.458432964
+I1116 02:47:59.692722       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:47:59.692912       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:47:59.692950       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:47:59.692967       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:47:59.692980       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:47:59.693024       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:47:59.693050       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:47:59.693165       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (51.2953% of allocatable) is above the scale-down utilization threshold
+I1116 02:47:59.693177       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:47:59.693208       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:47:59.693236       1 static_autoscaler.go:629] Starting scale down
+I1116 02:48:09.706753       1 static_autoscaler.go:270] Starting main loop
+I1116 02:48:09.707514       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:48:09.707743       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:48:09.707754       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:48:09.707780       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:48:09.707795       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:48:09.707817       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:48:09.707836       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:48:09.707978       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (51.2953% of allocatable) is above the scale-down utilization threshold
+I1116 02:48:09.707990       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:48:09.708033       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:48:09.708073       1 static_autoscaler.go:629] Starting scale down
+I1116 02:48:19.725525       1 static_autoscaler.go:270] Starting main loop
+I1116 02:48:19.726248       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:48:19.726487       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:48:19.726497       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:48:19.726505       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:48:19.726512       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:48:19.726532       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:48:19.726549       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:48:19.726668       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (51.2953% of allocatable) is above the scale-down utilization threshold
+I1116 02:48:19.726680       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:48:19.726713       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:48:19.726763       1 static_autoscaler.go:629] Starting scale down
+I1116 02:48:29.742802       1 static_autoscaler.go:270] Starting main loop
+I1116 02:48:29.743489       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:48:29.743704       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:48:29.743715       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:48:29.743751       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:48:29.743758       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:48:29.743781       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:48:29.743800       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:48:29.743937       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:48:29.743949       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:48:29.743983       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:48:29.744017       1 static_autoscaler.go:629] Starting scale down
+I1116 02:48:39.758549       1 static_autoscaler.go:270] Starting main loop
+I1116 02:48:39.759461       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:48:39.759709       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:48:39.759758       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:48:39.759767       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:48:39.759772       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:48:39.759792       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:48:39.759810       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:48:39.759963       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:48:39.759976       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:48:39.760008       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:48:39.760038       1 static_autoscaler.go:629] Starting scale down
+I1116 02:48:49.778700       1 static_autoscaler.go:270] Starting main loop
+I1116 02:48:49.779758       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:48:49.780352       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:48:49.780457       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:48:49.780516       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:48:49.780547       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:48:49.780623       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:48:49.780660       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:48:49.780906       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:48:49.780963       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:48:49.781036       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:48:49.781111       1 static_autoscaler.go:629] Starting scale down
+I1116 02:48:59.379960       1 node_instances_cache.go:156] Start refreshing cloud provider node instances cache
+I1116 02:48:59.380002       1 node_instances_cache.go:168] Refresh cloud provider node instances cache finished, refresh took 14.063µs
+I1116 02:48:59.799001       1 static_autoscaler.go:270] Starting main loop
+I1116 02:48:59.806062       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:48:59.806338       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:48:59.905231       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:48:59.905313       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:48:59.905331       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:48:59.905345       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:48:59.905358       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:48:59.905397       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:49:59.905393408 +0000 UTC m=+183.671671442
+I1116 02:48:59.906408       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:48:59.906740       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:48:59.906780       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:48:59.906798       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:48:59.906812       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:48:59.906856       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:48:59.906886       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:48:59.907063       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:48:59.907101       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:48:59.907141       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:48:59.907196       1 static_autoscaler.go:629] Starting scale down
+I1116 02:49:09.922985       1 static_autoscaler.go:270] Starting main loop
+I1116 02:49:09.923976       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:49:09.924302       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:49:09.924335       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:49:09.924364       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:49:09.924376       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:49:09.924426       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:49:09.924459       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:49:09.924662       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:49:09.924697       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:49:09.924754       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:49:09.925014       1 static_autoscaler.go:629] Starting scale down
+I1116 02:49:19.944312       1 static_autoscaler.go:270] Starting main loop
+I1116 02:49:19.945235       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:49:19.945502       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:49:19.945533       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:49:19.945549       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:49:19.945561       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:49:19.945588       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:49:19.945629       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:49:19.945796       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:49:19.945823       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:49:19.945861       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:49:19.945909       1 static_autoscaler.go:629] Starting scale down
+I1116 02:49:29.961379       1 static_autoscaler.go:270] Starting main loop
+I1116 02:49:29.962549       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:49:29.963018       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:49:29.963067       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:49:29.963124       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:49:29.963151       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:49:29.963216       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:49:29.963258       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:49:29.963491       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:49:29.963549       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:49:29.964314       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:49:29.964439       1 static_autoscaler.go:629] Starting scale down
+I1116 02:49:39.988002       1 static_autoscaler.go:270] Starting main loop
+I1116 02:49:39.989670       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:49:39.990176       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:49:39.990242       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:49:39.990279       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:49:39.990321       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:49:39.990366       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:49:39.990424       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:49:39.991252       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:49:39.991281       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:49:39.991321       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:49:39.991352       1 static_autoscaler.go:629] Starting scale down
+I1116 02:49:50.006666       1 static_autoscaler.go:270] Starting main loop
+I1116 02:49:50.008095       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:49:50.008432       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:49:50.008503       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:49:50.008575       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:49:50.008610       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:49:50.008682       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:49:50.008750       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:49:50.008963       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:49:50.009025       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:49:50.009107       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:49:50.009185       1 static_autoscaler.go:629] Starting scale down
+I1116 02:50:00.024864       1 static_autoscaler.go:270] Starting main loop
+I1116 02:50:00.024961       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:50:00.024977       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:50:00.116205       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:50:00.116227       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:50:00.116233       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:50:00.116248       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:50:00.116253       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:50:00.116262       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:51:00.116258419 +0000 UTC m=+243.882536431
+I1116 02:50:00.117463       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:50:00.117803       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:50:00.117815       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:50:00.117878       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:50:00.117885       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:50:00.117945       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:50:00.118001       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:50:00.120284       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:50:00.120325       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:50:00.120468       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:50:00.120558       1 static_autoscaler.go:629] Starting scale down
+I1116 02:50:10.138257       1 static_autoscaler.go:270] Starting main loop
+I1116 02:50:10.139048       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:50:10.139323       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:50:10.139335       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:50:10.139343       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:50:10.139348       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:50:10.139366       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:50:10.139383       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:50:10.139515       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:50:10.139527       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:50:10.139559       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:50:10.139589       1 static_autoscaler.go:629] Starting scale down
+I1116 02:50:20.153697       1 static_autoscaler.go:270] Starting main loop
+I1116 02:50:20.154696       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:50:20.154912       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:50:20.154941       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:50:20.154973       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:50:20.154980       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:50:20.155030       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:50:20.155048       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:50:20.155209       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:50:20.155222       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:50:20.155256       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:50:20.155285       1 static_autoscaler.go:629] Starting scale down
+I1116 02:50:30.170502       1 static_autoscaler.go:270] Starting main loop
+I1116 02:50:30.171236       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:50:30.171421       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:50:30.171431       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:50:30.171438       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:50:30.171442       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:50:30.171461       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:50:30.171477       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:50:30.171596       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:50:30.171609       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:50:30.171639       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:50:30.171668       1 static_autoscaler.go:629] Starting scale down
+I1116 02:50:40.188108       1 static_autoscaler.go:270] Starting main loop
+I1116 02:50:40.189092       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:50:40.189619       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:50:40.189645       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:50:40.189654       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:50:40.189658       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:50:40.189744       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:50:40.189813       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:50:40.190030       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:50:40.190102       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:50:40.190175       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:50:40.190266       1 static_autoscaler.go:629] Starting scale down
+I1116 02:50:50.206968       1 static_autoscaler.go:270] Starting main loop
+I1116 02:50:50.208077       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:50:50.208515       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:50:50.208530       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:50:50.208538       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:50:50.208542       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:50:50.208561       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:50:50.208575       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:50:50.208839       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:50:50.208880       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:50:50.208926       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:50:50.208978       1 static_autoscaler.go:629] Starting scale down
+I1116 02:50:59.380566       1 node_instances_cache.go:156] Start refreshing cloud provider node instances cache
+I1116 02:50:59.380600       1 node_instances_cache.go:168] Refresh cloud provider node instances cache finished, refresh took 13.234µs
+I1116 02:51:00.229145       1 static_autoscaler.go:270] Starting main loop
+I1116 02:51:00.229239       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:51:00.229253       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:51:00.298207       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:51:00.298233       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:51:00.298239       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:51:00.298244       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:51:00.298250       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:51:00.298281       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:52:00.298255312 +0000 UTC m=+304.064533353
+I1116 02:51:00.299731       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:51:00.300085       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:51:00.300099       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:51:00.300108       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:51:00.300125       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:51:00.300144       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:51:00.300160       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:51:00.300335       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:51:00.300348       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:51:00.300380       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:51:00.300427       1 static_autoscaler.go:629] Starting scale down
+I1116 02:51:10.317663       1 static_autoscaler.go:270] Starting main loop
+I1116 02:51:10.318424       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:51:10.318622       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:51:10.318641       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:51:10.318649       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:51:10.318654       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:51:10.318674       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:51:10.318692       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:51:10.318828       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:51:10.318840       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:51:10.318872       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:51:10.318904       1 static_autoscaler.go:629] Starting scale down
+I1116 02:51:20.335060       1 static_autoscaler.go:270] Starting main loop
+I1116 02:51:20.337482       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:51:20.337863       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:51:20.338153       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:51:20.338227       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:51:20.338258       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:51:20.338310       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:51:20.338365       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:51:20.338554       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:51:20.338606       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:51:20.338670       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:51:20.338733       1 static_autoscaler.go:629] Starting scale down
+I1116 02:51:30.353800       1 static_autoscaler.go:270] Starting main loop
+I1116 02:51:30.356505       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:51:30.359963       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:51:30.360078       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:51:30.360140       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:51:30.360177       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:51:30.360237       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:51:30.360276       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:51:30.360578       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:51:30.360655       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:51:30.360735       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:51:30.360814       1 static_autoscaler.go:629] Starting scale down
+I1116 02:51:40.378284       1 static_autoscaler.go:270] Starting main loop
+I1116 02:51:40.379282       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:51:40.379483       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:51:40.379492       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:51:40.379499       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:51:40.379504       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:51:40.379523       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:51:40.379540       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:51:40.379666       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:51:40.379681       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:51:40.379710       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:51:40.379741       1 static_autoscaler.go:629] Starting scale down
+I1116 02:51:50.396414       1 static_autoscaler.go:270] Starting main loop
+I1116 02:51:50.397084       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:51:50.397317       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:51:50.397328       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:51:50.397336       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:51:50.397341       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:51:50.397358       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:51:50.397375       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:51:50.397520       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:51:50.397532       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:51:50.397561       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=false
+I1116 02:51:50.397592       1 static_autoscaler.go:629] Starting scale down
+I1116 02:52:00.420305       1 static_autoscaler.go:270] Starting main loop
+I1116 02:52:00.420621       1 static_autoscaler.go:1173] Found 42 pods in the cluster: 40 scheduled, 2 unschedulable, 0 unprocessed by scheduler, 0 ignored (most likely using custom scheduler)
+I1116 02:52:00.429282       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:52:00.429406       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:52:00.675222       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:52:00.719889       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:52:00.722382       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:52:00.722460       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:52:00.722477       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:52:00.722502       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:53:00.722496942 +0000 UTC m=+364.488774986
+I1116 02:52:00.842343       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:52:00.852403       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:52:00.852730       1 klogx.go:87] failed to find place for default/epsinc-locust-workers-5f8cb7bb8f-p6fd6: can't schedule pod default/epsinc-locust-workers-5f8cb7bb8f-p6fd6: couldn't find a matching Node with passing predicates
+I1116 02:52:00.862632       1 klogx.go:87] failed to find place for default/epsinc-locust-workers-5f8cb7bb8f-g6pnj based on similar pods scheduling
+I1116 02:52:00.862868       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:52:00.863033       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:52:00.863089       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 2 unschedulable pods left
+I1116 02:52:00.863158       1 klogx.go:87] Pod default/epsinc-locust-workers-5f8cb7bb8f-p6fd6 is unschedulable
+I1116 02:52:00.869280       1 klogx.go:87] Pod default/epsinc-locust-workers-5f8cb7bb8f-g6pnj is unschedulable
+I1116 02:52:00.869593       1 orchestrator.go:110] Upcoming 0 nodes
+I1116 02:52:00.932844       1 waste.go:56] Expanding Node Group eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc would waste 50.00% CPU, 93.42% Memory, 71.71% Blended
+I1116 02:52:00.952212       1 orchestrator.go:185] Best option to resize: eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc
+I1116 02:52:00.952294       1 orchestrator.go:189] Estimated 1 nodes needed in eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc
+I1116 02:52:00.952337       1 orchestrator.go:261] Final scale-up plan: [{eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc 4->5 (max: 8)}]
+I1116 02:52:00.952408       1 executor.go:164] Scale-up: setting group eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc size to 5
+I1116 02:52:00.957662       1 auto_scaling_groups.go:267] Setting asg eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc size to 5
+I1116 02:52:00.957866       1 event_sink_logging_wrapper.go:48] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"kube-system", Name:"cluster-autoscaler-status", UID:"397c0bf8-5214-49c8-be50-58580d185926", APIVersion:"v1", ResourceVersion:"4888", FieldPath:""}): type: 'Normal' reason: 'ScaledUpGroup' Scale-up: setting group eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc size to 5 instead of 4 (max: 8)
+I1116 02:52:01.069352       1 eventing_scale_up_processor.go:47] Skipping event processing for unschedulable pods since there is a ScaleUp attempt this loop
+I1116 02:52:01.060076       1 event_sink_logging_wrapper.go:48] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"kube-system", Name:"cluster-autoscaler-status", UID:"397c0bf8-5214-49c8-be50-58580d185926", APIVersion:"v1", ResourceVersion:"4888", FieldPath:""}): type: 'Normal' reason: 'ScaledUpGroup' Scale-up: group eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc size set to 5 instead of 4 (max: 8)
+I1116 02:52:01.082274       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:52:01.099373       1 event_sink_logging_wrapper.go:48] Event(v1.ObjectReference{Kind:"Pod", Namespace:"default", Name:"epsinc-locust-workers-5f8cb7bb8f-p6fd6", UID:"3ea5f5fb-cdfc-42f9-83bb-c649e707ed6c", APIVersion:"v1", ResourceVersion:"5123", FieldPath:""}): type: 'Normal' reason: 'TriggeredScaleUp' pod triggered scale-up: [{eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc 4->5 (max: 8)}]
+I1116 02:52:01.092603       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:01.102267       1 eligibility.go:104] Scale-down calculation: ignoring 3 nodes unremovable in the last 5m0s
+I1116 02:52:01.106470       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:52:01.151217       1 event_sink_logging_wrapper.go:48] Event(v1.ObjectReference{Kind:"Pod", Namespace:"default", Name:"epsinc-locust-workers-5f8cb7bb8f-g6pnj", UID:"221b50bc-eb26-409a-a9ba-46f256485ccb", APIVersion:"v1", ResourceVersion:"5006", FieldPath:""}): type: 'Normal' reason: 'TriggeredScaleUp' pod triggered scale-up: [{eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc 4->5 (max: 8)}]
+I1116 02:52:11.167524       1 static_autoscaler.go:270] Starting main loop
+I1116 02:52:11.167610       1 static_autoscaler.go:1173] Found 41 pods in the cluster: 40 scheduled, 1 unschedulable, 0 unprocessed by scheduler, 0 ignored (most likely using custom scheduler)
+I1116 02:52:11.168494       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:52:11.168809       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:52:11.169019       1 klogx.go:87] Pod default/epsinc-locust-workers-5f8cb7bb8f-g6pnj can be moved to template-node-for-eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc-2986953148926703778-upcoming-0
+I1116 02:52:11.169075       1 filter_out_schedulable.go:122] 1 pods marked as unschedulable can be scheduled.
+I1116 02:52:11.169129       1 filter_out_schedulable.go:77] Schedulable pods present
+I1116 02:52:11.169203       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:52:11.169228       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:52:11.169246       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:52:11.169373       1 eligibility.go:163] Node ip-10-0-1-148.ec2.internal unremovable: cpu requested (82.9016% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:11.169429       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:11.169472       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:11.169574       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:11.169611       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:52:21.184590       1 static_autoscaler.go:270] Starting main loop
+I1116 02:52:21.185615       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:52:21.185994       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:52:21.186005       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:52:21.186013       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:52:21.186017       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:52:21.186035       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:52:21.186052       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:52:21.186173       1 eligibility.go:163] Node ip-10-0-1-148.ec2.internal unremovable: cpu requested (95.8549% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:21.186228       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:21.186276       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:21.186359       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:21.186389       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:52:24.087132       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.Job" totalItems=10
+I1116 02:52:31.236264       1 static_autoscaler.go:270] Starting main loop
+I1116 02:52:31.237182       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+W1116 02:52:31.237411       1 clusterstate.go:1097] Failed to check cloud provider has instance for ip-10-0-1-104.ec2.internal: node is not present in aws: could not find instance {aws:///us-east-1a/i-0ce1ae28c27c2f2b7 i-0ce1ae28c27c2f2b7}
+I1116 02:52:31.237633       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:52:31.237663       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:52:31.237681       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:52:31.237693       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:52:31.237721       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:52:31.237745       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:52:31.237872       1 klogx.go:87] Node ip-10-0-1-148.ec2.internal - cpu requested is 44.0415% of allocatable
+I1116 02:52:31.237941       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:31.238002       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:31.238089       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:31.238114       1 cluster.go:166] Simulating node ip-10-0-1-148.ec2.internal removal
+I1116 02:52:31.238147       1 cluster.go:170] Node ip-10-0-1-148.ec2.internal cannot be removed: pod with local storage present: agones-extensions-855d755454-t45qq
+I1116 02:52:31.238165       1 planner.go:311] 1 nodes found to be unremovable in simulation, will re-check them at 2026-11-16 02:57:31.23622003 +0000 UTC m=+635.002498070
+I1116 02:52:31.238211       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:52:31.892785       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.CSIDriver" totalItems=6
+I1116 02:52:41.252515       1 static_autoscaler.go:270] Starting main loop
+I1116 02:52:41.253680       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+W1116 02:52:41.253910       1 clusterstate.go:1097] Failed to check cloud provider has instance for ip-10-0-1-104.ec2.internal: node is not present in aws: could not find instance {aws:///us-east-1a/i-0ce1ae28c27c2f2b7 i-0ce1ae28c27c2f2b7}
+I1116 02:52:41.254155       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:52:41.254185       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:52:41.254203       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:52:41.254215       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:52:41.254242       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:52:41.254715       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:52:41.255029       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:41.255115       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:41.255179       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:41.255197       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:52:41.255242       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:52:46.887975       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.CSINode" totalItems=8
+I1116 02:52:48.893012       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.PersistentVolumeClaim" totalItems=7
+I1116 02:52:51.269888       1 static_autoscaler.go:270] Starting main loop
+I1116 02:52:51.271490       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+W1116 02:52:51.271796       1 clusterstate.go:1097] Failed to check cloud provider has instance for ip-10-0-1-104.ec2.internal: node is not present in aws: could not find instance {aws:///us-east-1a/i-0ce1ae28c27c2f2b7 i-0ce1ae28c27c2f2b7}
+I1116 02:52:51.272121       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:52:51.272320       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:52:51.272372       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:52:51.272405       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:52:51.272646       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:52:51.272706       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:52:51.272894       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:51.273005       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:51.273242       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:52:51.273297       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:52:51.273360       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:52:51.893534       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.VolumeAttachment" totalItems=6
+I1116 02:52:59.380801       1 node_instances_cache.go:156] Start refreshing cloud provider node instances cache
+I1116 02:52:59.380849       1 node_instances_cache.go:168] Refresh cloud provider node instances cache finished, refresh took 15.18µs
+I1116 02:53:01.340466       1 static_autoscaler.go:270] Starting main loop
+I1116 02:53:01.340660       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:53:01.340712       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:53:01.461119       1 auto_scaling_groups.go:161] Updated ASG cache for eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc. min/max/current is 1/8/5
+I1116 02:53:01.461158       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:53:01.461162       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:53:01.461167       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:53:01.461172       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:53:01.461218       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:53:01.461232       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:54:01.461228643 +0000 UTC m=+425.227506670
+I1116 02:53:01.462167       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:53:01.462409       1 clusterstate.go:285] Scale up in group eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc finished successfully in 1m0.286948394s
+I1116 02:53:01.462489       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:53:01.462510       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:53:01.462527       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:53:01.462540       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:53:01.462572       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:53:01.462606       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:53:01.462791       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:01.462869       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:01.462962       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:01.462992       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:53:01.463000       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:53:01.463012       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:53:01.463113       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:53:01.463124       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:53:01.463136       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 0s
+I1116 02:53:01.463173       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:53:01.479995       1 taints.go:223] Successfully added DeletionCandidateOfClusterAutoscaler on node ip-10-0-1-104.ec2.internal
+I1116 02:53:02.292389       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.PodDisruptionBudget" totalItems=14
+I1116 02:53:04.388531       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.Pod" totalItems=66
+I1116 02:53:11.500299       1 static_autoscaler.go:270] Starting main loop
+I1116 02:53:11.501336       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:53:11.664243       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:53:11.664267       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:53:11.664275       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:53:11.664282       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:53:11.664302       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:53:11.664320       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:53:11.664479       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:53:11.664545       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:11.664599       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:11.664668       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:11.664674       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:53:11.664687       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:53:11.664796       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:53:11.664806       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:53:11.664816       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 10.159848018s
+I1116 02:53:11.664852       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:53:15.898518       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.ReplicaSet" totalItems=72
+I1116 02:53:21.680966       1 static_autoscaler.go:270] Starting main loop
+I1116 02:53:21.682087       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:53:21.682345       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:53:21.682357       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:53:21.682365       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:53:21.682369       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:53:21.682389       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:53:21.682706       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:53:21.682939       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:53:21.683067       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:21.683164       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:21.683295       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:21.683340       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:53:21.683375       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:53:21.683537       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:53:21.683590       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:53:21.683639       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 20.340514643s
+I1116 02:53:21.683708       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:53:31.698338       1 static_autoscaler.go:270] Starting main loop
+I1116 02:53:31.699092       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:53:31.699320       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:53:31.699331       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:53:31.699339       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:53:31.699344       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:53:31.699363       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:53:31.699392       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:53:31.699494       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:53:31.699556       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:31.699606       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:31.699656       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:31.699662       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:53:31.699675       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:53:31.699770       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:53:31.699781       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:53:31.699792       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 30.357890066s
+I1116 02:53:31.699831       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:53:41.714915       1 static_autoscaler.go:270] Starting main loop
+I1116 02:53:41.716097       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:53:41.716335       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:53:41.716345       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:53:41.716353       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:53:41.716358       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:53:41.716377       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:53:41.716394       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:53:41.716514       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:53:41.716583       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:41.716648       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:41.716724       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:41.716731       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:53:41.716744       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:53:41.716855       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:53:41.716866       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:53:41.716877       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 40.374446145s
+I1116 02:53:41.716914       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:53:51.734192       1 static_autoscaler.go:270] Starting main loop
+I1116 02:53:51.735332       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:53:51.735834       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:53:51.735944       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:53:51.735958       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:53:51.735963       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:53:51.735983       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:53:51.735999       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:53:51.736133       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:53:51.736198       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:51.736245       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:51.736335       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:53:51.736352       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:53:51.736374       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:53:51.736476       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:53:51.736501       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:53:51.736521       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 50.393743257s
+I1116 02:53:51.736557       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:54:01.751118       1 static_autoscaler.go:270] Starting main loop
+I1116 02:54:01.751293       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:54:01.751332       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:54:01.838411       1 auto_scaling_groups.go:161] Updated ASG cache for eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc. min/max/current is 1/8/5
+I1116 02:54:01.838464       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:54:01.838469       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:54:01.838475       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:54:01.838480       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:54:01.838486       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:54:01.838494       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:55:01.838491539 +0000 UTC m=+485.604769578
+I1116 02:54:01.839914       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:54:01.840316       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:54:01.840385       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:54:01.840405       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:54:01.840410       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:54:01.840429       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:54:01.840498       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:54:01.840731       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:54:01.840870       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:01.840987       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:01.841151       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:01.841200       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:54:01.841224       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:54:01.842352       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:54:01.842486       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:54:01.842562       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 1m0.410669268s
+I1116 02:54:01.842656       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:54:11.857131       1 static_autoscaler.go:270] Starting main loop
+I1116 02:54:11.858067       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:54:11.858294       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:54:11.858304       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:54:11.858312       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:54:11.858317       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:54:11.858335       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:54:11.858353       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:54:11.858490       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:54:11.858553       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:11.858604       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:11.858675       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:11.858685       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:54:11.858699       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:54:11.858800       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:54:11.858812       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:54:11.858823       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 1m10.516681297s
+I1116 02:54:11.858865       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:54:12.894215       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.Pod" totalItems=227
+I1116 02:54:20.894448       1 reflector.go:984] "Watch close" reflector="pkg/mod/k8s.io/client-go@v0.34.13/tools/cache/reflector.go:290" type="*v1.StatefulSet" totalItems=9
+I1116 02:54:21.877733       1 static_autoscaler.go:270] Starting main loop
+I1116 02:54:21.881961       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:54:21.882410       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:54:21.885604       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:54:21.885765       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:54:21.885820       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:54:21.885862       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:54:21.885930       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:54:21.886135       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:54:21.886759       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:21.886923       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:21.887068       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:21.887121       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:54:21.887171       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:54:21.887352       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:54:21.887390       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:54:21.887435       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 1m20.537282972s
+I1116 02:54:21.887531       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:54:31.906270       1 static_autoscaler.go:270] Starting main loop
+I1116 02:54:31.909634       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:54:31.909978       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:54:31.910007       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:54:31.910037       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:54:31.910056       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:54:31.910081       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:54:31.910121       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:54:31.910285       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:54:31.910371       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:31.910440       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:31.912253       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:31.912323       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:54:31.912351       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:54:31.912527       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:54:31.912564       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:54:31.912590       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 1m30.565815421s
+I1116 02:54:31.912655       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:54:41.928303       1 static_autoscaler.go:270] Starting main loop
+I1116 02:54:41.929323       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:54:41.929620       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:54:41.929665       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:54:41.929685       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:54:41.929699       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:54:41.929738       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:54:41.929766       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:54:41.929924       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:54:41.930016       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:41.930103       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:41.930189       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:41.930218       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:54:41.930240       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:54:41.930364       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:54:41.930399       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:54:41.930422       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 1m40.587852165s
+I1116 02:54:41.930481       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:54:51.950623       1 static_autoscaler.go:270] Starting main loop
+I1116 02:54:51.951568       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:54:51.951767       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:54:51.951775       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:54:51.951783       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:54:51.951787       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:54:51.951803       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:54:51.951821       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:54:51.951938       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:54:51.951999       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:51.952043       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:51.952950       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:54:51.953072       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:54:51.953113       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:54:51.953336       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:54:51.953396       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:54:51.953436       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 1m50.610172042s
+I1116 02:54:51.954112       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true
+I1116 02:54:59.381181       1 node_instances_cache.go:156] Start refreshing cloud provider node instances cache
+I1116 02:54:59.381223       1 node_instances_cache.go:168] Refresh cloud provider node instances cache finished, refresh took 13.099µs
+I1116 02:55:01.979121       1 static_autoscaler.go:270] Starting main loop
+I1116 02:55:01.979469       1 auto_scaling_groups.go:428] Regenerating instance to ASG map for ASG names: []
+I1116 02:55:01.979541       1 auto_scaling_groups.go:435] Regenerating instance to ASG map for ASG tags: map[k8s.io/cluster-autoscaler/enabled: k8s.io/cluster-autoscaler/epsinc:]
+I1116 02:55:02.038339       1 auto_scaling_groups.go:161] Updated ASG cache for eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc. min/max/current is 1/8/5
+I1116 02:55:02.038562       1 aws_wrapper.go:710] 0 launch configurations to query
+I1116 02:55:02.038626       1 aws_wrapper.go:711] 0 launch templates to query
+I1116 02:55:02.038662       1 aws_wrapper.go:731] Successfully queried 0 launch configurations
+I1116 02:55:02.038715       1 aws_wrapper.go:742] Successfully queried 0 launch templates
+I1116 02:55:02.038747       1 aws_wrapper.go:753] Successfully queried instance requirements for 0 ASGs
+I1116 02:55:02.038796       1 aws_manager.go:132] Refreshed ASG list, next refresh after 2026-11-16 02:56:02.038791755 +0000 UTC m=+545.805069784
+I1116 02:55:02.039859       1 aws_manager.go:188] Found multiple availability zones for ASG "eks-game-793eadc49272a07ef3f2aba4bf-02d0f11e-a7fd-4d22-b705-5fb4830756bc"; using us-east-1a for failure-domain.beta.kubernetes.io/zone label
+I1116 02:55:02.042228       1 filter_out_schedulable.go:65] Filtering out schedulables
+I1116 02:55:02.042375       1 filter_out_schedulable.go:122] 0 pods marked as unschedulable can be scheduled.
+I1116 02:55:02.043658       1 filter_out_schedulable.go:85] No schedulable pods
+I1116 02:55:02.049064       1 filter_out_daemon_sets.go:47] Filtered out 0 daemon set pods, 0 unschedulable pods left
+I1116 02:55:02.050513       1 static_autoscaler.go:520] No unschedulable pods
+I1116 02:55:02.050683       1 static_autoscaler.go:559] Calculating unneeded nodes
+I1116 02:55:02.050947       1 klogx.go:87] Node ip-10-0-1-104.ec2.internal - cpu requested is 20.7254% of allocatable
+I1116 02:55:02.051091       1 eligibility.go:163] Node ip-10-0-1-211.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:55:02.051203       1 eligibility.go:163] Node ip-10-0-2-119.ec2.internal unremovable: cpu requested (85.4922% of allocatable) is above the scale-down utilization threshold
+I1116 02:55:02.051359       1 eligibility.go:163] Node ip-10-0-2-84.ec2.internal unremovable: cpu requested (77.2021% of allocatable) is above the scale-down utilization threshold
+I1116 02:55:02.051398       1 eligibility.go:104] Scale-down calculation: ignoring 1 nodes unremovable in the last 5m0s
+I1116 02:55:02.051447       1 cluster.go:166] Simulating node ip-10-0-1-104.ec2.internal removal
+I1116 02:55:02.051625       1 klogx.go:87] Pod default/epsinc-locust-rampa-d8gck can be moved to ip-10-0-1-148.ec2.internal
+I1116 02:55:02.051670       1 cluster.go:184] Node ip-10-0-1-104.ec2.internal may be removed
+I1116 02:55:02.051724       1 nodes.go:153] ip-10-0-1-104.ec2.internal is unneeded since 2026-11-16 02:53:01.340418328 +0000 UTC m=+365.106696371 duration 2m0.638661274s
+I1116 02:55:02.051803       1 static_autoscaler.go:602] Scale down status: lastScaleUpTime=2026-11-16 02:52:00.420259268 +0000 UTC m=+304.186537301 lastScaleDownDeleteTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 lastScaleDownFailTime=2026-11-16 01:46:57.877105752 +0000 UTC m=-3598.356616222 scaleDownForbidden=false scaleDownInCooldown=true

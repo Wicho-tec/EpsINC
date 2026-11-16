@@ -1,0 +1,15 @@
+aws_lambda_permission.leaderboard_invoke: Creation complete after 0s [id=InvokeOnlyViaDemoURL]
+aws_lambda_permission.leaderboard_url: Creation complete after 1s [id=PublicDemoURL]
+aws_lambda_function_url.leaderboard: Creation complete after 1s [id=epsinc-leaderboard]
+
+Apply complete! Resources: 4 added, 0 changed, 1 destroyed.
+
+Outputs:
+
+cluster_autoscaler_role_arn = "arn:aws:iam::911797457485:role/epsinc-cluster-autoscaler"
+cluster_endpoint = "https://4AF95A7C538D71D4195C2589A1AD2661.gr7.us-east-1.eks.amazonaws.com"
+cluster_name = "epsinc"
+connect_command = "aws eks update-kubeconfig --region us-east-1 --name epsinc"
+github_actions_role_arn = "arn:aws:iam::911797457485:role/epsinc-github-actions"
+image_repository_url = "911797457485.dkr.ecr.us-east-1.amazonaws.com/epsinc/server"
+leaderboard_url = "https://rhhxmp6ah63as32t3pxzz4ejhu0ehkpv.lambda-url.us-east-1.on.aws/"

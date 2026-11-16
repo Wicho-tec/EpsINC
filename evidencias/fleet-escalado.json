@@ -1,0 +1,311 @@
+{
+  "startedAt": "2026-11-15T21:22:18.5065301-06:00",
+  "node_scale_cause": "Pending load-generator CPU requests",
+  "allocation": {
+    "apiVersion": "allocation.agones.dev/v1",
+    "kind": "GameServerAllocation",
+    "metadata": {
+      "creationTimestamp": "2026-11-16T03:23:26Z",
+      "generateName": "epsinc-scale-probe-",
+      "name": "epsinc-fleet-v8zv6-lht9b",
+      "namespace": "default"
+    },
+    "spec": {
+      "metadata": {},
+      "multiClusterSetting": {
+        "policySelector": {}
+      },
+      "required": {
+        "gameServerState": "Ready",
+        "matchLabels": {
+          "agones.dev/fleet": "epsinc-fleet"
+        }
+      },
+      "scheduling": "Packed",
+      "selectors": [
+        {
+          "gameServerState": "Ready",
+          "matchLabels": {
+            "agones.dev/fleet": "epsinc-fleet"
+          }
+        }
+      ]
+    },
+    "status": {
+      "address": "ec2-44-204-50-103.compute-1.amazonaws.com",
+      "addresses": [
+        {
+          "address": "10.0.2.84",
+          "type": "InternalIP"
+        },
+        {
+          "address": "44.204.50.103",
+          "type": "ExternalIP"
+        },
+        {
+          "address": "ip-10-0-2-84.ec2.internal",
+          "type": "InternalDNS"
+        },
+        {
+          "address": "ip-10-0-2-84.ec2.internal",
+          "type": "Hostname"
+        },
+        {
+          "address": "ec2-44-204-50-103.compute-1.amazonaws.com",
+          "type": "ExternalDNS"
+        },
+        {
+          "address": "10.0.2.129",
+          "type": "PodIP"
+        }
+      ],
+      "gameServerName": "epsinc-fleet-v8zv6-lht9b",
+      "metadata": {
+        "annotations": {
+          "agones.dev/last-allocated": "2026-11-16T03:23:27.027353518Z",
+          "agones.dev/sdk-version": "1.60.0"
+        },
+        "labels": {
+          "agones.dev/fleet": "epsinc-fleet",
+          "agones.dev/gameserverset": "epsinc-fleet-v8zv6",
+          "app": "epsinc",
+          "tier": "game-server"
+        }
+      },
+      "nodeName": "ip-10-0-2-84.ec2.internal",
+      "ports": [
+        {
+          "name": "default",
+          "port": 7162
+        }
+      ],
+      "source": "local",
+      "state": "Allocated"
+    }
+  },
+  "after": {
+    "apiVersion": "agones.dev/v1",
+    "kind": "Fleet",
+    "metadata": {
+      "annotations": {
+        "agones.dev/sdk-version": "1.60.0",
+        "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"agones.dev/v1\",\"kind\":\"Fleet\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"epsinc\",\"tier\":\"game-server\"},\"name\":\"epsinc-fleet\",\"namespace\":\"default\"},\"spec\":{\"replicas\":5,\"scheduling\":\"Packed\",\"strategy\":{\"rollingUpdate\":{\"maxSurge\":\"25%\",\"maxUnavailable\":\"25%\"},\"type\":\"RollingUpdate\"},\"template\":{\"metadata\":{\"labels\":{\"app\":\"epsinc\",\"tier\":\"game-server\"}},\"spec\":{\"health\":{\"failureThreshold\":3,\"initialDelaySeconds\":10,\"periodSeconds\":5},\"ports\":[{\"containerPort\":8081,\"name\":\"default\",\"portPolicy\":\"Dynamic\",\"protocol\":\"TCP\"}],\"template\":{\"spec\":{\"containers\":[{\"env\":[{\"name\":\"PORT\",\"value\":\"8081\"},{\"name\":\"EPSINC_ENV\",\"value\":\"production\"}],\"image\":\"911797457485.dkr.ecr.us-east-1.amazonaws.com/epsinc/server:faa56288eadb37f6d9d188704b3d94dd37e875a5\",\"imagePullPolicy\":\"IfNotPresent\",\"livenessProbe\":{\"httpGet\":{\"path\":\"/health\",\"port\":8081},\"initialDelaySeconds\":15,\"periodSeconds\":10},\"name\":\"epsinc-server\",\"readinessProbe\":{\"httpGet\":{\"path\":\"/health\",\"port\":8081},\"initialDelaySeconds\":5,\"periodSeconds\":5},\"resources\":{\"limits\":{\"cpu\":\"1000m\",\"memory\":\"512Mi\"},\"requests\":{\"cpu\":\"250m\",\"memory\":\"256Mi\"}}}]}}}}}}\n"
+      },
+      "creationTimestamp": "2026-11-16T02:46:59Z",
+      "generation": 3,
+      "labels": {
+        "app": "epsinc",
+        "tier": "game-server"
+      },
+      "name": "epsinc-fleet",
+      "namespace": "default",
+      "resourceVersion": "14675",
+      "uid": "c19343df-e0d5-4fca-b62d-b6b8aa8276ac"
+    },
+    "spec": {
+      "replicas": 4,
+      "scheduling": "Packed",
+      "strategy": {
+        "rollingUpdate": {
+          "maxSurge": "25%",
+          "maxUnavailable": "25%"
+        },
+        "type": "RollingUpdate"
+      },
+      "template": {
+        "metadata": {
+          "labels": {
+            "app": "epsinc",
+            "tier": "game-server"
+          }
+        },
+        "spec": {
+          "health": {
+            "failureThreshold": 3,
+            "initialDelaySeconds": 10,
+            "periodSeconds": 5
+          },
+          "immutableReplicas": 1,
+          "ports": [
+            {
+              "containerPort": 8081,
+              "name": "default",
+              "portPolicy": "Dynamic",
+              "protocol": "TCP"
+            }
+          ],
+          "sdkServer": {},
+          "template": {
+            "metadata": {},
+            "spec": {
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "PORT",
+                      "value": "8081"
+                    },
+                    {
+                      "name": "EPSINC_ENV",
+                      "value": "production"
+                    }
+                  ],
+                  "image": "911797457485.dkr.ecr.us-east-1.amazonaws.com/epsinc/server:faa56288eadb37f6d9d188704b3d94dd37e875a5",
+                  "imagePullPolicy": "IfNotPresent",
+                  "livenessProbe": {
+                    "httpGet": {
+                      "path": "/health",
+                      "port": 8081
+                    },
+                    "initialDelaySeconds": 15,
+                    "periodSeconds": 10
+                  },
+                  "name": "epsinc-server",
+                  "readinessProbe": {
+                    "httpGet": {
+                      "path": "/health",
+                      "port": 8081
+                    },
+                    "initialDelaySeconds": 5,
+                    "periodSeconds": 5
+                  },
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "512Mi"
+                    },
+                    "requests": {
+                      "cpu": "250m",
+                      "memory": "256Mi"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "status": {
+      "allocatedReplicas": 1,
+      "allocations": 1,
+      "readyReplicas": 3,
+      "replicas": 4,
+      "reservedReplicas": 0
+    }
+  },
+  "finishedAt": "2026-11-15T21:22:28.4340756-06:00",
+  "elapsed_seconds": 9.9238786,
+  "before": {
+    "apiVersion": "agones.dev/v1",
+    "kind": "Fleet",
+    "metadata": {
+      "annotations": {
+        "agones.dev/sdk-version": "1.60.0",
+        "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"agones.dev/v1\",\"kind\":\"Fleet\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"epsinc\",\"tier\":\"game-server\"},\"name\":\"epsinc-fleet\",\"namespace\":\"default\"},\"spec\":{\"replicas\":5,\"scheduling\":\"Packed\",\"strategy\":{\"rollingUpdate\":{\"maxSurge\":\"25%\",\"maxUnavailable\":\"25%\"},\"type\":\"RollingUpdate\"},\"template\":{\"metadata\":{\"labels\":{\"app\":\"epsinc\",\"tier\":\"game-server\"}},\"spec\":{\"health\":{\"failureThreshold\":3,\"initialDelaySeconds\":10,\"periodSeconds\":5},\"ports\":[{\"containerPort\":8081,\"name\":\"default\",\"portPolicy\":\"Dynamic\",\"protocol\":\"TCP\"}],\"template\":{\"spec\":{\"containers\":[{\"env\":[{\"name\":\"PORT\",\"value\":\"8081\"},{\"name\":\"EPSINC_ENV\",\"value\":\"production\"}],\"image\":\"911797457485.dkr.ecr.us-east-1.amazonaws.com/epsinc/server:faa56288eadb37f6d9d188704b3d94dd37e875a5\",\"imagePullPolicy\":\"IfNotPresent\",\"livenessProbe\":{\"httpGet\":{\"path\":\"/health\",\"port\":8081},\"initialDelaySeconds\":15,\"periodSeconds\":10},\"name\":\"epsinc-server\",\"readinessProbe\":{\"httpGet\":{\"path\":\"/health\",\"port\":8081},\"initialDelaySeconds\":5,\"periodSeconds\":5},\"resources\":{\"limits\":{\"cpu\":\"1000m\",\"memory\":\"512Mi\"},\"requests\":{\"cpu\":\"250m\",\"memory\":\"256Mi\"}}}]}}}}}}\n"
+      },
+      "creationTimestamp": "2026-11-16T02:46:59Z",
+      "generation": 2,
+      "labels": {
+        "app": "epsinc",
+        "tier": "game-server"
+      },
+      "name": "epsinc-fleet",
+      "namespace": "default",
+      "resourceVersion": "3661",
+      "uid": "c19343df-e0d5-4fca-b62d-b6b8aa8276ac"
+    },
+    "spec": {
+      "replicas": 3,
+      "scheduling": "Packed",
+      "strategy": {
+        "rollingUpdate": {
+          "maxSurge": "25%",
+          "maxUnavailable": "25%"
+        },
+        "type": "RollingUpdate"
+      },
+      "template": {
+        "metadata": {
+          "labels": {
+            "app": "epsinc",
+            "tier": "game-server"
+          }
+        },
+        "spec": {
+          "health": {
+            "failureThreshold": 3,
+            "initialDelaySeconds": 10,
+            "periodSeconds": 5
+          },
+          "immutableReplicas": 1,
+          "ports": [
+            {
+              "containerPort": 8081,
+              "name": "default",
+              "portPolicy": "Dynamic",
+              "protocol": "TCP"
+            }
+          ],
+          "sdkServer": {},
+          "template": {
+            "metadata": {},
+            "spec": {
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "PORT",
+                      "value": "8081"
+                    },
+                    {
+                      "name": "EPSINC_ENV",
+                      "value": "production"
+                    }
+                  ],
+                  "image": "911797457485.dkr.ecr.us-east-1.amazonaws.com/epsinc/server:faa56288eadb37f6d9d188704b3d94dd37e875a5",
+                  "imagePullPolicy": "IfNotPresent",
+                  "livenessProbe": {
+                    "httpGet": {
+                      "path": "/health",
+                      "port": 8081
+                    },
+                    "initialDelaySeconds": 15,
+                    "periodSeconds": 10
+                  },
+                  "name": "epsinc-server",
+                  "readinessProbe": {
+                    "httpGet": {
+                      "path": "/health",
+                      "port": 8081
+                    },
+                    "initialDelaySeconds": 5,
+                    "periodSeconds": 5
+                  },
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "512Mi"
+                    },
+                    "requests": {
+                      "cpu": "250m",
+                      "memory": "256Mi"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "status": {
+      "allocatedReplicas": 0,
+      "allocations": 0,
+      "readyReplicas": 3,
+      "replicas": 3,
+      "reservedReplicas": 0
+    }
+  },
+  "node_scale_seconds": 30.05
+}

@@ -1,5 +1,16 @@
 # 🍼 EPSINC — GUERRA DE BIBERONES LEGO 2D 🧱
 
+## Entrega del proyecto integrador
+
+- [Reporte técnico PDF, 5 páginas](REPORTE_TECNICO.pdf) y [fuente Markdown](REPORTE_TECNICO.md).
+- [Índice de capturas y fuentes reales](evidencias/README.md).
+- Resultados completos: [rampa 1,000](loadtest/resultados/rampa-final_report.html), [pico 1,000](loadtest/resultados/pico_report.html), [500 espectadores](loadtest/resultados/espectadores_report.html).
+- [Análisis medido y extrapolación 20,000](loadtest/resultados/analysis.json).
+- [CI/CD verificado](https://github.com/Wicho-tec/EpsINC/actions/runs/43798125761).
+
+Las cargas se ejecutaron y registraron degradación; no validan capacidad estable de 1,000 jugadores o 500 espectadores. Los costos por usuario son estimaciones con exclusiones explícitas. El laboratorio se destruye tras la demostración; las capturas y reportes conservan lo observado.
+
+
 > Videojuego web multijugador 2D en tiempo real con perspectiva cenital, inspirado en la física de rebotes balísticos de *TankTrouble*, con personajes originales en forma de **biberón**, mapas de **bloques de LEGO**, servidores autoritativos en FastAPI/WebSockets, infraestructura en Kubernetes con Agones y arquitectura de observabilidad integral.
 
 ---

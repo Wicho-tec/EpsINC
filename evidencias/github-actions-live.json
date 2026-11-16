@@ -1,0 +1,32 @@
+{
+  "id": 43798125761,
+  "run_number": 14,
+  "status": "completed",
+  "conclusion": "success",
+  "html_url": "https://github.com/Wicho-tec/EpsINC/actions/runs/43798125761",
+  "head_sha": "8d372521aeb17d71bf0513011601cdc34b532926",
+  "created_at": "2026-11-16T03:25:39Z",
+  "updated_at": "2026-11-16T03:29:28Z",
+  "jobs": [
+    {
+      "name": "Comprobar configuración AWS",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Pruebas del servidor",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Crear y publicar imagen",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Actualizar Agones en EKS",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}

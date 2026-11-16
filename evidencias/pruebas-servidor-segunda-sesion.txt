@@ -1,0 +1,34 @@
+test_local_mode_does_not_contact_sidecar (test_agones_sdk.AgonesLifecycleTests.test_local_mode_does_not_contact_sidecar) ... ok
+test_health_endpoint (test_api.TestAPI.test_health_endpoint) ... ok
+test_list_5_original_maps (test_api.TestAPI.test_list_5_original_maps) ... ok
+test_metrics_prometheus (test_api.TestAPI.test_metrics_prometheus) ... ok
+test_room_listing_and_creation (test_api.TestAPI.test_room_listing_and_creation) ... ok
+test_bot_synchronization (test_game_engine.TestGameEngine.test_bot_synchronization)
+Bots fill room up to target_bots count when enabled. ... ok
+test_kill_streak_triggers (test_game_engine.TestGameEngine.test_kill_streak_triggers)
+3, 4, 5 consecutive kills trigger EPSTAKILL streaks. ... ok
+test_match_win_epswin (test_game_engine.TestGameEngine.test_match_win_epswin)
+Eliminating opponents leaves last survivor as winner with EPSWIN. ... ok
+test_powerup_shield_absorbs_hit (test_game_engine.TestGameEngine.test_powerup_shield_absorbs_hit)
+Shield powerup prevents death on hit and breaks shield. ... ok
+test_powerup_speed_boost (test_game_engine.TestGameEngine.test_powerup_speed_boost)
+Speed boost increases speed timer. ... ok
+test_room_player_limit_20 (test_game_engine.TestGameEngine.test_room_player_limit_20)
+Room enforces up to 20 players. ... ok
+test_spectator_mode (test_game_engine.TestGameEngine.test_spectator_mode)
+Spectator joins without consuming player spawn or being targetable. ... ok
+test_bullet_bounces_horizontal_wall (test_physics.TestPhysics.test_bullet_bounces_horizontal_wall)
+A bullet flying vertically into a horizontal wall reflects vy. ... ok
+test_bullet_bounces_vertical_wall (test_physics.TestPhysics.test_bullet_bounces_vertical_wall)
+A bullet flying horizontally into a vertical wall reflects vx. ... ok
+test_bullet_can_kill_shooter_suicide (test_physics.TestPhysics.test_bullet_can_kill_shooter_suicide)
+Projectiles can bounce and eliminate the player who shot them (like TankTrouble). ... ok
+test_bullet_expires_after_5_seconds (test_physics.TestPhysics.test_bullet_expires_after_5_seconds)
+Bullets must expire and be deleted after 5 seconds lifespan. ... ok
+test_player_wall_sliding_collision (test_physics.TestPhysics.test_player_wall_sliding_collision)
+Player cannot pass through LEGO walls. ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.014s
+
+OK

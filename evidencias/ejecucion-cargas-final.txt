@@ -1,0 +1,26 @@
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+Saved pico at 2026-11-15T21:14:49.3548863-06:00
+job.batch "epsinc-locust-pico" deleted from default namespace
+deployment.apps/epsinc-locust-workers scaled
+pod/epsinc-locust-workers-666bdf8457-54b5b condition met
+pod/epsinc-locust-workers-666bdf8457-ct8pn condition met
+pod/epsinc-locust-workers-666bdf8457-g9dqc condition met
+pod/epsinc-locust-workers-666bdf8457-hmnpt condition met
+pod/epsinc-locust-workers-666bdf8457-hsxcn condition met
+pod/epsinc-locust-workers-666bdf8457-lj9qm condition met
+pod/epsinc-locust-workers-666bdf8457-xbwf9 condition met
+pod/epsinc-locust-workers-666bdf8457-zb9lf condition met
+configmap/epsinc-locust unchanged
+job.batch/epsinc-locust-espectadores created
+deployment.apps/epsinc-locust-workers scaled
+deployment "epsinc-locust-workers" successfully rolled out
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+Saved espectadores at 2026-11-15T21:22:15.8494748-06:00
+job.batch "epsinc-locust-espectadores" deleted from default namespace

@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-11-15T21:38:39.108008-06:00",
+  "project": "EpsINC",
+  "region": "us-east-1",
+  "verified": true,
+  "checks": {
+    "clusters": {
+      "clusters": []
+    },
+    "nonterminated_nodes": [],
+    "vpc": {
+      "absent": true
+    },
+    "classic_load_balancers": [],
+    "v2_load_balancers": [],
+    "lambda": {
+      "absent": true
+    },
+    "dynamodb": {
+      "absent": true
+    },
+    "ecr": {
+      "absent": true
+    },
+    "terraform_state_empty": true,
+    "destroy_completed": true
+  },
+  "note": "Pre-existing GitHub OIDC provider is retained; a KMS key may remain scheduled for deletion."
+}

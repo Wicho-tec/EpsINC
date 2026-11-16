@@ -1,0 +1,17 @@
+deployment.apps/epsinc-locust-workers scaled
+pod/epsinc-locust-workers-666bdf8457-gm2kr condition met
+configmap/epsinc-locust unchanged
+job.batch/epsinc-locust-pico created
+deployment.apps/epsinc-locust-workers scaled
+deployment "epsinc-locust-workers" successfully rolled out
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+Error from server (NotFound): pods "epsinc-locust-pico-96h6n" not found
+Cannot preserve pico_failures.csv
+En C:\Users\hisen\Documents\TecNM\3ER SEM\CÓMPUTO EN LA NUBE\labs videojuegos\epsinc\loadtest\run-distributed.ps1: 45 
+Carácter: 36
++ ...       if ($LASTEXITCODE -ne 0) { throw "Cannot preserve $id$suffix" }
++                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Cannot preserve pico_failures.csv:String) [], RuntimeException
+    + FullyQualifiedErrorId : Cannot preserve pico_failures.csv
+ 

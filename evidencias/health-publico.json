@@ -1,0 +1,4 @@
+{
+  "StatusCode": 200,
+  "Content": "{\"status\":\"healthy\",\"service\":\"EpsInc\",\"timestamp\":1794797648.7962415,\"active_rooms\":5}"
+}

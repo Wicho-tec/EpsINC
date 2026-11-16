@@ -12,7 +12,7 @@ spec:
     buffer:
       bufferSize: 3           # Maintains 3 Ready standby game servers at all times
       minReplicas: 3          # Baseline standby during idle hours
-      maxReplicas: 50         # Supports up to 1,000 concurrent players (50 servers * 20 players)
+      maxReplicas: 50         # Server ceiling; player capacity must be measured with load tests.
   sync:
     type: FixedInterval
     fixedInterval:

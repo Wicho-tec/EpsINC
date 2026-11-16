@@ -1,0 +1,11 @@
+{
+  "spectators": 20000,
+  "measured_mean_snapshot_bytes": 3535.530850896241,
+  "assumed_broadcast_hz": 30,
+  "projected_MB_per_second": 2121.3185105377447,
+  "projected_Gbps": 16.970548084301956,
+  "projected_GiB_per_hour": 7112.274540528544,
+  "gross_egress_USD_per_hour_at_0_09_per_GiB": 640.1047086475689,
+  "node_count": "Not validated; no linear node-capacity claim",
+  "basis": "Measured snapshot size; assumed 30 Hz; not a 20,000-user test"
+}

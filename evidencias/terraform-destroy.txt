@@ -1,0 +1,1936 @@
+module.eks.module.eks_managed_node_group["game"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+data.aws_iam_openid_connect_provider.github: Reading...
+data.aws_availability_zones.available: Reading...
+module.eks.data.aws_caller_identity.current[0]: Reading...
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+module.eks.module.kms.data.aws_partition.current[0]: Reading...
+module.eks.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/eks/epsinc/cluster]
+aws_iam_policy.cluster_autoscaler: Refreshing state... [id=arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler]
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-05e4799ceb155aa3b]
+aws_ecr_repository.epsinc: Refreshing state... [id=epsinc/server]
+module.eks.module.kms.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks.module.eks_managed_node_group["game"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2830595799]
+module.eks.module.kms.data.aws_caller_identity.current[0]: Reading...
+module.eks.data.aws_partition.current[0]: Reading...
+module.eks.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks.module.eks_managed_node_group["game"].aws_iam_role.this[0]: Refreshing state... [id=game-eks-node-group-44cd79c97ed9c1681cb3edd98e]
+module.eks.aws_iam_role.this[0]: Refreshing state... [id=epsinc-cluster-08da2406aab2cbf690a1554d02]
+module.eks.data.aws_caller_identity.current[0]: Read complete after 0s [id=911797457485]
+module.eks.data.aws_iam_session_context.current[0]: Reading...
+module.eks.data.aws_iam_session_context.current[0]: Read complete after 0s [id=arn:aws:iam::911797457485:root]
+module.eks.module.kms.data.aws_caller_identity.current[0]: Read complete after 1s [id=911797457485]
+data.aws_availability_zones.available: Read complete after 2s [id=us-east-1]
+data.aws_iam_openid_connect_provider.github: Read complete after 2s [id=arn:aws:iam::911797457485:oidc-provider/token.actions.githubusercontent.com]
+aws_iam_role.github_actions: Refreshing state... [id=epsinc-github-actions]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Refreshing state... [id=epsinc-cluster-08da2406aab2cbf690a1554d02/arn:aws:iam::aws:policy/AmazonEKSClusterPolicy]
+module.eks.module.kms.data.aws_iam_policy_document.this[0]: Reading...
+module.eks.module.kms.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=1095420127]
+module.eks.module.kms.aws_kms_key.this[0]: Refreshing state... [id=e2d32237-85eb-4899-add8-6fb490602203]
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy]
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly]
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy]
+module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-077dfd42a288f2164]
+module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0ff5cdb808c6c0255]
+module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-0595062541d994407]
+module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-02ee9aca0891d4b8d]
+module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-051a2cdbba497072c]
+module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0b6c788e951139dd3]
+module.eks.aws_security_group.cluster[0]: Refreshing state... [id=sg-09757d2b3d2883662]
+module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-01e967482bfb6ffb5]
+module.eks.aws_security_group.node[0]: Refreshing state... [id=sg-0b2e4806a84c46e14]
+module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-051a2cdbba497072c1080289494]
+module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-0a2c4af7a5e7fb178]
+module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-0c6a4ab8542ad713e]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Refreshing state... [id=sgrule-2891069754]
+module.eks.aws_security_group_rule.node["ingress_cluster_443"]: Refreshing state... [id=sgrule-3729849546]
+module.eks.aws_security_group_rule.node["game_udp"]: Refreshing state... [id=sgrule-616314084]
+module.eks.aws_security_group_rule.node["game_tcp"]: Refreshing state... [id=sgrule-1517540988]
+module.eks.aws_security_group_rule.node["egress_all"]: Refreshing state... [id=sgrule-3336328187]
+module.eks.aws_security_group_rule.node["ingress_cluster_10251_webhook"]: Refreshing state... [id=sgrule-2714078818]
+module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Refreshing state... [id=sgrule-1646198773]
+module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Refreshing state... [id=sgrule-113232958]
+module.eks.aws_security_group_rule.node["agones_webhook"]: Refreshing state... [id=sgrule-1447395702]
+module.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Refreshing state... [id=sgrule-1900200916]
+module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Refreshing state... [id=sgrule-3087049794]
+module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Refreshing state... [id=sgrule-2790271104]
+module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Refreshing state... [id=sgrule-2509037081]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Refreshing state... [id=sgrule-135109333]
+module.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Refreshing state... [id=sgrule-2802878899]
+module.eks.module.kms.aws_kms_alias.this["cluster"]: Refreshing state... [id=alias/eks/epsinc]
+module.eks.aws_iam_policy.cluster_encryption[0]: Refreshing state... [id=arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72]
+module.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Refreshing state... [id=epsinc-cluster-08da2406aab2cbf690a1554d02/arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72]
+module.eks.aws_eks_cluster.this[0]: Refreshing state... [id=epsinc]
+module.eks.data.aws_eks_addon_version.this["kube-proxy"]: Reading...
+module.eks.data.aws_eks_addon_version.this["coredns"]: Reading...
+module.eks.data.aws_eks_addon_version.this["vpc-cni"]: Reading...
+module.eks.aws_eks_access_entry.this["cluster_creator"]: Refreshing state... [id=epsinc:arn:aws:iam::911797457485:root]
+module.eks.aws_eks_access_entry.this["github_actions"]: Refreshing state... [id=epsinc:arn:aws:iam::911797457485:role/epsinc-github-actions]
+module.eks.data.tls_certificate.this[0]: Reading...
+module.eks.time_sleep.this[0]: Refreshing state... [id=2026-11-14T23:22:03Z]
+module.eks.module.eks_managed_node_group["game"].data.aws_ssm_parameter.ami[0]: Reading...
+module.eks.module.eks_managed_node_group["game"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=5224174377639764879]
+module.eks.module.eks_managed_node_group["game"].aws_launch_template.this[0]: Refreshing state... [id=lt-0cf02810fc10caa14]
+module.eks.data.aws_eks_addon_version.this["vpc-cni"]: Read complete after 0s [id=vpc-cni]
+module.eks.data.aws_eks_addon_version.this["kube-proxy"]: Read complete after 0s [id=kube-proxy]
+module.eks.data.aws_eks_addon_version.this["coredns"]: Read complete after 0s [id=coredns]
+module.eks.aws_eks_addon.before_compute["vpc-cni"]: Refreshing state... [id=epsinc:vpc-cni]
+module.eks.aws_eks_addon.before_compute["kube-proxy"]: Refreshing state... [id=epsinc:kube-proxy]
+module.eks.aws_eks_addon.before_compute["coredns"]: Refreshing state... [id=epsinc:coredns]
+module.eks.aws_eks_access_policy_association.this["github_actions_admin"]: Refreshing state... [id=epsinc#arn:aws:iam::911797457485:role/epsinc-github-actions#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+module.eks.aws_eks_access_policy_association.this["cluster_creator_admin"]: Refreshing state... [id=epsinc#arn:aws:iam::911797457485:root#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+aws_iam_policy.github_actions: Refreshing state... [id=arn:aws:iam::911797457485:policy/epsinc-github-actions]
+aws_iam_role_policy_attachment.github_actions: Refreshing state... [id=epsinc-github-actions/arn:aws:iam::911797457485:policy/epsinc-github-actions]
+module.eks.data.tls_certificate.this[0]: Read complete after 1s [id=b1b539daa206035ae3c3e28288b0681fa1b462f3]
+module.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Refreshing state... [id=arn:aws:iam::911797457485:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53]
+aws_iam_role.cluster_autoscaler: Refreshing state... [id=epsinc-cluster-autoscaler]
+module.eks.module.eks_managed_node_group["game"].data.aws_ssm_parameter.ami[0]: Read complete after 2s [id=/aws/service/eks/optimized-ami/1.34/amazon-linux-2023/x86_64/standard/recommended/release_version]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Refreshing state... [id=epsinc:game-da1be1b29462f428c2782ff7d8]
+aws_iam_role_policy_attachment.cluster_autoscaler: Refreshing state... [id=epsinc-cluster-autoscaler/arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_ecr_repository.epsinc will be destroyed
+  - resource "aws_ecr_repository" "epsinc" {
+      - arn                  = "arn:aws:ecr:us-east-1:911797457485:repository/epsinc/server" -> null
+      - id                   = "epsinc/server" -> null
+      - image_tag_mutability = "IMMUTABLE" -> null
+      - name                 = "epsinc/server" -> null
+      - region               = "us-east-1" -> null
+      - registry_id          = "911797457485" -> null
+      - repository_url       = "911797457485.dkr.ecr.us-east-1.amazonaws.com/epsinc/server" -> null
+      - tags                 = {} -> null
+      - tags_all             = {} -> null
+
+      - encryption_configuration {
+          - encryption_type = "AES256" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - image_scanning_configuration {
+          - scan_on_push = true -> null
+        }
+    }
+
+  # aws_iam_policy.cluster_autoscaler will be destroyed
+  - resource "aws_iam_policy" "cluster_autoscaler" {
+      - arn              = "arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler" -> null
+      - attachment_count = 1 -> null
+      - id               = "arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler" -> null
+      - name             = "epsinc-cluster-autoscaler" -> null
+      - path             = "/" -> null
+      - policy           = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = [
+                          - "autoscaling:SetDesiredCapacity",
+                          - "autoscaling:TerminateInstanceInAutoScalingGroup",
+                        ]
+                      - Condition = {
+                          - StringEquals = {
+                              - "aws:ResourceTag/k8s.io/cluster-autoscaler/enabled" = "true"
+                              - "aws:ResourceTag/k8s.io/cluster-autoscaler/epsinc"  = "owned"
+                            }
+                        }
+                      - Effect    = "Allow"
+                      - Resource  = "*"
+                    },
+                  - {
+                      - Action   = [
+                          - "autoscaling:DescribeAutoScalingGroups",
+                          - "autoscaling:DescribeAutoScalingInstances",
+                          - "autoscaling:DescribeLaunchConfigurations",
+                          - "autoscaling:DescribeScalingActivities",
+                          - "autoscaling:DescribeTags",
+                          - "ec2:DescribeImages",
+                          - "ec2:DescribeInstanceTypes",
+                          - "ec2:DescribeLaunchTemplateVersions",
+                          - "ec2:GetInstanceTypesFromInstanceRequirements",
+                          - "eks:DescribeNodegroup",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = "*"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - policy_id        = "ANPA5IS25CJGVQ3RHVEAN" -> null
+      - tags             = {} -> null
+      - tags_all         = {} -> null
+        # (2 unchanged attributes hidden)
+    }
+
+  # aws_iam_policy.github_actions will be destroyed
+  - resource "aws_iam_policy" "github_actions" {
+      - arn              = "arn:aws:iam::911797457485:policy/epsinc-github-actions" -> null
+      - attachment_count = 1 -> null
+      - id               = "arn:aws:iam::911797457485:policy/epsinc-github-actions" -> null
+      - name             = "epsinc-github-actions" -> null
+      - path             = "/" -> null
+      - policy           = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action   = "ecr:GetAuthorizationToken"
+                      - Effect   = "Allow"
+                      - Resource = "*"
+                    },
+                  - {
+                      - Action   = [
+                          - "ecr:BatchCheckLayerAvailability",
+                          - "ecr:BatchGetImage",
+                          - "ecr:CompleteLayerUpload",
+                          - "ecr:GetDownloadUrlForLayer",
+                          - "ecr:InitiateLayerUpload",
+                          - "ecr:PutImage",
+                          - "ecr:UploadLayerPart",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = "arn:aws:ecr:us-east-1:911797457485:repository/epsinc/server"
+                    },
+                  - {
+                      - Action   = "eks:DescribeCluster"
+                      - Effect   = "Allow"
+                      - Resource = "arn:aws:eks:us-east-1:911797457485:cluster/epsinc"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - policy_id        = "ANPA5IS25CJGVSYJRCMUX" -> null
+      - tags             = {} -> null
+      - tags_all         = {} -> null
+        # (2 unchanged attributes hidden)
+    }
+
+  # aws_iam_role.cluster_autoscaler will be destroyed
+  - resource "aws_iam_role" "cluster_autoscaler" {
+      - arn                   = "arn:aws:iam::911797457485:role/epsinc-cluster-autoscaler" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRoleWithWebIdentity"
+                      - Condition = {
+                          - StringEquals = {
+                              - "oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53:aud" = "sts.amazonaws.com"
+                              - "oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53:sub" = "system:serviceaccount:kube-system:cluster-autoscaler"
+                            }
+                        }
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Federated = "arn:aws:iam::911797457485:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53"
+                        }
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-11-14T23:22:40Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "epsinc-cluster-autoscaler" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "epsinc-cluster-autoscaler" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROA5IS25CJGWNZHK5BAF" -> null
+        # (3 unchanged attributes hidden)
+    }
+
+  # aws_iam_role.github_actions will be destroyed
+  - resource "aws_iam_role" "github_actions" {
+      - arn                   = "arn:aws:iam::911797457485:role/epsinc-github-actions" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRoleWithWebIdentity"
+                      - Condition = {
+                          - StringEquals = {
+                              - "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
+                              - "token.actions.githubusercontent.com:sub" = "repo:Wicho-tec@243614440/EpsINC@1458250764:ref:refs/heads/main"
+                            }
+                        }
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Federated = "arn:aws:iam::911797457485:oidc-provider/token.actions.githubusercontent.com"
+                        }
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-11-14T23:11:38Z" -> null
+      - force_detach_policies = false -> null
+      - id                    = "epsinc-github-actions" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::911797457485:policy/epsinc-github-actions",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "epsinc-github-actions" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROA5IS25CJGX2GQDKSQQ" -> null
+        # (3 unchanged attributes hidden)
+    }
+
+  # aws_iam_role_policy_attachment.cluster_autoscaler will be destroyed
+  - resource "aws_iam_role_policy_attachment" "cluster_autoscaler" {
+      - id         = "epsinc-cluster-autoscaler/arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler" -> null
+      - policy_arn = "arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler" -> null
+      - role       = "epsinc-cluster-autoscaler" -> null
+    }
+
+  # aws_iam_role_policy_attachment.github_actions will be destroyed
+  - resource "aws_iam_role_policy_attachment" "github_actions" {
+      - id         = "epsinc-github-actions/arn:aws:iam::911797457485:policy/epsinc-github-actions" -> null
+      - policy_arn = "arn:aws:iam::911797457485:policy/epsinc-github-actions" -> null
+      - role       = "epsinc-github-actions" -> null
+    }
+
+  # module.eks.aws_cloudwatch_log_group.this[0] will be destroyed
+  - resource "aws_cloudwatch_log_group" "this" {
+      - arn                         = "arn:aws:logs:us-east-1:911797457485:log-group:/aws/eks/epsinc/cluster" -> null
+      - deletion_protection_enabled = false -> null
+      - id                          = "/aws/eks/epsinc/cluster" -> null
+      - log_group_class             = "STANDARD" -> null
+      - name                        = "/aws/eks/epsinc/cluster" -> null
+      - region                      = "us-east-1" -> null
+      - retention_in_days           = 90 -> null
+      - skip_destroy                = false -> null
+      - tags                        = {
+          - "Name" = "/aws/eks/epsinc/cluster"
+        } -> null
+      - tags_all                    = {
+          - "Name" = "/aws/eks/epsinc/cluster"
+        } -> null
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.eks.aws_eks_access_entry.this["cluster_creator"] will be destroyed
+  - resource "aws_eks_access_entry" "this" {
+      - access_entry_arn  = "arn:aws:eks:us-east-1:911797457485:access-entry/epsinc/root/911797457485//34d0ee36-3c0e-c431-d8e3-d5f03ca3b3d4" -> null
+      - cluster_name      = "epsinc" -> null
+      - created_at        = "2026-11-14T23:37:38Z" -> null
+      - id                = "epsinc:arn:aws:iam::911797457485:root" -> null
+      - kubernetes_groups = [] -> null
+      - modified_at       = "2026-11-14T23:37:38Z" -> null
+      - principal_arn     = "arn:aws:iam::911797457485:root" -> null
+      - region            = "us-east-1" -> null
+      - tags              = {} -> null
+      - tags_all          = {} -> null
+      - type              = "STANDARD" -> null
+      - user_name         = "arn:aws:iam::911797457485:root" -> null
+    }
+
+  # module.eks.aws_eks_access_entry.this["github_actions"] will be destroyed
+  - resource "aws_eks_access_entry" "this" {
+      - access_entry_arn  = "arn:aws:eks:us-east-1:911797457485:access-entry/epsinc/role/911797457485/epsinc-github-actions/06d0ee2f-5b81-2dbb-cdba-df9b0165fedf" -> null
+      - cluster_name      = "epsinc" -> null
+      - created_at        = "2026-11-14T23:22:37Z" -> null
+      - id                = "epsinc:arn:aws:iam::911797457485:role/epsinc-github-actions" -> null
+      - kubernetes_groups = [] -> null
+      - modified_at       = "2026-11-14T23:22:37Z" -> null
+      - principal_arn     = "arn:aws:iam::911797457485:role/epsinc-github-actions" -> null
+      - region            = "us-east-1" -> null
+      - tags              = {} -> null
+      - tags_all          = {} -> null
+      - type              = "STANDARD" -> null
+      - user_name         = "arn:aws:sts::911797457485:assumed-role/epsinc-github-actions/{{SessionName}}" -> null
+    }
+
+  # module.eks.aws_eks_access_policy_association.this["cluster_creator_admin"] will be destroyed
+  - resource "aws_eks_access_policy_association" "this" {
+      - associated_at = "2026-11-14 23:37:41.009 +0000 UTC" -> null
+      - cluster_name  = "epsinc" -> null
+      - id            = "epsinc#arn:aws:iam::911797457485:root#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy" -> null
+      - modified_at   = "2026-11-14 23:37:41.009 +0000 UTC" -> null
+      - policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy" -> null
+      - principal_arn = "arn:aws:iam::911797457485:root" -> null
+      - region        = "us-east-1" -> null
+
+      - access_scope {
+          - namespaces = [] -> null
+          - type       = "cluster" -> null
+        }
+    }
+
+  # module.eks.aws_eks_access_policy_association.this["github_actions_admin"] will be destroyed
+  - resource "aws_eks_access_policy_association" "this" {
+      - associated_at = "2026-11-14 23:22:38.031 +0000 UTC" -> null
+      - cluster_name  = "epsinc" -> null
+      - id            = "epsinc#arn:aws:iam::911797457485:role/epsinc-github-actions#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy" -> null
+      - modified_at   = "2026-11-14 23:22:38.031 +0000 UTC" -> null
+      - policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy" -> null
+      - principal_arn = "arn:aws:iam::911797457485:role/epsinc-github-actions" -> null
+      - region        = "us-east-1" -> null
+
+      - access_scope {
+          - namespaces = [] -> null
+          - type       = "cluster" -> null
+        }
+    }
+
+  # module.eks.aws_eks_addon.before_compute["coredns"] will be destroyed
+  - resource "aws_eks_addon" "before_compute" {
+      - addon_name               = "coredns" -> null
+      - addon_version            = "v1.12.4-eksbuild.82" -> null
+      - arn                      = "arn:aws:eks:us-east-1:911797457485:addon/epsinc/coredns/32d0ee36-f993-9ece-8789-5a96ae1e818e" -> null
+      - cluster_name             = "epsinc" -> null
+      - created_at               = "2026-11-14T23:39:15Z" -> null
+      - id                       = "epsinc:coredns" -> null
+      - modified_at              = "2026-11-14T23:46:21Z" -> null
+      - region                   = "us-east-1" -> null
+      - tags                     = {} -> null
+      - tags_all                 = {} -> null
+        # (2 unchanged attributes hidden)
+
+      - namespace_config {
+          - namespace = "kube-system" -> null
+        }
+    }
+
+  # module.eks.aws_eks_addon.before_compute["kube-proxy"] will be destroyed
+  - resource "aws_eks_addon" "before_compute" {
+      - addon_name               = "kube-proxy" -> null
+      - addon_version            = "v1.34.6-eksbuild.69" -> null
+      - arn                      = "arn:aws:eks:us-east-1:911797457485:addon/epsinc/kube-proxy/30d0ee36-f31b-f497-a391-7a466e17fa8d" -> null
+      - cluster_name             = "epsinc" -> null
+      - created_at               = "2026-11-14T23:39:12Z" -> null
+      - id                       = "epsinc:kube-proxy" -> null
+      - modified_at              = "2026-11-14T23:39:29Z" -> null
+      - region                   = "us-east-1" -> null
+      - tags                     = {} -> null
+      - tags_all                 = {} -> null
+        # (2 unchanged attributes hidden)
+
+      - namespace_config {
+          - namespace = "kube-system" -> null
+        }
+    }
+
+  # module.eks.aws_eks_addon.before_compute["vpc-cni"] will be destroyed
+  - resource "aws_eks_addon" "before_compute" {
+      - addon_name               = "vpc-cni" -> null
+      - addon_version            = "v1.22.4-eksbuild.14" -> null
+      - arn                      = "arn:aws:eks:us-east-1:911797457485:addon/epsinc/vpc-cni/64d0ee36-ef15-5d68-2896-fe4225879ff6" -> null
+      - cluster_name             = "epsinc" -> null
+      - created_at               = "2026-11-14T23:39:10Z" -> null
+      - id                       = "epsinc:vpc-cni" -> null
+      - modified_at              = "2026-11-14T23:39:28Z" -> null
+      - region                   = "us-east-1" -> null
+      - tags                     = {} -> null
+      - tags_all                 = {} -> null
+        # (2 unchanged attributes hidden)
+
+      - namespace_config {
+          - namespace = "kube-system" -> null
+        }
+    }
+
+  # module.eks.aws_eks_cluster.this[0] will be destroyed
+  - resource "aws_eks_cluster" "this" {
+      - arn                           = "arn:aws:eks:us-east-1:911797457485:cluster/epsinc" -> null
+      - bootstrap_self_managed_addons = false -> null
+      - certificate_authority         = [
+          - {
+              - data = "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURNakNDQWhxZ0F3SUJBZ0lSQU9nQ2Z3S0EyaXpmdUV0OXlmRkQ3dHN3RFFZSktvWklodmNOQVFFTEJRQXcKSnpFUU1BNEdBMVVFQ2hNSFFWZFRJRVZMVXpFVE1CRUdBMVVFQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TmpFeApNVFF5TXpFeU1UTmFGdzB6TVRFeE1UTXlNekV5TVROYU1DY3hFREFPQmdOVkJBb1RCMEZYVXlCRlMxTXhFekFSCkJnTlZCQU1UQ210MVltVnlibVYwWlhNd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUIKQVFEbk80RnJ6TzA2TVB5OW5nOFZ6SkFvcHdsWnJhQS9LaVBYNHZycHpFRWhqWUU5YkxQaUx2Y0pka0FkancwSQp5dnZ4bWpkc1JndEoxWGd0WlpJbjhoRXgxVTFaSE9rcUtaWGozTkpJUlVaZ0FOYmFxVWt6UmdtUWxNUDd2YkVLCkhXRVRpTS9yWWxDbVZPeW1jazM5WVJsVThNdzJIMXBMa2IrZjkyVVVEaTZxVEswR3hEVXVPUGFIQ0ttNml6bHEKWlNKNmZCZzdxdG5LS1hESmpCdjZ0N2NXeDJwSkozeFgvWWlibkxTb3hHSmhpMThIc2tUQ3crakFjdWhtVTR1bwpJT1h2NVlwVnF1aFlOVGRWSU03bUpwQ3FUeGxIQ2dYTmtKOEJwQjhYTDh6U3Zka1NlWGdzb0xIZTJTUUoyaXFrCmRjUXR4Vk95QmR0bmJwcCtDN3hodzJ3NUFnTUJBQUdqV1RCWE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlYKSFJNQkFmOEVCVEFEQVFIL01CMEdBMVVkRGdRV0JCVEExcUZ1bGttSTBTL0pEcVBMSUxRaVd1M1pCREFWQmdOVgpIUkVFRGpBTWdncHJkV0psY201bGRHVnpNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUJBUUI4QnZCVWp2Ly9JQTZVCmNKeFZnK0dBSXY5amQ2dDF6dkNKcXMwbkIyczAxS3JHM2R1VlJPOFUzVjJpWWFyZjVTKzVxUGU2RmhRRWxrSDkKNVZwNURoSEJSRGFTcHdFcjF4VFJ4SFFMMUtpQkZTcmxuQ0JBWUs1VGhZbmUramhPNVFxZFFvOXlWRnRVL0dYbAo2UURObmZKazdkYkZ4aExBYXpLTlJUeWJ4dFFKV3dJS2w5WE9PRzJxVDdabmRHUWw1QTlrQlA0RUhDNG00cGdUCmZxUDVZakVuU1VZQzZDdlBqOE5VME5iSVh5aWhjK2kvWFZ3RVdLS0VaY2FMbTJDWXFtWGVKSmliZllPekI0RTkKMjg3aGJjbEFmQ2Rya1Mwai9iU0pTSk41bmxXbVEyZmlSQS91MXgxbjZQeGxkREhHQ0QrZkEzVGVxT2hQTWhpYgpFcUdMdjVJcAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+            },
+        ] -> null
+      - created_at                    = "2026-11-14T23:12:00Z" -> null
+      - deletion_protection           = false -> null
+      - enabled_cluster_log_types     = [
+          - "api",
+          - "audit",
+          - "authenticator",
+        ] -> null
+      - endpoint                      = "https://869239D3921B1976CC6457A4EB920D53.gr7.us-east-1.eks.amazonaws.com" -> null
+      - id                            = "epsinc" -> null
+      - identity                      = [
+          - {
+              - oidc = [
+                  - {
+                      - issuer = "https://oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53"
+                    },
+                ]
+            },
+        ] -> null
+      - name                          = "epsinc" -> null
+      - platform_version              = "eks.37" -> null
+      - region                        = "us-east-1" -> null
+      - role_arn                      = "arn:aws:iam::911797457485:role/epsinc-cluster-08da2406aab2cbf690a1554d02" -> null
+      - status                        = "ACTIVE" -> null
+      - tags                          = {} -> null
+      - tags_all                      = {} -> null
+      - version                       = "1.34" -> null
+
+      - access_config {
+          - authentication_mode                         = "API_AND_CONFIG_MAP" -> null
+          - bootstrap_cluster_creator_admin_permissions = false -> null
+        }
+
+      - compute_config {
+          - enabled       = false -> null
+          - node_pools    = [] -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - control_plane_scaling_config {
+          - tier = "standard" -> null
+        }
+
+      - encryption_config {
+          - resources = [
+              - "secrets",
+            ] -> null
+
+          - provider {
+              - key_arn = "arn:aws:kms:us-east-1:911797457485:key/e2d32237-85eb-4899-add8-6fb490602203" -> null
+            }
+        }
+
+      - kube_api_server_config {
+          - event_ttl = "60m" -> null
+
+          - service_node_port_range {
+              - max_port = 32767 -> null
+              - min_port = 30000 -> null
+            }
+        }
+
+      - kube_controller_manager_config {
+          - horizontal_pod_autoscaler_controller_config {
+              - horizontal_pod_autoscaler_sync_period = "15s" -> null
+            }
+          - pod_gc_controller_config {
+              - terminated_pod_gc_threshold = 12500 -> null
+            }
+        }
+
+      - kube_scheduler_config {
+          - node_resources_fit {
+              - scoring_strategy {
+                  - type = "LeastAllocated" -> null
+
+                  - resource {
+                      - name   = "cpu" -> null
+                      - weight = 1 -> null
+                    }
+                  - resource {
+                      - name   = "memory" -> null
+                      - weight = 1 -> null
+                    }
+                }
+            }
+        }
+
+      - kubernetes_network_config {
+          - ip_family         = "ipv4" -> null
+          - service_ipv4_cidr = "172.20.0.0/16" -> null
+            # (1 unchanged attribute hidden)
+
+          - elastic_load_balancing {
+              - enabled = false -> null
+            }
+        }
+
+      - storage_config {
+          - block_storage {
+              - enabled = false -> null
+            }
+        }
+
+      - upgrade_policy {
+          - support_type = "EXTENDED" -> null
+        }
+
+      - vpc_config {
+          - cluster_security_group_id = "sg-0c7e0edd6e8a1a96a" -> null
+          - control_plane_egress_mode = "AWS_MANAGED" -> null
+          - endpoint_private_access   = true -> null
+          - endpoint_public_access    = true -> null
+          - public_access_cidrs       = [
+              - "0.0.0.0/0",
+            ] -> null
+          - security_group_ids        = [
+              - "sg-09757d2b3d2883662",
+            ] -> null
+          - subnet_ids                = [
+              - "subnet-02ee9aca0891d4b8d",
+              - "subnet-0b6c788e951139dd3",
+            ] -> null
+          - vpc_id                    = "vpc-05e4799ceb155aa3b" -> null
+        }
+    }
+
+  # module.eks.aws_iam_openid_connect_provider.oidc_provider[0] will be destroyed
+  - resource "aws_iam_openid_connect_provider" "oidc_provider" {
+      - arn             = "arn:aws:iam::911797457485:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53" -> null
+      - client_id_list  = [
+          - "sts.amazonaws.com",
+        ] -> null
+      - id              = "arn:aws:iam::911797457485:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53" -> null
+      - tags            = {
+          - "Name" = "epsinc-eks-irsa"
+        } -> null
+      - tags_all        = {
+          - "Name" = "epsinc-eks-irsa"
+        } -> null
+      - thumbprint_list = [
+          - "06b25927c42a721631c1efd9431e648fa62e1e39",
+        ] -> null
+      - url             = "oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53" -> null
+    }
+
+  # module.eks.aws_iam_policy.cluster_encryption[0] will be destroyed
+  - resource "aws_iam_policy" "cluster_encryption" {
+      - arn              = "arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72" -> null
+      - attachment_count = 1 -> null
+      - description      = "Cluster encryption policy to allow cluster role to utilize CMK provided" -> null
+      - id               = "arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72" -> null
+      - name             = "epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72" -> null
+      - name_prefix      = "epsinc-cluster-ClusterEncryption" -> null
+      - path             = "/" -> null
+      - policy           = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action   = [
+                          - "kms:Encrypt",
+                          - "kms:Decrypt",
+                          - "kms:ListGrants",
+                          - "kms:DescribeKey",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = "arn:aws:kms:us-east-1:911797457485:key/e2d32237-85eb-4899-add8-6fb490602203"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - policy_id        = "ANPA5IS25CJG6IFL66ID5" -> null
+      - tags             = {} -> null
+      - tags_all         = {} -> null
+    }
+
+  # module.eks.aws_iam_role.this[0] will be destroyed
+  - resource "aws_iam_role" "this" {
+      - arn                   = "arn:aws:iam::911797457485:role/epsinc-cluster-08da2406aab2cbf690a1554d02" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = [
+                          - "sts:TagSession",
+                          - "sts:AssumeRole",
+                        ]
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "eks.amazonaws.com"
+                        }
+                      - Sid       = "EKSClusterAssumeRole"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-11-14T23:11:38Z" -> null
+      - force_detach_policies = true -> null
+      - id                    = "epsinc-cluster-08da2406aab2cbf690a1554d02" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72",
+          - "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "epsinc-cluster-08da2406aab2cbf690a1554d02" -> null
+      - name_prefix           = "epsinc-cluster-" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROA5IS25CJGYMTYWMZUR" -> null
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.eks.aws_iam_role_policy_attachment.cluster_encryption[0] will be destroyed
+  - resource "aws_iam_role_policy_attachment" "cluster_encryption" {
+      - id         = "epsinc-cluster-08da2406aab2cbf690a1554d02/arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72" -> null
+      - policy_arn = "arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72" -> null
+      - role       = "epsinc-cluster-08da2406aab2cbf690a1554d02" -> null
+    }
+
+  # module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"] will be destroyed
+  - resource "aws_iam_role_policy_attachment" "this" {
+      - id         = "epsinc-cluster-08da2406aab2cbf690a1554d02/arn:aws:iam::aws:policy/AmazonEKSClusterPolicy" -> null
+      - policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy" -> null
+      - role       = "epsinc-cluster-08da2406aab2cbf690a1554d02" -> null
+    }
+
+  # module.eks.aws_security_group.cluster[0] will be destroyed
+  - resource "aws_security_group" "cluster" {
+      - arn                    = "arn:aws:ec2:us-east-1:911797457485:security-group/sg-09757d2b3d2883662" -> null
+      - description            = "EKS cluster security group" -> null
+      - egress                 = [] -> null
+      - id                     = "sg-09757d2b3d2883662" -> null
+      - ingress                = [
+          - {
+              - cidr_blocks      = []
+              - description      = "Node groups to cluster API"
+              - from_port        = 443
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-0b2e4806a84c46e14",
+                ]
+              - self             = false
+              - to_port          = 443
+            },
+        ] -> null
+      - name                   = "epsinc-cluster-006795c2b6ad3aa5f312c4ca64" -> null
+      - name_prefix            = "epsinc-cluster-" -> null
+      - owner_id               = "911797457485" -> null
+      - region                 = "us-east-1" -> null
+      - revoke_rules_on_delete = false -> null
+      - tags                   = {
+          - "Name" = "epsinc-cluster"
+        } -> null
+      - tags_all               = {
+          - "Name" = "epsinc-cluster"
+        } -> null
+      - vpc_id                 = "vpc-05e4799ceb155aa3b" -> null
+    }
+
+  # module.eks.aws_security_group.node[0] will be destroyed
+  - resource "aws_security_group" "node" {
+      - arn                    = "arn:aws:ec2:us-east-1:911797457485:security-group/sg-0b2e4806a84c46e14" -> null
+      - description            = "EKS node shared security group" -> null
+      - egress                 = [
+          - {
+              - cidr_blocks      = [
+                  - "0.0.0.0/0",
+                ]
+              - description      = "Allow all egress"
+              - from_port        = 0
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "-1"
+              - security_groups  = []
+              - self             = false
+              - to_port          = 0
+            },
+        ] -> null
+      - id                     = "sg-0b2e4806a84c46e14" -> null
+      - ingress                = [
+          - {
+              - cidr_blocks      = [
+                  - "0.0.0.0/0",
+                ]
+              - description      = "Agones allocated game server TCP ports"
+              - from_port        = 7000
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = []
+              - self             = false
+              - to_port          = 8000
+            },
+          - {
+              - cidr_blocks      = [
+                  - "0.0.0.0/0",
+                ]
+              - description      = "Agones allocated game server UDP ports"
+              - from_port        = 7000
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "udp"
+              - security_groups  = []
+              - self             = false
+              - to_port          = 8000
+            },
+          - {
+              - cidr_blocks      = []
+              - from_port        = 0
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "-1"
+              - security_groups  = [
+                  - "sg-01f1e3ef91b7fe7f1",
+                  - "sg-0963e2ccb7d694519",
+                ]
+              - self             = false
+              - to_port          = 0
+                # (1 unchanged attribute hidden)
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Agones admission webhook from EKS control plane"
+              - from_port        = 8081
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-09757d2b3d2883662",
+                ]
+              - self             = false
+              - to_port          = 8081
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Cluster API to node 10251/tcp webhook"
+              - from_port        = 10251
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-09757d2b3d2883662",
+                ]
+              - self             = false
+              - to_port          = 10251
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Cluster API to node 4443/tcp webhook"
+              - from_port        = 4443
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-09757d2b3d2883662",
+                ]
+              - self             = false
+              - to_port          = 4443
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Cluster API to node 6443/tcp webhook"
+              - from_port        = 6443
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-09757d2b3d2883662",
+                ]
+              - self             = false
+              - to_port          = 6443
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Cluster API to node 8443/tcp webhook"
+              - from_port        = 8443
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-09757d2b3d2883662",
+                ]
+              - self             = false
+              - to_port          = 8443
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Cluster API to node 9443/tcp webhook"
+              - from_port        = 9443
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-09757d2b3d2883662",
+                ]
+              - self             = false
+              - to_port          = 9443
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Cluster API to node groups"
+              - from_port        = 443
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-09757d2b3d2883662",
+                ]
+              - self             = false
+              - to_port          = 443
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Cluster API to node kubelets"
+              - from_port        = 10250
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-09757d2b3d2883662",
+                ]
+              - self             = false
+              - to_port          = 10250
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Node to node CoreDNS UDP"
+              - from_port        = 53
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "udp"
+              - security_groups  = []
+              - self             = true
+              - to_port          = 53
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Node to node CoreDNS"
+              - from_port        = 53
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = []
+              - self             = true
+              - to_port          = 53
+            },
+          - {
+              - cidr_blocks      = []
+              - description      = "Node to node ingress on ephemeral ports"
+              - from_port        = 1025
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = []
+              - self             = true
+              - to_port          = 65535
+            },
+        ] -> null
+      - name                   = "epsinc-node-d6054a31b480265f0afee83b28" -> null
+      - name_prefix            = "epsinc-node-" -> null
+      - owner_id               = "911797457485" -> null
+      - region                 = "us-east-1" -> null
+      - revoke_rules_on_delete = false -> null
+      - tags                   = {
+          - "Name"                         = "epsinc-node"
+          - "kubernetes.io/cluster/epsinc" = "owned"
+        } -> null
+      - tags_all               = {
+          - "Name"                         = "epsinc-node"
+          - "kubernetes.io/cluster/epsinc" = "owned"
+        } -> null
+      - vpc_id                 = "vpc-05e4799ceb155aa3b" -> null
+    }
+
+  # module.eks.aws_security_group_rule.cluster["ingress_nodes_443"] will be destroyed
+  - resource "aws_security_group_rule" "cluster" {
+      - description              = "Node groups to cluster API" -> null
+      - from_port                = 443 -> null
+      - id                       = "sgrule-2802878899" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-09757d2b3d2883662" -> null
+      - security_group_rule_id   = "sgr-075b7a27965bf2d71" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-0b2e4806a84c46e14" -> null
+      - to_port                  = 443 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["agones_webhook"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description              = "Agones admission webhook from EKS control plane" -> null
+      - from_port                = 8081 -> null
+      - id                       = "sgrule-1447395702" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id   = "sgr-0b302bd9fcee7e535" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-09757d2b3d2883662" -> null
+      - to_port                  = 8081 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["egress_all"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - cidr_blocks            = [
+          - "0.0.0.0/0",
+        ] -> null
+      - description            = "Allow all egress" -> null
+      - from_port              = 0 -> null
+      - id                     = "sgrule-3336328187" -> null
+      - protocol               = "-1" -> null
+      - region                 = "us-east-1" -> null
+      - security_group_id      = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id = "sgr-0da83795106f602a0" -> null
+      - self                   = false -> null
+      - to_port                = 0 -> null
+      - type                   = "egress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["game_tcp"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - cidr_blocks            = [
+          - "0.0.0.0/0",
+        ] -> null
+      - description            = "Agones allocated game server TCP ports" -> null
+      - from_port              = 7000 -> null
+      - id                     = "sgrule-1517540988" -> null
+      - protocol               = "tcp" -> null
+      - region                 = "us-east-1" -> null
+      - security_group_id      = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id = "sgr-0957737158c98e25b" -> null
+      - self                   = false -> null
+      - to_port                = 8000 -> null
+      - type                   = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["game_udp"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - cidr_blocks            = [
+          - "0.0.0.0/0",
+        ] -> null
+      - description            = "Agones allocated game server UDP ports" -> null
+      - from_port              = 7000 -> null
+      - id                     = "sgrule-616314084" -> null
+      - protocol               = "udp" -> null
+      - region                 = "us-east-1" -> null
+      - security_group_id      = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id = "sgr-0b19ee2fc743c9038" -> null
+      - self                   = false -> null
+      - to_port                = 8000 -> null
+      - type                   = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_cluster_10251_webhook"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description              = "Cluster API to node 10251/tcp webhook" -> null
+      - from_port                = 10251 -> null
+      - id                       = "sgrule-2714078818" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id   = "sgr-0e661813dcc57b293" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-09757d2b3d2883662" -> null
+      - to_port                  = 10251 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_cluster_443"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description              = "Cluster API to node groups" -> null
+      - from_port                = 443 -> null
+      - id                       = "sgrule-3729849546" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id   = "sgr-0a0f0263beda4a300" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-09757d2b3d2883662" -> null
+      - to_port                  = 443 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description              = "Cluster API to node 4443/tcp webhook" -> null
+      - from_port                = 4443 -> null
+      - id                       = "sgrule-3087049794" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id   = "sgr-06f09e58a1c75b0b9" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-09757d2b3d2883662" -> null
+      - to_port                  = 4443 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description              = "Cluster API to node 6443/tcp webhook" -> null
+      - from_port                = 6443 -> null
+      - id                       = "sgrule-1900200916" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id   = "sgr-01b23936e53925cd4" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-09757d2b3d2883662" -> null
+      - to_port                  = 6443 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description              = "Cluster API to node 8443/tcp webhook" -> null
+      - from_port                = 8443 -> null
+      - id                       = "sgrule-1646198773" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id   = "sgr-00480560d21a18f2b" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-09757d2b3d2883662" -> null
+      - to_port                  = 8443 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description              = "Cluster API to node 9443/tcp webhook" -> null
+      - from_port                = 9443 -> null
+      - id                       = "sgrule-113232958" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id   = "sgr-07552ca4403b5a389" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-09757d2b3d2883662" -> null
+      - to_port                  = 9443 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description              = "Cluster API to node kubelets" -> null
+      - from_port                = 10250 -> null
+      - id                       = "sgrule-2509037081" -> null
+      - protocol                 = "tcp" -> null
+      - region                   = "us-east-1" -> null
+      - security_group_id        = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id   = "sgr-03dd0b218054cce41" -> null
+      - self                     = false -> null
+      - source_security_group_id = "sg-09757d2b3d2883662" -> null
+      - to_port                  = 10250 -> null
+      - type                     = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description            = "Node to node ingress on ephemeral ports" -> null
+      - from_port              = 1025 -> null
+      - id                     = "sgrule-2790271104" -> null
+      - protocol               = "tcp" -> null
+      - region                 = "us-east-1" -> null
+      - security_group_id      = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id = "sgr-053d556908419f336" -> null
+      - self                   = true -> null
+      - to_port                = 65535 -> null
+      - type                   = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description            = "Node to node CoreDNS" -> null
+      - from_port              = 53 -> null
+      - id                     = "sgrule-135109333" -> null
+      - protocol               = "tcp" -> null
+      - region                 = "us-east-1" -> null
+      - security_group_id      = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id = "sgr-0fabc3d1f8c5174e4" -> null
+      - self                   = true -> null
+      - to_port                = 53 -> null
+      - type                   = "ingress" -> null
+    }
+
+  # module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"] will be destroyed
+  - resource "aws_security_group_rule" "node" {
+      - description            = "Node to node CoreDNS UDP" -> null
+      - from_port              = 53 -> null
+      - id                     = "sgrule-2891069754" -> null
+      - protocol               = "udp" -> null
+      - region                 = "us-east-1" -> null
+      - security_group_id      = "sg-0b2e4806a84c46e14" -> null
+      - security_group_rule_id = "sgr-02cf7054544b76540" -> null
+      - self                   = true -> null
+      - to_port                = 53 -> null
+      - type                   = "ingress" -> null
+    }
+
+  # module.eks.time_sleep.this[0] will be destroyed
+  - resource "time_sleep" "this" {
+      - create_duration = "30s" -> null
+      - id              = "2026-11-14T23:22:03Z" -> null
+      - triggers        = {
+          - "certificate_authority_data" = "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURNakNDQWhxZ0F3SUJBZ0lSQU9nQ2Z3S0EyaXpmdUV0OXlmRkQ3dHN3RFFZSktvWklodmNOQVFFTEJRQXcKSnpFUU1BNEdBMVVFQ2hNSFFWZFRJRVZMVXpFVE1CRUdBMVVFQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TmpFeApNVFF5TXpFeU1UTmFGdzB6TVRFeE1UTXlNekV5TVROYU1DY3hFREFPQmdOVkJBb1RCMEZYVXlCRlMxTXhFekFSCkJnTlZCQU1UQ210MVltVnlibVYwWlhNd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUIKQVFEbk80RnJ6TzA2TVB5OW5nOFZ6SkFvcHdsWnJhQS9LaVBYNHZycHpFRWhqWUU5YkxQaUx2Y0pka0FkancwSQp5dnZ4bWpkc1JndEoxWGd0WlpJbjhoRXgxVTFaSE9rcUtaWGozTkpJUlVaZ0FOYmFxVWt6UmdtUWxNUDd2YkVLCkhXRVRpTS9yWWxDbVZPeW1jazM5WVJsVThNdzJIMXBMa2IrZjkyVVVEaTZxVEswR3hEVXVPUGFIQ0ttNml6bHEKWlNKNmZCZzdxdG5LS1hESmpCdjZ0N2NXeDJwSkozeFgvWWlibkxTb3hHSmhpMThIc2tUQ3crakFjdWhtVTR1bwpJT1h2NVlwVnF1aFlOVGRWSU03bUpwQ3FUeGxIQ2dYTmtKOEJwQjhYTDh6U3Zka1NlWGdzb0xIZTJTUUoyaXFrCmRjUXR4Vk95QmR0bmJwcCtDN3hodzJ3NUFnTUJBQUdqV1RCWE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlYKSFJNQkFmOEVCVEFEQVFIL01CMEdBMVVkRGdRV0JCVEExcUZ1bGttSTBTL0pEcVBMSUxRaVd1M1pCREFWQmdOVgpIUkVFRGpBTWdncHJkV0psY201bGRHVnpNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUJBUUI4QnZCVWp2Ly9JQTZVCmNKeFZnK0dBSXY5amQ2dDF6dkNKcXMwbkIyczAxS3JHM2R1VlJPOFUzVjJpWWFyZjVTKzVxUGU2RmhRRWxrSDkKNVZwNURoSEJSRGFTcHdFcjF4VFJ4SFFMMUtpQkZTcmxuQ0JBWUs1VGhZbmUramhPNVFxZFFvOXlWRnRVL0dYbAo2UURObmZKazdkYkZ4aExBYXpLTlJUeWJ4dFFKV3dJS2w5WE9PRzJxVDdabmRHUWw1QTlrQlA0RUhDNG00cGdUCmZxUDVZakVuU1VZQzZDdlBqOE5VME5iSVh5aWhjK2kvWFZ3RVdLS0VaY2FMbTJDWXFtWGVKSmliZllPekI0RTkKMjg3aGJjbEFmQ2Rya1Mwai9iU0pTSk41bmxXbVEyZmlSQS91MXgxbjZQeGxkREhHQ0QrZkEzVGVxT2hQTWhpYgpFcUdMdjVJcAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+          - "endpoint"                   = "https://869239D3921B1976CC6457A4EB920D53.gr7.us-east-1.eks.amazonaws.com"
+          - "kubernetes_version"         = "1.34"
+          - "name"                       = "epsinc"
+          - "service_cidr"               = "172.20.0.0/16"
+        } -> null
+    }
+
+  # module.vpc.aws_default_network_acl.this[0] will be destroyed
+  - resource "aws_default_network_acl" "this" {
+      - arn                    = "arn:aws:ec2:us-east-1:911797457485:network-acl/acl-01e967482bfb6ffb5" -> null
+      - default_network_acl_id = "acl-01e967482bfb6ffb5" -> null
+      - id                     = "acl-01e967482bfb6ffb5" -> null
+      - owner_id               = "911797457485" -> null
+      - region                 = "us-east-1" -> null
+      - subnet_ids             = [
+          - "subnet-02ee9aca0891d4b8d",
+          - "subnet-0b6c788e951139dd3",
+        ] -> null
+      - tags                   = {
+          - "Name" = "epsinc-default"
+        } -> null
+      - tags_all               = {
+          - "Name" = "epsinc-default"
+        } -> null
+      - vpc_id                 = "vpc-05e4799ceb155aa3b" -> null
+
+      - egress {
+          - action          = "allow" -> null
+          - from_port       = 0 -> null
+          - icmp_code       = 0 -> null
+          - icmp_type       = 0 -> null
+          - ipv6_cidr_block = "::/0" -> null
+          - protocol        = "-1" -> null
+          - rule_no         = 101 -> null
+          - to_port         = 0 -> null
+            # (1 unchanged attribute hidden)
+        }
+      - egress {
+          - action          = "allow" -> null
+          - cidr_block      = "0.0.0.0/0" -> null
+          - from_port       = 0 -> null
+          - icmp_code       = 0 -> null
+          - icmp_type       = 0 -> null
+          - protocol        = "-1" -> null
+          - rule_no         = 100 -> null
+          - to_port         = 0 -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - ingress {
+          - action          = "allow" -> null
+          - from_port       = 0 -> null
+          - icmp_code       = 0 -> null
+          - icmp_type       = 0 -> null
+          - ipv6_cidr_block = "::/0" -> null
+          - protocol        = "-1" -> null
+          - rule_no         = 101 -> null
+          - to_port         = 0 -> null
+            # (1 unchanged attribute hidden)
+        }
+      - ingress {
+          - action          = "allow" -> null
+          - cidr_block      = "0.0.0.0/0" -> null
+          - from_port       = 0 -> null
+          - icmp_code       = 0 -> null
+          - icmp_type       = 0 -> null
+          - protocol        = "-1" -> null
+          - rule_no         = 100 -> null
+          - to_port         = 0 -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # module.vpc.aws_default_route_table.default[0] will be destroyed
+  - resource "aws_default_route_table" "default" {
+      - arn                    = "arn:aws:ec2:us-east-1:911797457485:route-table/rtb-077dfd42a288f2164" -> null
+      - default_route_table_id = "rtb-077dfd42a288f2164" -> null
+      - id                     = "rtb-077dfd42a288f2164" -> null
+      - owner_id               = "911797457485" -> null
+      - propagating_vgws       = [] -> null
+      - region                 = "us-east-1" -> null
+      - route                  = [] -> null
+      - tags                   = {
+          - "Name" = "epsinc-default"
+        } -> null
+      - tags_all               = {
+          - "Name" = "epsinc-default"
+        } -> null
+      - vpc_id                 = "vpc-05e4799ceb155aa3b" -> null
+
+      - timeouts {
+          - create = "5m" -> null
+          - update = "5m" -> null
+        }
+    }
+
+  # module.vpc.aws_default_security_group.this[0] will be destroyed
+  - resource "aws_default_security_group" "this" {
+      - arn                    = "arn:aws:ec2:us-east-1:911797457485:security-group/sg-0ff5cdb808c6c0255" -> null
+      - description            = "default VPC security group" -> null
+      - egress                 = [] -> null
+      - id                     = "sg-0ff5cdb808c6c0255" -> null
+      - ingress                = [] -> null
+      - name                   = "default" -> null
+      - owner_id               = "911797457485" -> null
+      - region                 = "us-east-1" -> null
+      - revoke_rules_on_delete = false -> null
+      - tags                   = {
+          - "Name" = "epsinc-default"
+        } -> null
+      - tags_all               = {
+          - "Name" = "epsinc-default"
+        } -> null
+      - vpc_id                 = "vpc-05e4799ceb155aa3b" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # module.vpc.aws_internet_gateway.this[0] will be destroyed
+  - resource "aws_internet_gateway" "this" {
+      - arn      = "arn:aws:ec2:us-east-1:911797457485:internet-gateway/igw-0595062541d994407" -> null
+      - id       = "igw-0595062541d994407" -> null
+      - owner_id = "911797457485" -> null
+      - region   = "us-east-1" -> null
+      - tags     = {
+          - "Name" = "epsinc"
+        } -> null
+      - tags_all = {
+          - "Name" = "epsinc"
+        } -> null
+      - vpc_id   = "vpc-05e4799ceb155aa3b" -> null
+    }
+
+  # module.vpc.aws_route.public_internet_gateway[0] will be destroyed
+  - resource "aws_route" "public_internet_gateway" {
+      - destination_cidr_block      = "0.0.0.0/0" -> null
+      - gateway_id                  = "igw-0595062541d994407" -> null
+      - id                          = "r-rtb-051a2cdbba497072c1080289494" -> null
+      - origin                      = "CreateRoute" -> null
+      - region                      = "us-east-1" -> null
+      - route_table_id              = "rtb-051a2cdbba497072c" -> null
+      - state                       = "active" -> null
+        # (14 unchanged attributes hidden)
+
+      - timeouts {
+          - create = "5m" -> null
+        }
+    }
+
+  # module.vpc.aws_route_table.public[0] will be destroyed
+  - resource "aws_route_table" "public" {
+      - arn              = "arn:aws:ec2:us-east-1:911797457485:route-table/rtb-051a2cdbba497072c" -> null
+      - id               = "rtb-051a2cdbba497072c" -> null
+      - owner_id         = "911797457485" -> null
+      - propagating_vgws = [] -> null
+      - region           = "us-east-1" -> null
+      - route            = [
+          - {
+              - cidr_block                 = "0.0.0.0/0"
+              - gateway_id                 = "igw-0595062541d994407"
+                # (12 unchanged attributes hidden)
+            },
+        ] -> null
+      - tags             = {
+          - "Name" = "epsinc-public"
+        } -> null
+      - tags_all         = {
+          - "Name" = "epsinc-public"
+        } -> null
+      - vpc_id           = "vpc-05e4799ceb155aa3b" -> null
+    }
+
+  # module.vpc.aws_route_table_association.public[0] will be destroyed
+  - resource "aws_route_table_association" "public" {
+      - id             = "rtbassoc-0a2c4af7a5e7fb178" -> null
+      - region         = "us-east-1" -> null
+      - route_table_id = "rtb-051a2cdbba497072c" -> null
+      - subnet_id      = "subnet-0b6c788e951139dd3" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # module.vpc.aws_route_table_association.public[1] will be destroyed
+  - resource "aws_route_table_association" "public" {
+      - id             = "rtbassoc-0c6a4ab8542ad713e" -> null
+      - region         = "us-east-1" -> null
+      - route_table_id = "rtb-051a2cdbba497072c" -> null
+      - subnet_id      = "subnet-02ee9aca0891d4b8d" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # module.vpc.aws_subnet.public[0] will be destroyed
+  - resource "aws_subnet" "public" {
+      - arn                                            = "arn:aws:ec2:us-east-1:911797457485:subnet/subnet-0b6c788e951139dd3" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-east-1a" -> null
+      - availability_zone_id                           = "use1-az1" -> null
+      - cidr_block                                     = "10.0.1.0/24" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-0b6c788e951139dd3" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = true -> null
+      - owner_id                                       = "911797457485" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-east-1" -> null
+      - tags                                           = {
+          - "Name"                   = "epsinc-public-us-east-1a"
+          - "kubernetes.io/role/elb" = "1"
+        } -> null
+      - tags_all                                       = {
+          - "Name"                   = "epsinc-public-us-east-1a"
+          - "kubernetes.io/role/elb" = "1"
+        } -> null
+      - vpc_id                                         = "vpc-05e4799ceb155aa3b" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.public[1] will be destroyed
+  - resource "aws_subnet" "public" {
+      - arn                                            = "arn:aws:ec2:us-east-1:911797457485:subnet/subnet-02ee9aca0891d4b8d" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-east-1b" -> null
+      - availability_zone_id                           = "use1-az2" -> null
+      - cidr_block                                     = "10.0.2.0/24" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-02ee9aca0891d4b8d" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = true -> null
+      - owner_id                                       = "911797457485" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-east-1" -> null
+      - tags                                           = {
+          - "Name"                   = "epsinc-public-us-east-1b"
+          - "kubernetes.io/role/elb" = "1"
+        } -> null
+      - tags_all                                       = {
+          - "Name"                   = "epsinc-public-us-east-1b"
+          - "kubernetes.io/role/elb" = "1"
+        } -> null
+      - vpc_id                                         = "vpc-05e4799ceb155aa3b" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_vpc.this[0] will be destroyed
+  - resource "aws_vpc" "this" {
+      - arn                                  = "arn:aws:ec2:us-east-1:911797457485:vpc/vpc-05e4799ceb155aa3b" -> null
+      - assign_generated_ipv6_cidr_block     = false -> null
+      - cidr_block                           = "10.0.0.0/16" -> null
+      - default_network_acl_id               = "acl-01e967482bfb6ffb5" -> null
+      - default_route_table_id               = "rtb-077dfd42a288f2164" -> null
+      - default_security_group_id            = "sg-0ff5cdb808c6c0255" -> null
+      - dhcp_options_id                      = "dopt-0b441d340d22cbe65" -> null
+      - enable_dns_hostnames                 = true -> null
+      - enable_dns_support                   = true -> null
+      - enable_network_address_usage_metrics = false -> null
+      - id                                   = "vpc-05e4799ceb155aa3b" -> null
+      - instance_tenancy                     = "default" -> null
+      - ipv6_netmask_length                  = 0 -> null
+      - main_route_table_id                  = "rtb-077dfd42a288f2164" -> null
+      - owner_id                             = "911797457485" -> null
+      - region                               = "us-east-1" -> null
+      - tags                                 = {
+          - "Name" = "epsinc"
+        } -> null
+      - tags_all                             = {
+          - "Name" = "epsinc"
+        } -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0] will be destroyed
+  - resource "aws_eks_node_group" "this" {
+      - ami_type               = "AL2023_x86_64_STANDARD" -> null
+      - arn                    = "arn:aws:eks:us-east-1:911797457485:nodegroup/epsinc/game-da1be1b29462f428c2782ff7d8/82d0ee2f-a4b0-5110-9f50-31f48f51c42c" -> null
+      - capacity_type          = "ON_DEMAND" -> null
+      - cluster_name           = "epsinc" -> null
+      - disk_size              = 0 -> null
+      - id                     = "epsinc:game-da1be1b29462f428c2782ff7d8" -> null
+      - instance_types         = [
+          - "m7i.large",
+        ] -> null
+      - labels                 = {
+          - "agones.dev/agones-system" = "true"
+          - "app"                      = "epsinc"
+        } -> null
+      - node_group_name        = "game-da1be1b29462f428c2782ff7d8" -> null
+      - node_group_name_prefix = "game-" -> null
+      - node_role_arn          = "arn:aws:iam::911797457485:role/game-eks-node-group-44cd79c97ed9c1681cb3edd98e" -> null
+      - region                 = "us-east-1" -> null
+      - release_version        = "1.34.12-20261107" -> null
+      - resources              = [
+          - {
+              - autoscaling_groups              = [
+                  - {
+                      - name = "eks-game-da1be1b29462f428c2782ff7d8-82d0ee2f-a4b0-5110-9f50-31f48f51c42c"
+                    },
+                ]
+                # (1 unchanged attribute hidden)
+            },
+        ] -> null
+      - status                 = "ACTIVE" -> null
+      - subnet_ids             = [
+          - "subnet-02ee9aca0891d4b8d",
+          - "subnet-0b6c788e951139dd3",
+        ] -> null
+      - tags                   = {
+          - "Name" = "game"
+        } -> null
+      - tags_all               = {
+          - "Name" = "game"
+        } -> null
+      - version                = "1.34" -> null
+
+      - launch_template {
+          - id      = "lt-0cf02810fc10caa14" -> null
+          - name    = "game-b5cc69b44aa6a8abfd6da1dae0" -> null
+          - version = "1" -> null
+        }
+
+      - scaling_config {
+          - desired_size = 2 -> null
+          - max_size     = 8 -> null
+          - min_size     = 1 -> null
+        }
+
+      - update_config {
+          - max_unavailable            = 0 -> null
+          - max_unavailable_percentage = 33 -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # module.eks.module.eks_managed_node_group["game"].aws_iam_role.this[0] will be destroyed
+  - resource "aws_iam_role" "this" {
+      - arn                   = "arn:aws:iam::911797457485:role/game-eks-node-group-44cd79c97ed9c1681cb3edd98e" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "ec2.amazonaws.com"
+                        }
+                      - Sid       = "EKSNodeAssumeRole"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-11-14T23:11:38Z" -> null
+      - description           = "EKS managed node group IAM role" -> null
+      - force_detach_policies = true -> null
+      - id                    = "game-eks-node-group-44cd79c97ed9c1681cb3edd98e" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly",
+          - "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy",
+          - "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "game-eks-node-group-44cd79c97ed9c1681cb3edd98e" -> null
+      - name_prefix           = "game-eks-node-group-" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {} -> null
+      - unique_id             = "AROA5IS25CJGXPPSRS76R" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"] will be destroyed
+  - resource "aws_iam_role_policy_attachment" "this" {
+      - id         = "game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly" -> null
+      - policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly" -> null
+      - role       = "game-eks-node-group-44cd79c97ed9c1681cb3edd98e" -> null
+    }
+
+  # module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"] will be destroyed
+  - resource "aws_iam_role_policy_attachment" "this" {
+      - id         = "game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy" -> null
+      - policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy" -> null
+      - role       = "game-eks-node-group-44cd79c97ed9c1681cb3edd98e" -> null
+    }
+
+  # module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"] will be destroyed
+  - resource "aws_iam_role_policy_attachment" "this" {
+      - id         = "game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy" -> null
+      - policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy" -> null
+      - role       = "game-eks-node-group-44cd79c97ed9c1681cb3edd98e" -> null
+    }
+
+  # module.eks.module.eks_managed_node_group["game"].aws_launch_template.this[0] will be destroyed
+  - resource "aws_launch_template" "this" {
+      - arn                                  = "arn:aws:ec2:us-east-1:911797457485:launch-template/lt-0cf02810fc10caa14" -> null
+      - default_version                      = 1 -> null
+      - description                          = "Custom launch template for game EKS managed node group" -> null
+      - disable_api_stop                     = false -> null
+      - disable_api_termination              = false -> null
+      - id                                   = "lt-0cf02810fc10caa14" -> null
+      - latest_version                       = 1 -> null
+      - name                                 = "game-b5cc69b44aa6a8abfd6da1dae0" -> null
+      - name_prefix                          = "game-" -> null
+      - region                               = "us-east-1" -> null
+      - security_group_names                 = [] -> null
+      - tags                                 = {} -> null
+      - tags_all                             = {} -> null
+      - update_default_version               = true -> null
+      - vpc_security_group_ids               = [
+          - "sg-0b2e4806a84c46e14",
+        ] -> null
+        # (8 unchanged attributes hidden)
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "required" -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - tag_specifications {
+          - resource_type = "instance" -> null
+          - tags          = {
+              - "Name" = "game"
+            } -> null
+        }
+      - tag_specifications {
+          - resource_type = "network-interface" -> null
+          - tags          = {
+              - "Name" = "game"
+            } -> null
+        }
+      - tag_specifications {
+          - resource_type = "volume" -> null
+          - tags          = {
+              - "Name" = "game"
+            } -> null
+        }
+    }
+
+  # module.eks.module.kms.aws_kms_alias.this["cluster"] will be destroyed
+  - resource "aws_kms_alias" "this" {
+      - arn            = "arn:aws:kms:us-east-1:911797457485:alias/eks/epsinc" -> null
+      - id             = "alias/eks/epsinc" -> null
+      - name           = "alias/eks/epsinc" -> null
+      - region         = "us-east-1" -> null
+      - target_key_arn = "arn:aws:kms:us-east-1:911797457485:key/e2d32237-85eb-4899-add8-6fb490602203" -> null
+      - target_key_id  = "e2d32237-85eb-4899-add8-6fb490602203" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # module.eks.module.kms.aws_kms_key.this[0] will be destroyed
+  - resource "aws_kms_key" "this" {
+      - arn                                = "arn:aws:kms:us-east-1:911797457485:key/e2d32237-85eb-4899-add8-6fb490602203" -> null
+      - bypass_policy_lockout_safety_check = false -> null
+      - customer_master_key_spec           = "SYMMETRIC_DEFAULT" -> null
+      - description                        = "epsinc cluster encryption key" -> null
+      - enable_key_rotation                = true -> null
+      - id                                 = "e2d32237-85eb-4899-add8-6fb490602203" -> null
+      - is_enabled                         = true -> null
+      - key_id                             = "e2d32237-85eb-4899-add8-6fb490602203" -> null
+      - key_usage                          = "ENCRYPT_DECRYPT" -> null
+      - multi_region                       = false -> null
+      - policy                             = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "kms:*"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - AWS = "arn:aws:iam::911797457485:root"
+                        }
+                      - Resource  = "*"
+                      - Sid       = "Default"
+                    },
+                  - {
+                      - Action    = [
+                          - "kms:Update*",
+                          - "kms:UntagResource",
+                          - "kms:TagResource",
+                          - "kms:ScheduleKeyDeletion",
+                          - "kms:Revoke*",
+                          - "kms:ReplicateKey",
+                          - "kms:Put*",
+                          - "kms:List*",
+                          - "kms:ImportKeyMaterial",
+                          - "kms:Get*",
+                          - "kms:Enable*",
+                          - "kms:Disable*",
+                          - "kms:Describe*",
+                          - "kms:Delete*",
+                          - "kms:Create*",
+                          - "kms:CancelKeyDeletion",
+                        ]
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - AWS = "arn:aws:iam::911797457485:root"
+                        }
+                      - Resource  = "*"
+                      - Sid       = "KeyAdministration"
+                    },
+                  - {
+                      - Action    = [
+                          - "kms:ReEncrypt*",
+                          - "kms:GenerateDataKey*",
+                          - "kms:Encrypt",
+                          - "kms:DescribeKey",
+                          - "kms:Decrypt",
+                        ]
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - AWS = "arn:aws:iam::911797457485:role/epsinc-cluster-08da2406aab2cbf690a1554d02"
+                        }
+                      - Resource  = "*"
+                      - Sid       = "KeyUsage"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - region                             = "us-east-1" -> null
+      - rotation_period_in_days            = 365 -> null
+      - tags                               = {} -> null
+      - tags_all                           = {} -> null
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.eks.module.eks_managed_node_group["game"].module.user_data.null_resource.validate_cluster_service_cidr will be destroyed
+  - resource "null_resource" "validate_cluster_service_cidr" {
+      - id = "5224174377639764879" -> null
+    }
+
+Plan: 0 to add, 0 to change, 59 to destroy.
+
+Changes to Outputs:
+  - cluster_autoscaler_role_arn = "arn:aws:iam::911797457485:role/epsinc-cluster-autoscaler" -> null
+  - cluster_endpoint            = "https://869239D3921B1976CC6457A4EB920D53.gr7.us-east-1.eks.amazonaws.com" -> null
+  - cluster_name                = "epsinc" -> null
+  - connect_command             = "aws eks update-kubeconfig --region us-east-1 --name epsinc" -> null
+  - github_actions_role_arn     = "arn:aws:iam::911797457485:role/epsinc-github-actions" -> null
+  - image_repository_url        = "911797457485.dkr.ecr.us-east-1.amazonaws.com/epsinc/server" -> null
+module.eks.module.eks_managed_node_group["game"].module.user_data.null_resource.validate_cluster_service_cidr: Destroying... [id=5224174377639764879]
+module.eks.module.eks_managed_node_group["game"].module.user_data.null_resource.validate_cluster_service_cidr: Destruction complete after 0s
+module.vpc.aws_route_table_association.public[1]: Destroying... [id=rtbassoc-0c6a4ab8542ad713e]
+module.vpc.aws_default_security_group.this[0]: Destroying... [id=sg-0ff5cdb808c6c0255]
+module.eks.module.kms.aws_kms_alias.this["cluster"]: Destroying... [id=alias/eks/epsinc]
+module.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Destroying... [id=epsinc-cluster-08da2406aab2cbf690a1554d02/arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72]
+aws_iam_role_policy_attachment.cluster_autoscaler: Destroying... [id=epsinc-cluster-autoscaler/arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler]
+module.eks.aws_eks_addon.before_compute["coredns"]: Destroying... [id=epsinc:coredns]
+module.eks.aws_eks_addon.before_compute["vpc-cni"]: Destroying... [id=epsinc:vpc-cni]
+module.vpc.aws_default_route_table.default[0]: Destroying... [id=rtb-077dfd42a288f2164]
+module.eks.aws_eks_addon.before_compute["kube-proxy"]: Destroying... [id=epsinc:kube-proxy]
+module.vpc.aws_route.public_internet_gateway[0]: Destroying... [id=r-rtb-051a2cdbba497072c1080289494]
+module.vpc.aws_default_route_table.default[0]: Destruction complete after 0s
+module.vpc.aws_default_security_group.this[0]: Destruction complete after 0s
+aws_iam_role_policy_attachment.github_actions: Destroying... [id=epsinc-github-actions/arn:aws:iam::911797457485:policy/epsinc-github-actions]
+module.vpc.aws_route_table_association.public[0]: Destroying... [id=rtbassoc-0a2c4af7a5e7fb178]
+module.eks.module.kms.aws_kms_alias.this["cluster"]: Destruction complete after 0s
+module.vpc.aws_default_network_acl.this[0]: Destroying... [id=acl-01e967482bfb6ffb5]
+module.vpc.aws_default_network_acl.this[0]: Destruction complete after 0s
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8]
+aws_iam_role_policy_attachment.cluster_autoscaler: Destruction complete after 0s
+aws_iam_role.cluster_autoscaler: Destroying... [id=epsinc-cluster-autoscaler]
+aws_iam_role_policy_attachment.github_actions: Destruction complete after 0s
+module.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Destruction complete after 0s
+aws_iam_policy.cluster_autoscaler: Destroying... [id=arn:aws:iam::911797457485:policy/epsinc-cluster-autoscaler]
+aws_iam_policy.github_actions: Destroying... [id=arn:aws:iam::911797457485:policy/epsinc-github-actions]
+module.vpc.aws_route_table_association.public[0]: Destruction complete after 0s
+module.eks.aws_iam_policy.cluster_encryption[0]: Destroying... [id=arn:aws:iam::911797457485:policy/epsinc-cluster-ClusterEncryption205543af181a66774f62eb6f72]
+module.vpc.aws_route_table_association.public[1]: Destruction complete after 0s
+aws_iam_role.cluster_autoscaler: Destruction complete after 0s
+module.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Destroying... [id=arn:aws:iam::911797457485:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/869239D3921B1976CC6457A4EB920D53]
+aws_iam_policy.cluster_autoscaler: Destruction complete after 1s
+module.vpc.aws_route.public_internet_gateway[0]: Destruction complete after 1s
+module.vpc.aws_internet_gateway.this[0]: Destroying... [id=igw-0595062541d994407]
+module.vpc.aws_route_table.public[0]: Destroying... [id=rtb-051a2cdbba497072c]
+aws_iam_policy.github_actions: Destruction complete after 1s
+module.eks.aws_eks_access_policy_association.this["cluster_creator_admin"]: Destroying... [id=epsinc#arn:aws:iam::911797457485:root#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+module.eks.aws_eks_access_policy_association.this["github_actions_admin"]: Destroying... [id=epsinc#arn:aws:iam::911797457485:role/epsinc-github-actions#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+module.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Destruction complete after 0s
+aws_ecr_repository.epsinc: Destroying... [id=epsinc/server]
+module.eks.aws_iam_policy.cluster_encryption[0]: Destruction complete after 1s
+module.eks.aws_eks_access_policy_association.this["cluster_creator_admin"]: Destruction complete after 0s
+module.eks.aws_eks_addon.before_compute["kube-proxy"]: Destruction complete after 1s
+module.eks.aws_eks_access_policy_association.this["github_actions_admin"]: Destruction complete after 0s
+module.eks.aws_eks_access_entry.this["github_actions"]: Destroying... [id=epsinc:arn:aws:iam::911797457485:role/epsinc-github-actions]
+module.eks.aws_eks_access_entry.this["cluster_creator"]: Destroying... [id=epsinc:arn:aws:iam::911797457485:root]
+module.eks.aws_eks_access_entry.this["github_actions"]: Destruction complete after 1s
+module.eks.aws_eks_access_entry.this["cluster_creator"]: Destruction complete after 1s
+aws_iam_role.github_actions: Destroying... [id=epsinc-github-actions]
+module.vpc.aws_route_table.public[0]: Destruction complete after 1s
+aws_iam_role.github_actions: Destruction complete after 0s
+module.eks.aws_eks_addon.before_compute["vpc-cni"]: Destruction complete after 2s
+module.eks.aws_eks_addon.before_compute["coredns"]: Destruction complete after 2s
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 00m10s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 00m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 00m20s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 00m20s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 00m30s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 00m30s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 00m40s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 00m40s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 00m50s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 00m50s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 01m00s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 01m00s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 01m10s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 01m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 01m20s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 01m20s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 01m30s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 01m30s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 01m40s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 01m40s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 01m50s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 01m50s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 02m00s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 02m00s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 02m10s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 02m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 02m20s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 02m20s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 02m30s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 02m30s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 02m40s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 02m40s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 02m50s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 02m50s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 03m00s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 03m00s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 03m10s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 03m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 03m20s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 03m20s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 03m30s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 03m30s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 03m40s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 03m40s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 03m50s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 03m50s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 04m00s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 04m00s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 04m10s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 04m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 04m20s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 04m20s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 04m30s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 04m30s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 04m40s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 04m40s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 04m50s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 04m50s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 05m00s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 05m00s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 05m10s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 05m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 05m20s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 05m20s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 05m30s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 05m30s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 05m40s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 05m40s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 05m50s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 05m50s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 06m00s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 06m00s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 06m10s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 06m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 06m20s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 06m20s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 06m30s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Still destroying... [id=igw-0595062541d994407, 06m30s elapsed]
+module.vpc.aws_internet_gateway.this[0]: Destruction complete after 6m33s
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 06m40s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 06m50s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 07m00s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 07m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 07m20s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 07m30s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 07m40s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 07m50s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 08m00s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Still destroying... [id=epsinc:game-da1be1b29462f428c2782ff7d8, 08m10s elapsed]
+module.eks.module.eks_managed_node_group["game"].aws_eks_node_group.this[0]: Destruction complete after 8m14s
+module.eks.module.eks_managed_node_group["game"].aws_launch_template.this[0]: Destroying... [id=lt-0cf02810fc10caa14]
+module.eks.module.eks_managed_node_group["game"].aws_launch_template.this[0]: Destruction complete after 2s
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Destroying... [id=game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly]
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Destroying... [id=game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy]
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Destroying... [id=game-eks-node-group-44cd79c97ed9c1681cb3edd98e/arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy]
+module.eks.time_sleep.this[0]: Destroying... [id=2026-11-14T23:22:03Z]
+module.eks.time_sleep.this[0]: Destruction complete after 0s
+module.eks.aws_eks_cluster.this[0]: Destroying... [id=epsinc]
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Destruction complete after 1s
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Destruction complete after 1s
+module.eks.module.eks_managed_node_group["game"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Destruction complete after 1s
+module.eks.module.eks_managed_node_group["game"].aws_iam_role.this[0]: Destroying... [id=game-eks-node-group-44cd79c97ed9c1681cb3edd98e]
+module.eks.module.eks_managed_node_group["game"].aws_iam_role.this[0]: Destruction complete after 1s
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 00m10s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 00m20s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 00m30s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 00m40s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 00m50s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 01m00s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 01m10s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 01m20s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 01m30s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 01m40s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 01m50s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 02m00s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 02m10s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 02m20s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 02m30s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 02m40s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 02m50s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 03m00s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 03m10s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 03m20s elapsed]
+module.eks.aws_eks_cluster.this[0]: Still destroying... [id=epsinc, 03m30s elapsed]
+module.eks.aws_eks_cluster.this[0]: Destruction complete after 3m31s
+module.eks.aws_security_group_rule.node["egress_all"]: Destroying... [id=sgrule-3336328187]
+module.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Destroying... [id=sgrule-2802878899]
+module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Destroying... [id=sgrule-113232958]
+module.eks.aws_security_group_rule.node["game_udp"]: Destroying... [id=sgrule-616314084]
+module.eks.module.kms.aws_kms_key.this[0]: Destroying... [id=e2d32237-85eb-4899-add8-6fb490602203]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Destroying... [id=epsinc-cluster-08da2406aab2cbf690a1554d02/arn:aws:iam::aws:policy/AmazonEKSClusterPolicy]
+module.eks.aws_security_group_rule.node["ingress_cluster_10251_webhook"]: Destroying... [id=sgrule-2714078818]
+module.eks.aws_security_group_rule.node["game_tcp"]: Destroying... [id=sgrule-1517540988]
+module.vpc.aws_subnet.public[0]: Destroying... [id=subnet-0b6c788e951139dd3]
+module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Destroying... [id=sgrule-2790271104]
+module.eks.module.kms.aws_kms_key.this[0]: Destruction complete after 2s
+module.eks.aws_security_group_rule.node["agones_webhook"]: Destroying... [id=sgrule-1447395702]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Destruction complete after 2s
+module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Destroying... [id=sgrule-1646198773]
+module.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Destruction complete after 2s
+module.eks.aws_security_group_rule.node["egress_all"]: Destruction complete after 2s
+module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Destroying... [id=sgrule-2891069754]
+module.eks.aws_cloudwatch_log_group.this[0]: Destroying... [id=/aws/eks/epsinc/cluster]
+module.vpc.aws_subnet.public[0]: Destruction complete after 2s
+module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Destroying... [id=sgrule-2509037081]
+module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Destruction complete after 3s
+module.eks.aws_security_group_rule.node["ingress_cluster_443"]: Destroying... [id=sgrule-3729849546]
+module.eks.aws_security_group_rule.node["ingress_cluster_10251_webhook"]: Destruction complete after 3s
+module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Destroying... [id=sgrule-135109333]
+module.eks.aws_cloudwatch_log_group.this[0]: Destruction complete after 1s
+module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Destroying... [id=sgrule-3087049794]
+module.eks.aws_security_group_rule.node["game_tcp"]: Destruction complete after 4s
+module.vpc.aws_subnet.public[1]: Destroying... [id=subnet-02ee9aca0891d4b8d]
+module.vpc.aws_subnet.public[1]: Destruction complete after 1s
+module.eks.aws_security_group_rule.node["game_udp"]: Destruction complete after 5s
+module.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Destroying... [id=sgrule-1900200916]
+module.eks.aws_iam_role.this[0]: Destroying... [id=epsinc-cluster-08da2406aab2cbf690a1554d02]
+module.eks.aws_iam_role.this[0]: Destruction complete after 0s
+module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Destruction complete after 5s
+module.eks.aws_security_group_rule.node["agones_webhook"]: Destruction complete after 4s
+module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Destruction complete after 4s
+module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Destruction complete after 5s
+module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Destruction complete after 6s
+module.eks.aws_security_group_rule.node["ingress_cluster_443"]: Destruction complete after 5s
+module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Destruction complete after 6s
+module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Destruction complete after 6s
+module.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Destruction complete after 5s
+module.eks.aws_security_group.cluster[0]: Destroying... [id=sg-09757d2b3d2883662]
+module.eks.aws_security_group.node[0]: Destroying... [id=sg-0b2e4806a84c46e14]
+module.eks.aws_security_group.cluster[0]: Destruction complete after 1s
+module.eks.aws_security_group.node[0]: Destruction complete after 1s
+module.vpc.aws_vpc.this[0]: Destroying... [id=vpc-05e4799ceb155aa3b]
+module.vpc.aws_vpc.this[0]: Destruction complete after 1s
+
+Error: ECR Repository (epsinc/server) not empty, consider using force_delete: operation error ECR: DeleteRepository, https response error StatusCode: 400, RequestID: 1aa80273-f531-4793-bdd6-cbf1fc4a5033, RepositoryNotEmptyException: The repository with name 'epsinc/server' in registry with id '911797457485' cannot be deleted because it still contains images
+
