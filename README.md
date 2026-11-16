@@ -160,8 +160,14 @@ la API de clasificación se demuestra de forma independiente.
 
 `loadtest/Dockerfile` fija Locust 2.47.0 y websocket-client 1.9.0. CI publica
 `epsinc/server:loadtest-SHA` junto a la imagen del juego. Los manifiestos en `loadtest/k8s/`
-ejecutan cuatro workers y un master. Sustituir `__LOCUST_IMAGE__` por la URI publicada y los
+ejecutan ocho workers y un master. Sustituir `__LOCUST_IMAGE__` por la URI publicada y los
 marcadores del Job por la clase, usuarios, tasa y duración del perfil. Crear ConfigMap `epsinc-locust`
 con `locustfile.py`. Los workers leen snapshots continuamente; el ping mide solamente mensajes pong.
 El master conserva HTML/CSV en `/tmp` durante diez minutos tras terminar para extraerlos con `kubectl cp`.
 Esta modalidad comparte el clúster bajo prueba: informar CPU del generador y tráfico interno.
+
+El ejecutor Windows `loadtest/run-distributed.ps1 -Image URI_ECR_LOADTEST` ejecuta los tres perfiles,
+separa workers entre corridas, guarda HTML/CSV/logs y reanuda perfiles cuyos marcadores de finalización
+ya existen en `loadtest/resultados/`. Requiere kubeconfig en `infra/.terraform/kubeconfig` y el Deployment
+worker instalado. `python loadtest/analyze_results.py` resume los CSV y las muestras Prometheus conservadas.
+Los resultados completos y los diagnósticos se mantienen separados por nombre en esa carpeta.

@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+WebSocket,Player_Input_Move_Shoot,"BrokenPipeError(32, 'Broken pipe')",2,2026-11-16T03:01:40Z,2026-11-16T03:01:40Z
+WebSocket,Player_Input_Move_Shoot,"ConnectionResetError(104, 'Connection reset by peer')",1,2026-11-16T03:01:39Z,2026-11-16T03:01:39Z
+WebSocket,Player_Disconnected,WebSocketTimeoutException('Connection timed out'),365,2026-11-16T03:00:55Z,2026-11-16T03:07:46Z
+WebSocket,Player_Disconnected,WebSocketConnectionClosedException('Connection to remote host was lost.'),1,2026-11-16T03:01:41Z,2026-11-16T03:01:41Z

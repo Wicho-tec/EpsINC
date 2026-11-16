@@ -1,0 +1,1132 @@
+[2026-11-16 02:53:03,907] epsinc-locust-rampa-d8gck/INFO/locust.main: Starting Locust 2.47.0
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                         0     0(0.00%) |      0       0       0      0 |    0.00        0.00
+
+[2026-11-16 02:53:04,030] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,030] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,030] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,030] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,031] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,031] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,031] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,031] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,031] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,031] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,032] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,032] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,032] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,032] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,032] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,032] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:04,073] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,073] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,073] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,073] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,073] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,073] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,074] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,074] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,074] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,074] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,074] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,074] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,075] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,075] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,075] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:04,141] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,142] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,142] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,142] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,142] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,142] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,142] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,143] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,143] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,143] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,143] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,143] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,143] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,143] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,144] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:04,170] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,170] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,170] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,171] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,171] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,171] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,171] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,171] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,171] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,172] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,172] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,172] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,172] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,172] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,172] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,172] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,173] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,173] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,173] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,173] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,173] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,173] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,173] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,174] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,174] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,174] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,174] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,174] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,174] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,175] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,175] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,175] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,175] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,175] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,175] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,175] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,176] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,176] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,176] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,176] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,176] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:04,318] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:04,477] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:04,550] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,551] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Got spawning_complete message from unknown worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6. Asking worker to quit.
+[2026-11-16 02:53:04,552] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,552] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,552] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,552] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,552] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,553] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,553] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,553] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,553] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,553] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,553] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,553] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,554] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,554] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,554] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,631] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_6ef7bc3816824ee390cd09784b9b99d6
+[2026-11-16 02:53:04,779] epsinc-locust-rampa-d8gck/INFO/locust.runners: epsinc-locust-workers-5f8cb7bb8f-g6pnj_392812cc6bda4b6a9c12590cbaae3b7b (index 0) reported as ready. 1 workers connected.
+[2026-11-16 02:53:05,870] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    69     0(0.00%) |   7183      11   19173    150 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              397 397(100.00%) |      0       0       0      0 |    1.60        1.60
+WebSocket  Player_Input_Move_Shoot                                                       169848     0(0.00%) |      0       0      10      0 | 3534.10        0.00
+WebSocket  Player_Ping_RTT                                                                21205     0(0.00%) |     34       0   16004      0 |  440.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    191519   397(0.21%) |      6       0   19173      0 | 3975.80        1.60
+
+[2026-11-16 02:53:06,396] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:06,488] epsinc-locust-rampa-d8gck/INFO/locust.runners: epsinc-locust-workers-5f8cb7bb8f-dlqp9_16a6eac3baca4d83812f8ce859acdefe (index 1) reported as ready. 2 workers connected.
+[2026-11-16 02:53:06,809] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:07,658] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:07,696] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    69     0(0.00%) |   7183      11   19173    150 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              399 399(100.00%) |      0       0       0      0 |    1.30        1.30
+WebSocket  Player_Input_Move_Shoot                                                       172240     0(0.00%) |      0       0      10      0 | 3318.60        0.00
+WebSocket  Player_Ping_RTT                                                                21438     0(0.00%) |     34       0   16004      0 |  412.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    194146   399(0.21%) |      6       0   19173      0 | 3732.20        1.30
+
+[2026-11-16 02:53:07,919] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:08,870] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:08,912] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 2 of 8 connected
+[2026-11-16 02:53:09,404] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:09,810] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    69     0(0.00%) |   7183      11   19173    150 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              405 405(100.00%) |      0       0       0      0 |    1.20        1.20
+WebSocket  Player_Input_Move_Shoot                                                       176757     0(0.00%) |      0       0      10      0 | 2939.20        0.00
+WebSocket  Player_Ping_RTT                                                                21989     0(0.00%) |     34       0   16004      0 |  360.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    199220   405(0.20%) |      6       0   19173      0 | 3301.00        1.20
+
+[2026-11-16 02:53:09,913] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 2 of 8 connected
+[2026-11-16 02:53:10,659] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:10,697] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+[2026-11-16 02:53:10,913] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 2 of 8 connected
+[2026-11-16 02:53:10,926] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:11,871] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    69     0(0.00%) |   7183      11   19173    150 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              428 428(100.00%) |      0       0       0      0 |    3.00        3.00
+WebSocket  Player_Input_Move_Shoot                                                       182475     0(0.00%) |      0       0      10      0 | 2612.80        0.00
+WebSocket  Player_Ping_RTT                                                                22717     0(0.00%) |     34       0   16004      0 |  320.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    205689   428(0.21%) |      6       0   19173      0 | 2936.30        3.00
+
+[2026-11-16 02:53:11,914] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 2 of 8 connected
+[2026-11-16 02:53:12,404] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:12,819] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+[2026-11-16 02:53:12,915] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 2 of 8 connected
+[2026-11-16 02:53:13,660] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_cf6c49bec8024ef6864d3d9eb503c42a
+[2026-11-16 02:53:13,698] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_e5a0aae9772449d6b6fc09531a626ada
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    69     0(0.00%) |   7183      11   19173    150 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              428 428(100.00%) |      0       0       0      0 |    3.30        3.30
+WebSocket  Player_Input_Move_Shoot                                                       187248     0(0.00%) |      0       0      10      0 | 2466.90        0.00
+WebSocket  Player_Ping_RTT                                                                23351     0(0.00%) |     33       0   16004      0 |  305.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    211096   428(0.20%) |      6       0   19173      0 | 2776.00        3.30
+
+[2026-11-16 02:53:13,916] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 2 of 8 connected
+[2026-11-16 02:53:13,927] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_79e1611de8cd42e09d7d20448f718505
+[2026-11-16 02:53:14,871] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_684f0b37b4194f5288fd7e86025bc63e
+[2026-11-16 02:53:14,916] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 2 of 8 connected
+[2026-11-16 02:53:15,405] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_0f0df053fbef4c758831f7ad5c3da7ef
+[2026-11-16 02:53:15,813] epsinc-locust-rampa-d8gck/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_b493d95a856745df83b0255323ff63b9
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    69     0(0.00%) |   7183      11   19173    150 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              429 429(100.00%) |      0       0       0      0 |    3.10        3.10
+WebSocket  Player_Input_Move_Shoot                                                       192952     0(0.00%) |      0       0      10      0 | 2341.40        0.00
+WebSocket  Player_Ping_RTT                                                                24079     0(0.00%) |     32       0   16004      0 |  293.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    217529   429(0.20%) |      5       0   19173      0 | 2638.20        3.10
+
+[2026-11-16 02:53:15,916] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 2 of 8 connected
+[2026-11-16 02:53:16,043] epsinc-locust-rampa-d8gck/INFO/locust.runners: epsinc-locust-workers-5f8cb7bb8f-p6fd6_793cc097844f492a93ac212c36b94fd5 (index 2) reported as ready. 3 workers connected.
+[2026-11-16 02:53:16,429] epsinc-locust-rampa-d8gck/INFO/locust.runners: epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b (index 3) reported as ready. 4 workers connected.
+[2026-11-16 02:53:16,916] epsinc-locust-rampa-d8gck/INFO/root: Waiting for workers to be ready, 4 of 8 connected
+[2026-11-16 02:53:17,420] epsinc-locust-rampa-d8gck/INFO/locust.runners: epsinc-locust-workers-5f8cb7bb8f-l9pbn_f91643d265454f9ab77537514ca6aa78 (index 4) reported as ready. 5 workers connected.
+[2026-11-16 02:53:17,424] epsinc-locust-rampa-d8gck/INFO/locust.runners: epsinc-locust-workers-5f8cb7bb8f-xkd7n_c07f160c725e43ec8db957028a1a7175 (index 5) reported as ready. 6 workers connected.
+[2026-11-16 02:53:17,590] epsinc-locust-rampa-d8gck/INFO/locust.runners: epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 (index 6) reported as ready. 7 workers connected.
+[2026-11-16 02:53:17,591] epsinc-locust-rampa-d8gck/INFO/locust.runners: epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 (index 7) reported as ready. 8 workers connected.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    69     0(0.00%) |   7183      11   19173    150 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              429 429(100.00%) |      0       0       0      0 |    3.10        3.10
+WebSocket  Player_Input_Move_Shoot                                                       192952     0(0.00%) |      0       0      10      0 | 2341.40        0.00
+WebSocket  Player_Ping_RTT                                                                24079     0(0.00%) |     32       0   16004      0 |  293.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    217529   429(0.20%) |      5       0   19173      0 | 2638.20        3.10
+
+[2026-11-16 02:53:17,917] epsinc-locust-rampa-d8gck/INFO/locust.main: Run time limit set to 600 seconds
+[2026-11-16 02:53:17,917] epsinc-locust-rampa-d8gck/INFO/locust.runners: Sending spawn jobs of 1000 users at 3.33 spawn rate to 8 ready workers
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                     4     0(0.00%) |      6       5       7      7 |    0.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                           29     0(0.00%) |      0       0       0      0 |    0.00        0.00
+WebSocket  Player_Ping_RTT                                                                    2     0(0.00%) |      0       0       0      0 |    0.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                        35     0(0.00%) |      0       0       7      0 |    0.00        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                     9     0(0.00%) |      6       5       7      6 |    3.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                          120     0(0.00%) |      0       0       0      0 |   16.50        0.00
+WebSocket  Player_Ping_RTT                                                                    7     0(0.00%) |      0       0       0      0 |    0.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                       136     0(0.00%) |      0       0       7      0 |   20.00        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    17     0(0.00%) |      9       5      32      7 |    3.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                          400     0(0.00%) |      0       0       1      0 |   44.25        0.00
+WebSocket  Player_Ping_RTT                                                                   41     0(0.00%) |      1       0      12      1 |    3.25        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                       458     0(0.00%) |      0       0      32      0 |   50.50        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    21     0(0.00%) |      9       5      32      7 |    3.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                          682     0(0.00%) |      0       0       1      0 |   71.50        0.00
+WebSocket  Player_Ping_RTT                                                                   84     0(0.00%) |      1       0      12      1 |    7.33        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                       787     0(0.00%) |      0       0      32      0 |   81.83        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    29     0(0.00%) |     12       5      32     10 |    3.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                         1081     0(0.00%) |      0       0       1      0 |   98.75        0.00
+WebSocket  Player_Ping_RTT                                                                  121     0(0.00%) |      1       0      21      1 |   11.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      1231     0(0.00%) |      0       0      32      0 |  113.25        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    38     0(0.00%) |     15       5      73     12 |    3.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                         1787     0(0.00%) |      0       0       2      0 |  124.60        0.00
+WebSocket  Player_Ping_RTT                                                                  205     0(0.00%) |      1       0      22      1 |   14.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      2030     0(0.00%) |      0       0      73      0 |  142.00        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    43     0(0.00%) |     18       5      75     12 |    3.30        0.00
+WebSocket  Player_Input_Move_Shoot                                                         2324     0(0.00%) |      0       0       2      0 |  179.60        0.00
+WebSocket  Player_Ping_RTT                                                                  273     0(0.00%) |      1       0      56      1 |   20.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      2640     0(0.00%) |      0       0      75      0 |  203.30        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    49     0(0.00%) |     23       5     111     13 |    3.30        0.00
+WebSocket  Player_Input_Move_Shoot                                                         2973     0(0.00%) |      0       0       2      0 |  233.60        0.00
+WebSocket  Player_Ping_RTT                                                                  346     0(0.00%) |      2       0      56      1 |   27.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      3368     0(0.00%) |      0       0     111      0 |  264.10        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    57     0(0.00%) |     30       5     114     19 |    3.30        0.00
+WebSocket  Player_Input_Move_Shoot                                                         4103     0(0.00%) |      0       0       2      0 |  286.50        0.00
+WebSocket  Player_Ping_RTT                                                                  484     0(0.00%) |      2       0      69      1 |   33.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      4644     0(0.00%) |      0       0     114      0 |  323.20        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    62     0(0.00%) |     33       5     138     19 |    3.30        0.00
+WebSocket  Player_Input_Move_Shoot                                                         4869     0(0.00%) |      0       0       2      0 |  337.90        0.00
+WebSocket  Player_Ping_RTT                                                                  574     0(0.00%) |      3       0     109      1 |   40.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      5505     0(0.00%) |      0       0     138      0 |  381.70        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    67     0(0.00%) |     42       5     202     22 |    3.40        0.00
+WebSocket  Player_Input_Move_Shoot                                                         5837     0(0.00%) |      0       0       2      0 |  388.60        0.00
+WebSocket  Player_Ping_RTT                                                                  700     0(0.00%) |      3       0     109      1 |   46.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      6604     0(0.00%) |      0       0     202      0 |  438.80        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    75     0(0.00%) |     54       5     285     22 |    3.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                         7284     0(0.00%) |      0       0       9      0 |  436.00        0.00
+WebSocket  Player_Ping_RTT                                                                  895     0(0.00%) |      5       0     298      1 |   55.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      8254     0(0.00%) |      1       0     298      0 |  494.00        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    80     0(0.00%) |     58       5     427     26 |    3.20        0.00
+WebSocket  Player_Input_Move_Shoot                                                         8056     0(0.00%) |      0       0       9      0 |  481.50        0.00
+WebSocket  Player_Ping_RTT                                                                  975     0(0.00%) |      6       0     298      1 |   61.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      9111     0(0.00%) |      1       0     427      0 |  546.60        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    88     0(0.00%) |     87       5     636     31 |    3.30        0.00
+WebSocket  Player_Input_Move_Shoot                                                         9229     0(0.00%) |      0       0      11      0 |  520.80        0.00
+WebSocket  Player_Ping_RTT                                                                 1125     0(0.00%) |     11       0     398      1 |   66.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     10442     0(0.00%) |      2       0     636      0 |  590.20        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    93     0(0.00%) |    112       5    1238     31 |    3.30        0.00
+WebSocket  Player_Input_Move_Shoot                                                        10290     0(0.00%) |      0       0      11      0 |  541.30        0.00
+WebSocket  Player_Ping_RTT                                                                 1234     0(0.00%) |     12       0     398      1 |   66.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     11617     0(0.00%) |      2       0    1238      0 |  610.70        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    97     0(0.00%) |    115       5    1238     31 |    3.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                        11266     0(0.00%) |      0       0      11      0 |  542.40        0.00
+WebSocket  Player_Ping_RTT                                                                 1357     0(0.00%) |     15       0     587      1 |   65.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     12720     0(0.00%) |      2       0    1238      0 |  610.40        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   101     0(0.00%) |    224       5    3963     36 |    2.70        0.00
+WebSocket  Player_Input_Move_Shoot                                                        11532     0(0.00%) |      0       0      11      0 |  510.00        0.00
+WebSocket  Player_Ping_RTT                                                                 1385     0(0.00%) |     20       0    1341      1 |   60.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     13018     0(0.00%) |      3       0    3963      0 |  572.70        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   105     0(0.00%) |    265       5    3963     40 |    2.50        0.00
+WebSocket  Player_Input_Move_Shoot                                                        12477     0(0.00%) |      0       0      11      0 |  461.00        0.00
+WebSocket  Player_Ping_RTT                                                                 1513     0(0.00%) |     21       0    1341      1 |   53.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     14095     0(0.00%) |      4       0    3963      0 |  516.80        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   108     0(0.00%) |    259       5    3963     41 |    2.10        0.00
+WebSocket  Player_Input_Move_Shoot                                                        13283     0(0.00%) |      0       0      11      0 |  408.50        0.00
+WebSocket  Player_Ping_RTT                                                                 1604     0(0.00%) |     20       0    1341      1 |   48.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     14995     0(0.00%) |      4       0    3963      0 |  459.10        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   110     0(0.00%) |    310       5    4185     42 |    1.80        0.00
+WebSocket  Player_Input_Move_Shoot                                                        13466     0(0.00%) |      0       0      11      0 |  362.20        0.00
+WebSocket  Player_Ping_RTT                                                                 1622     0(0.00%) |     29       0    2167      1 |   44.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     15198     0(0.00%) |      5       0    4185      0 |  408.00        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   113     0(0.00%) |    303       5    4185     41 |    1.80        0.00
+WebSocket  Player_Input_Move_Shoot                                                        14302     0(0.00%) |      0       0      11      0 |  341.20        0.00
+WebSocket  Player_Ping_RTT                                                                 1755     0(0.00%) |     27       0    2167      1 |   43.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     16170     0(0.00%) |      5       0    4185      0 |  386.30        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   117     0(0.00%) |    445       5    9070     42 |    1.90        0.00
+WebSocket  Player_Input_Move_Shoot                                                        15307     0(0.00%) |      0       0      11      0 |  317.10        0.00
+WebSocket  Player_Ping_RTT                                                                 1872     0(0.00%) |     31       0    2167      1 |   42.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     17296     0(0.00%) |      6       0    9070      0 |  361.40        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   119     0(0.00%) |    597       5   10333     44 |    1.60        0.00
+WebSocket  Player_Input_Move_Shoot                                                        15385     0(0.00%) |      0       0      11      0 |  324.30        0.00
+WebSocket  Player_Ping_RTT                                                                 1880     0(0.00%) |     37       0    2336      1 |   41.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     17384     0(0.00%) |      8       0   10333      0 |  367.80        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   126     0(0.00%) |    858       5   10333     44 |    1.50        0.00
+WebSocket  Player_Input_Move_Shoot                                                        16428     0(0.00%) |      0       0      11      0 |  323.70        0.00
+WebSocket  Player_Ping_RTT                                                                 2003     0(0.00%) |     37       0    2336      1 |   40.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     18557     0(0.00%) |      9       0   10333      0 |  365.90        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   130     0(0.00%) |    983       5   10501     44 |    1.90        0.00
+WebSocket  Player_Input_Move_Shoot                                                        17566     0(0.00%) |      0       0      11      0 |  338.60        0.00
+WebSocket  Player_Ping_RTT                                                                 2107     0(0.00%) |     38       0    4012      1 |   42.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     19803     0(0.00%) |     10       0   10501      0 |  382.90        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   133     0(0.00%) |   1186       5   11654     45 |    1.90        0.00
+WebSocket  Player_Input_Move_Shoot                                                        17621     0(0.00%) |      0       0      11      0 |  353.10        0.00
+WebSocket  Player_Ping_RTT                                                                 2114     0(0.00%) |     42       0    4012      1 |   41.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     19868     0(0.00%) |     12       0   11654      0 |  396.30        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   138     0(0.00%) |   1352       5   11654     49 |    2.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                        18813     0(0.00%) |      0       0      11      0 |  370.20        0.00
+WebSocket  Player_Ping_RTT                                                                 2265     0(0.00%) |     43       0    4012      1 |   39.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     21216     0(0.00%) |     13       0   11654      0 |  411.60        0.00
+
+[2026-11-16 02:54:11,949] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-l9pbn_f91643d265454f9ab77537514ca6aa78 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   150     0(0.00%) |   1515       5   14753     55 |    2.30        0.00
+WebSocket  Player_Input_Move_Shoot                                                        20130     0(0.00%) |      0       0      11      0 |  382.00        0.00
+WebSocket  Player_Ping_RTT                                                                 2422     0(0.00%) |     41       0    4012      1 |   43.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     22702     0(0.00%) |     14       0   14753      0 |  428.10        0.00
+
+[2026-11-16 02:54:14,952] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-dlqp9_16a6eac3baca4d83812f8ce859acdefe failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   152     0(0.00%) |   1682       5   14753     56 |    2.80        0.00
+WebSocket  Player_Input_Move_Shoot                                                        20145     0(0.00%) |      0       0      11      0 |  398.00        0.00
+WebSocket  Player_Ping_RTT                                                                 2423     0(0.00%) |     42       0    4012      1 |   45.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     22720     0(0.00%) |     15       0   14753      0 |  446.40        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   170     0(0.00%) |   1908       5   14962     57 |    3.20        0.00
+WebSocket  Player_Input_Move_Shoot                                                        21648     0(0.00%) |      0       0      11      0 |  423.50        0.00
+WebSocket  Player_Ping_RTT                                                                 2605     0(0.00%) |     43       0    4012      1 |   47.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     24423     0(0.00%) |     17       0   14962      0 |  474.30        0.00
+
+[2026-11-16 02:54:17,953] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:18,162] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   178     0(0.00%) |   2171       5   14962     58 |    4.50        0.00
+WebSocket  Player_Disconnected                                                                1   1(100.00%) |      0       0       0      0 |    0.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                        23014     0(0.00%) |      0       0      11      0 |  451.70        0.00
+WebSocket  Player_Ping_RTT                                                                 2767     0(0.00%) |     50       0    4012      1 |   54.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     25960     1(0.00%) |     20       0   14962      0 |  510.30        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   179     0(0.00%) |   2238       5   14962     58 |    4.10        0.00
+WebSocket  Player_Disconnected                                                                1   1(100.00%) |      0       0       0      0 |    0.10        0.10
+WebSocket  Player_Input_Move_Shoot                                                        23050     0(0.00%) |      0       0      11      0 |  450.90        0.00
+WebSocket  Player_Ping_RTT                                                                 2770     0(0.00%) |     52       0    4012      1 |   55.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     26000     1(0.00%) |     21       0   14962      0 |  510.60        0.10
+
+[2026-11-16 02:54:21,956] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:22,956] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:22,957] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   188     0(0.00%) |   2483       5   17253     59 |    4.50        0.00
+WebSocket  Player_Disconnected                                                                3   3(100.00%) |      0       0       0      0 |    0.10        0.10
+WebSocket  Player_Input_Move_Shoot                                                        24881     0(0.00%) |      0       0      11      0 |  477.90        0.00
+WebSocket  Player_Ping_RTT                                                                 3010     0(0.00%) |     53       0    4012      1 |   58.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     28082     3(0.01%) |     22       0   17253      0 |  540.90        0.10
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   235     0(0.00%) |   2355       5   17253     92 |    4.60        0.00
+WebSocket  Player_Disconnected                                                                3   3(100.00%) |      0       0       0      0 |    0.30        0.30
+WebSocket  Player_Input_Move_Shoot                                                        27434     0(0.00%) |      0       0      11      0 |  515.70        0.00
+WebSocket  Player_Ping_RTT                                                                 3350     0(0.00%) |     54       0    4012      1 |   63.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     31022     3(0.01%) |     23       0   17253      0 |  584.40        0.30
+
+[2026-11-16 02:54:26,959] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   246     0(0.00%) |   2860       5   17253     94 |    7.10        0.00
+WebSocket  Player_Disconnected                                                                3   3(100.00%) |      0       0       0      0 |    0.30        0.30
+WebSocket  Player_Input_Move_Shoot                                                        28094     0(0.00%) |      0       0      11      0 |  594.60        0.00
+WebSocket  Player_Ping_RTT                                                                 3434     0(0.00%) |     56       0    4012      1 |   75.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     31777     3(0.01%) |     28       0   17253      0 |  677.80        0.30
+
+[2026-11-16 02:54:27,960] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:28,253] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   271     0(0.00%) |   2737       5   17416    120 |    7.50        0.00
+WebSocket  Player_Disconnected                                                                3   3(100.00%) |      0       0       0      0 |    0.30        0.30
+WebSocket  Player_Input_Move_Shoot                                                        30710     0(0.00%) |      0       0      11      0 |  733.90        0.00
+WebSocket  Player_Ping_RTT                                                                 3750     0(0.00%) |     55       0    4012      1 |   93.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     34734     3(0.01%) |     27       0   17416      0 |  835.30        0.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   271     0(0.00%) |   2737       5   17416    120 |    9.30        0.00
+WebSocket  Player_Disconnected                                                                4   4(100.00%) |      0       0       0      0 |    0.20        0.20
+WebSocket  Player_Input_Move_Shoot                                                        31302     0(0.00%) |      0       0      11      0 |  833.70        0.00
+WebSocket  Player_Ping_RTT                                                                 3819     0(0.00%) |     60       0    4012      1 |  106.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     35396     4(0.01%) |     27       0   17416      0 |  949.90        0.20
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   291     0(0.00%) |   2827       5   17416    130 |   10.20        0.00
+WebSocket  Player_Disconnected                                                               14  14(100.00%) |      0       0       0      0 |    0.40        0.40
+WebSocket  Player_Input_Move_Shoot                                                        33052     0(0.00%) |      0       0      11      0 |  829.80        0.00
+WebSocket  Player_Ping_RTT                                                                 4074     0(0.00%) |     70       0    4846      1 |  106.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     37431    14(0.04%) |     29       0   17416      0 |  947.20        0.40
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   340     0(0.00%) |   3773       5   19213    180 |    9.30        0.00
+WebSocket  Player_Disconnected                                                               14  14(100.00%) |      0       0       0      0 |    0.50        0.50
+WebSocket  Player_Input_Move_Shoot                                                        34947     0(0.00%) |      0       0      11      0 |  830.80        0.00
+WebSocket  Player_Ping_RTT                                                                 4314     0(0.00%) |     70       0    4846      1 |  107.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     39615    14(0.04%) |     40       0   19213      0 |  948.20        0.50
+
+[2026-11-16 02:54:35,963] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:35,963] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:36,003] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 self-healed with heartbeat, setting state to spawning.
+[2026-11-16 02:54:36,399] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   352     0(0.00%) |   4271       5   19213    200 |   11.30        0.00
+WebSocket  Player_Disconnected                                                               17  17(100.00%) |      0       0       0      0 |    1.40        1.40
+WebSocket  Player_Input_Move_Shoot                                                        35385     0(0.00%) |      0       0      11      0 |  843.10        0.00
+WebSocket  Player_Ping_RTT                                                                 4357     0(0.00%) |     73       0    4846      1 |  108.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     40111    17(0.04%) |     45       0   19213      0 |  964.10        1.40
+
+[2026-11-16 02:54:37,969] epsinc-locust-rampa-d8gck/WARNING/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-p6fd6_793cc097844f492a93ac212c36b94fd5 (index 2) exceeded cpu threshold (will only log this once per worker)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   362     0(0.00%) |   4330       5   19213    220 |   12.00        0.00
+WebSocket  Player_Disconnected                                                               19  19(100.00%) |      0       0       0      0 |    1.60        1.60
+WebSocket  Player_Input_Move_Shoot                                                        36652     0(0.00%) |      0       0      11      0 |  816.10        0.00
+WebSocket  Player_Ping_RTT                                                                 4498     0(0.00%) |     81       0    4846      1 |  101.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     41531    19(0.05%) |     46       0   19213      0 |  930.90        1.60
+
+[2026-11-16 02:54:40,966] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:40,967] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:40,967] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   366     0(0.00%) |   4297       5   19213    220 |    8.70        0.00
+WebSocket  Player_Disconnected                                                               21  21(100.00%) |      0       0       0      0 |    1.60        1.60
+WebSocket  Player_Input_Move_Shoot                                                        39191     0(0.00%) |      0       0      11      0 |  613.20        0.00
+WebSocket  Player_Ping_RTT                                                                 4812     0(0.00%) |     83       0    4846      1 |   77.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     44390    21(0.05%) |     44       0   19213      0 |  701.40        1.60
+
+[2026-11-16 02:54:41,967] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:41,967] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_c07f160c725e43ec8db957028a1a7175 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:41,968] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:42,287] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   384     0(0.00%) |   4756       5   19213    240 |    9.60        0.00
+WebSocket  Player_Disconnected                                                               24  24(100.00%) |      0       0       0      0 |    1.80        1.80
+WebSocket  Player_Input_Move_Shoot                                                        39700     0(0.00%) |      0       0      11      0 |  732.90        0.00
+WebSocket  Player_Ping_RTT                                                                 4878     0(0.00%) |     90       0    5043      1 |   90.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     44986    24(0.05%) |     50       0   19213      0 |  834.50        1.80
+
+[2026-11-16 02:54:43,969] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_c07f160c725e43ec8db957028a1a7175 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   466     0(0.00%) |   4053       5   19213    340 |    8.90        0.00
+WebSocket  Player_Disconnected                                                               24  24(100.00%) |      0       0       0      0 |    1.80        1.80
+WebSocket  Player_Input_Move_Shoot                                                        42783     0(0.00%) |      0       0      11      0 |  807.00        0.00
+WebSocket  Player_Ping_RTT                                                                 5272     0(0.00%) |     97       0    5302      1 |   97.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     48545    24(0.05%) |     49       0   19213      0 |  915.60        1.80
+
+[2026-11-16 02:54:46,972] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:46,972] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:46,972] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:47,326] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   481     0(0.00%) |   4301       5   19989    340 |   11.00        0.00
+WebSocket  Player_Disconnected                                                               25  25(100.00%) |      0       0       0      0 |    0.40        0.40
+WebSocket  Player_Input_Move_Shoot                                                        48923     0(0.00%) |      0       0      11      0 |  929.50        0.00
+WebSocket  Player_Ping_RTT                                                                 5966     0(0.00%) |     89       0    5302      1 |  110.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     55395    25(0.05%) |     47       0   19989      0 | 1051.10        0.40
+
+[2026-11-16 02:54:48,298] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 self-healed with heartbeat, setting state to spawning.
+[2026-11-16 02:54:48,974] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_c07f160c725e43ec8db957028a1a7175 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:49,710] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_c07f160c725e43ec8db957028a1a7175 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   492     0(0.00%) |   4646       5   19989    380 |   12.40        0.00
+WebSocket  Player_Disconnected                                                               28  28(100.00%) |      0       0       0      0 |    0.60        0.60
+WebSocket  Player_Input_Move_Shoot                                                        49362     0(0.00%) |      0       0      11      0 | 1240.90        0.00
+WebSocket  Player_Ping_RTT                                                                 6011     0(0.00%) |     95       0    7776      1 |  149.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     55893    28(0.05%) |     51       0   19989      0 | 1403.10        0.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   492     0(0.00%) |   4646       5   19989    380 |   12.20        0.00
+WebSocket  Player_Disconnected                                                               30  30(100.00%) |      0       0       0      0 |    0.60        0.60
+WebSocket  Player_Input_Move_Shoot                                                        50199     0(0.00%) |      0       0      11      0 | 1257.10        0.00
+WebSocket  Player_Ping_RTT                                                                 6095     0(0.00%) |     98       0    7776      1 |  147.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     56816    30(0.05%) |     50       0   19989      0 | 1417.00        0.60
+
+[2026-11-16 02:54:51,976] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:52,977] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   510     0(0.00%) |   4590       5   19989    410 |   11.40        0.00
+WebSocket  Player_Disconnected                                                               38  38(100.00%) |      0       0       0      0 |    0.90        0.90
+WebSocket  Player_Input_Move_Shoot                                                        52601     0(0.00%) |      0       0      11      0 | 1112.80        0.00
+WebSocket  Player_Ping_RTT                                                                 6429     0(0.00%) |    101       0    7776      1 |  129.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     59578    38(0.06%) |     50       0   19989      0 | 1254.90        0.90
+
+[2026-11-16 02:54:53,978] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_c07f160c725e43ec8db957028a1a7175 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:53,978] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:53,994] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-xkd7n_c07f160c725e43ec8db957028a1a7175 self-healed with heartbeat, setting state to spawning.
+[2026-11-16 02:54:54,979] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:55,142] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   526     0(0.00%) |   5100       5   24392   1100 |   10.20        0.00
+WebSocket  Player_Disconnected                                                               43  43(100.00%) |      0       0       0      0 |    1.70        1.70
+WebSocket  Player_Input_Move_Shoot                                                        53273     0(0.00%) |      0       0      11      0 | 1116.40        0.00
+WebSocket  Player_Ping_RTT                                                                 6501     0(0.00%) |    106       0    7776      1 |  135.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     60343    43(0.07%) |     55       0   24392      0 | 1263.60        1.70
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   573     0(0.00%) |   4842       5   24392    410 |    8.50        0.00
+WebSocket  Player_Disconnected                                                               62  62(100.00%) |      0       0       0      0 |    3.60        3.60
+WebSocket  Player_Input_Move_Shoot                                                        55802     0(0.00%) |      0       0      11      0 |  995.40        0.00
+WebSocket  Player_Ping_RTT                                                                 6812     0(0.00%) |    111       0    7776      1 |  120.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     63249    62(0.10%) |     55       0   24392      0 | 1128.20        3.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   575     0(0.00%) |   4825       5   24392    410 |    8.10        0.00
+WebSocket  Player_Disconnected                                                               64  64(100.00%) |      0       0       0      0 |    3.50        3.50
+WebSocket  Player_Input_Move_Shoot                                                        58473     0(0.00%) |      0       0      11      0 |  745.30        0.00
+WebSocket  Player_Ping_RTT                                                                 7138     0(0.00%) |    107       0    7776      1 |   91.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     66250    64(0.10%) |     53       0   24392      0 |  848.30        3.50
+
+[2026-11-16 02:54:59,983] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:54:59,983] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:55:01,417] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   607     0(0.00%) |   5383       5   31461   1200 |    7.90        0.00
+WebSocket  Player_Disconnected                                                               68  68(100.00%) |      0       0       0      0 |    4.00        4.00
+WebSocket  Player_Input_Move_Shoot                                                        60726     0(0.00%) |      0       0      11      0 |  909.60        0.00
+WebSocket  Player_Ping_RTT                                                                 7415     0(0.00%) |    112       0    7776      1 |  112.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     68816    68(0.10%) |     59       0   31461      0 | 1033.80        4.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   644     0(0.00%) |   5099       5   31461    720 |   11.20        0.00
+WebSocket  Player_Disconnected                                                               70  70(100.00%) |      0       0       0      0 |    3.60        3.60
+WebSocket  Player_Input_Move_Shoot                                                        64064     0(0.00%) |      0       0      11      0 | 1139.40        0.00
+WebSocket  Player_Ping_RTT                                                                 7846     0(0.00%) |    107       0    7776      1 |  141.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     72624    70(0.10%) |     56       0   31461      0 | 1295.90        3.60
+
+[2026-11-16 02:55:04,987] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   665     0(0.00%) |   5465       5   31461    720 |   13.80        0.00
+WebSocket  Player_Disconnected                                                               74  74(100.00%) |      0       0       0      0 |    2.90        2.90
+WebSocket  Player_Input_Move_Shoot                                                        67183     0(0.00%) |      0       0      11      0 | 1242.90        0.00
+WebSocket  Player_Ping_RTT                                                                 8237     0(0.00%) |    113       0    8870      1 |  153.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     76159    74(0.10%) |     60       0   31461      0 | 1413.10        2.90
+
+[2026-11-16 02:55:05,988] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:55:06,989] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   690     0(0.00%) |   5276       5   31461    650 |    9.40        0.00
+WebSocket  Player_Disconnected                                                               80  80(100.00%) |      0       0       0      0 |    1.40        1.40
+WebSocket  Player_Input_Move_Shoot                                                        70817     0(0.00%) |      0       0      11      0 | 1301.40        0.00
+WebSocket  Player_Ping_RTT                                                                 8695     0(0.00%) |    108       0    8870      1 |  163.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     80282    80(0.10%) |     57       0   31461      0 | 1475.60        1.40
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   745     0(0.00%) |   5315       5   31461    380 |   15.40        0.00
+WebSocket  Player_Disconnected                                                               83  83(100.00%) |      0       0       0      0 |    2.00        2.00
+WebSocket  Player_Input_Move_Shoot                                                        75358     0(0.00%) |      0       0      11      0 | 1576.40        0.00
+WebSocket  Player_Ping_RTT                                                                 9262     0(0.00%) |    105       0    8870      1 |  198.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     85448    83(0.10%) |     57       0   31461      0 | 1792.00        2.00
+
+[2026-11-16 02:55:09,991] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   749     0(0.00%) |   5287       5   31461    370 |   15.70        0.00
+WebSocket  Player_Disconnected                                                               83  83(100.00%) |      0       0       0      0 |    1.60        1.60
+WebSocket  Player_Input_Move_Shoot                                                        80511     0(0.00%) |      0       0      11      0 | 1775.00        0.00
+WebSocket  Player_Ping_RTT                                                                 9901     0(0.00%) |     99       0    8870      1 |  223.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     91244    83(0.09%) |     54       0   31461      0 | 2015.30        1.60
+
+[2026-11-16 02:55:12,993] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:55:13,771] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 self-healed with heartbeat, setting state to spawning.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   754     0(0.00%) |   5406       5   38598    380 |   11.60        0.00
+WebSocket  Player_Disconnected                                                               85  85(100.00%) |      0       0       0      0 |    1.50        1.50
+WebSocket  Player_Input_Move_Shoot                                                        82938     0(0.00%) |      0       0      11      0 | 1935.30        0.00
+WebSocket  Player_Ping_RTT                                                                10220     0(0.00%) |     99       0    8870      1 |  240.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     93997    85(0.09%) |     54       0   38598      0 | 2189.20        1.50
+
+[2026-11-16 02:55:13,994] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   765     0(0.00%) |   5436       5   38598    360 |    8.90        0.00
+WebSocket  Player_Disconnected                                                               92  92(100.00%) |      0       0       0      0 |    1.90        1.90
+WebSocket  Player_Input_Move_Shoot                                                        89240     0(0.00%) |      0       0      11      0 | 2152.50        0.00
+WebSocket  Player_Ping_RTT                                                                10998     0(0.00%) |     93       0    8870      1 |  272.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    101095    92(0.09%) |     51       0   38598      0 | 2435.60        1.90
+
+[2026-11-16 02:55:16,777] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   770     0(0.00%) |   5404       5   38598    360 |    8.90        0.00
+WebSocket  Player_Disconnected                                                              101 101(100.00%) |      0       0       0      0 |    1.80        1.80
+WebSocket  Player_Input_Move_Shoot                                                        93405     0(0.00%) |      0       0      11      0 | 2224.90        0.00
+WebSocket  Player_Ping_RTT                                                                11473     0(0.00%) |     96       0    8934      1 |  276.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    105749   101(0.10%) |     49       0   38598      0 | 2511.70        1.80
+
+[2026-11-16 02:55:18,998] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   773     0(0.00%) |   5385       5   38598    360 |    3.50        0.00
+WebSocket  Player_Disconnected                                                              101 101(100.00%) |      0       0       0      0 |    1.60        1.60
+WebSocket  Player_Input_Move_Shoot                                                        95582     0(0.00%) |      0       0      11      0 | 2186.70        0.00
+WebSocket  Player_Ping_RTT                                                                11728     0(0.00%) |     95       0    8934      1 |  267.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    108184   101(0.09%) |     48       0   38598      0 | 2459.00        1.60
+
+[2026-11-16 02:55:21,198] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   783     0(0.00%) |   5444       5   38598    360 |    3.20        0.00
+WebSocket  Player_Disconnected                                                              124 124(100.00%) |      0       0       0      0 |    2.10        2.10
+WebSocket  Player_Input_Move_Shoot                                                       100732     0(0.00%) |      0       0      11      0 | 2051.60        0.00
+WebSocket  Player_Ping_RTT                                                                12364     0(0.00%) |     92       0    8934      1 |  249.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    114003   124(0.11%) |     47       0   38598      0 | 2306.80        2.10
+
+[2026-11-16 02:55:22,000] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:55:22,107] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 self-healed with heartbeat, setting state to spawning.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   797     0(0.00%) |   5765       5   38598    380 |    4.10        0.00
+WebSocket  Player_Disconnected                                                              128 128(100.00%) |      0       0       0      0 |    4.30        4.30
+WebSocket  Player_Input_Move_Shoot                                                       104379     0(0.00%) |      0       0      11      0 | 2016.60        0.00
+WebSocket  Player_Ping_RTT                                                                12800     0(0.00%) |     90       0    8934      1 |  244.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    118104   128(0.11%) |     48       0   38598      0 | 2269.80        4.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   799     0(0.00%) |   5750       5   38598    380 |    3.50        0.00
+WebSocket  Player_Disconnected                                                              128 128(100.00%) |      0       0       0      0 |    3.90        3.90
+WebSocket  Player_Input_Move_Shoot                                                       106285     0(0.00%) |      0       0      11      0 | 1847.40        0.00
+WebSocket  Player_Ping_RTT                                                                13002     0(0.00%) |     89       0    8934      1 |  214.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    120214   128(0.11%) |     47       0   38598      0 | 2069.10        3.90
+
+[2026-11-16 02:55:26,002] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+[2026-11-16 02:55:27,206] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   830     0(0.00%) |   5862       5   38598    360 |    4.60        0.00
+WebSocket  Player_Disconnected                                                              144 144(100.00%) |      0       0       0      0 |    4.20        4.20
+WebSocket  Player_Input_Move_Shoot                                                       111402     0(0.00%) |      0       0      11      0 | 1827.60        0.00
+WebSocket  Player_Ping_RTT                                                                13674     0(0.00%) |     88       0    8934      1 |  217.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    126050   144(0.11%) |     48       0   38598      0 | 2054.30        4.20
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   887     0(0.00%) |   6077       5   38598    340 |    6.70        0.00
+WebSocket  Player_Disconnected                                                              160 160(100.00%) |      0       0       0      0 |    5.20        5.20
+WebSocket  Player_Input_Move_Shoot                                                       115835     0(0.00%) |      0       0      11      0 | 1810.70        0.00
+WebSocket  Player_Ping_RTT                                                                14259     0(0.00%) |     87       0    8934      1 |  218.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    131141   160(0.12%) |     50       0   38598      0 | 2041.40        5.20
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   911     0(0.00%) |   6270       5   38598    380 |   10.50        0.00
+WebSocket  Player_Disconnected                                                              167 167(100.00%) |      0       0       0      0 |    5.90        5.90
+WebSocket  Player_Input_Move_Shoot                                                       118385     0(0.00%) |      0       0      11      0 | 1890.20        0.00
+WebSocket  Player_Ping_RTT                                                                14553     0(0.00%) |     86       0    8934      1 |  238.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    134016   167(0.12%) |     52       0   38598      0 | 2144.70        5.90
+
+[2026-11-16 02:55:32,006] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+[2026-11-16 02:55:33,007] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-pzvs2_2a13e1b4919741f58d996ed46700dd6b failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   957     0(0.00%) |   5987       5   38598    330 |   12.70        0.00
+WebSocket  Player_Disconnected                                                              178 178(100.00%) |      0       0       0      0 |    4.50        4.50
+WebSocket  Player_Input_Move_Shoot                                                       124341     0(0.00%) |      0       0      13      0 | 1925.70        0.00
+WebSocket  Player_Ping_RTT                                                                15276     0(0.00%) |     84       0    8934      1 |  241.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    140752   178(0.13%) |     49       0   38598      0 | 2184.60        4.50
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1010     0(0.00%) |   5689       5   38598    340 |   16.50        0.00
+WebSocket  Player_Disconnected                                                              187 187(100.00%) |      0       0       0      0 |    4.60        4.60
+WebSocket  Player_Input_Move_Shoot                                                       130380     0(0.00%) |      0       0      13      0 | 2042.30        0.00
+WebSocket  Player_Ping_RTT                                                                16024     0(0.00%) |     82       0    8934      1 |  257.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    147601   187(0.13%) |     47       0   38598      0 | 2320.80        4.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1012     0(0.00%) |   5678       5   38598    340 |   18.90        0.00
+WebSocket  Player_Disconnected                                                              187 187(100.00%) |      0       0       0      0 |    5.00        5.00
+WebSocket  Player_Input_Move_Shoot                                                       132513     0(0.00%) |      0       0      13      0 | 2248.60        0.00
+WebSocket  Player_Ping_RTT                                                                16312     0(0.00%) |     81       0    8934      1 |  279.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    150024   187(0.12%) |     47       0   38598      0 | 2551.90        5.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1026     0(0.00%) |   5796       5   38598    360 |   18.40        0.00
+WebSocket  Player_Disconnected                                                              215 215(100.00%) |      0       0       0      0 |    5.00        5.00
+WebSocket  Player_Input_Move_Shoot                                                       138393     0(0.00%) |      0       0      13      0 | 2267.70        0.00
+WebSocket  Player_Ping_RTT                                                                17044     0(0.00%) |     81       0    8934      1 |  286.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    156678   215(0.14%) |     46       0   38598      0 | 2577.30        5.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1031     0(0.00%) |   5768       5   38598    340 |   13.30        0.00
+WebSocket  Player_Disconnected                                                              217 217(100.00%) |      0       0       0      0 |    5.20        5.20
+WebSocket  Player_Input_Move_Shoot                                                       143514     0(0.00%) |      0       0      13      0 | 2290.10        0.00
+WebSocket  Player_Ping_RTT                                                                17693     0(0.00%) |     79       0    8934      1 |  281.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    162455   217(0.13%) |     45       0   38598      0 | 2589.60        5.20
+
+[2026-11-16 02:55:43,013] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1046     0(0.00%) |   5936       5   38598    360 |   11.80        0.00
+WebSocket  Player_Disconnected                                                              251 251(100.00%) |      0       0       0      0 |    6.70        6.70
+WebSocket  Player_Input_Move_Shoot                                                       146007     0(0.00%) |      0       0      13      0 | 2299.50        0.00
+WebSocket  Player_Ping_RTT                                                                17990     0(0.00%) |     79       0    8934      1 |  284.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    165294   251(0.15%) |     46       0   38598      0 | 2602.90        6.70
+
+[2026-11-16 02:55:44,014] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-t4z9m_48abeafef28b4bddb154d19fcc00f205 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1125     0(0.00%) |   5553       5   38598    380 |    6.80        0.00
+WebSocket  Player_Disconnected                                                              269 269(100.00%) |      0       0       0      0 |    7.60        7.60
+WebSocket  Player_Input_Move_Shoot                                                       153174     0(0.00%) |      0       0      13      0 | 2341.90        0.00
+WebSocket  Player_Ping_RTT                                                                18858     0(0.00%) |     78       0    8934      1 |  289.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    173426   269(0.16%) |     44       0   38598      0 | 2646.10        7.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1133     0(0.00%) |   5536       5   38598    380 |   11.50        0.00
+WebSocket  Player_Disconnected                                                              298 298(100.00%) |      0       0       0      0 |    8.60        8.60
+WebSocket  Player_Input_Move_Shoot                                                       159383     0(0.00%) |      0       0      13      0 | 2306.40        0.00
+WebSocket  Player_Ping_RTT                                                                19572     0(0.00%) |     77       0    8934      1 |  286.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    180386   298(0.17%) |     43       0   38598      0 | 2613.00        8.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1135     0(0.00%) |   5526       5   38598    370 |   11.20        0.00
+WebSocket  Player_Disconnected                                                              300 300(100.00%) |      0       0       0      0 |    8.30        8.30
+WebSocket  Player_Input_Move_Shoot                                                       161922     0(0.00%) |      0       0      13      0 | 2468.20        0.00
+WebSocket  Player_Ping_RTT                                                                19859     0(0.00%) |     77       0    8934      1 |  299.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    183216   300(0.16%) |     42       0   38598      0 | 2786.80        8.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1155     0(0.00%) |   5479       5   38598    380 |   10.20        0.00
+WebSocket  Player_Disconnected                                                              311 311(100.00%) |      0       0       0      0 |    8.70        8.70
+WebSocket  Player_Input_Move_Shoot                                                       169482     0(0.00%) |      0       0      13      0 | 2542.60        0.00
+WebSocket  Player_Ping_RTT                                                                20791     0(0.00%) |     76       0    8934      1 |  305.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    191739   311(0.16%) |     41       0   38598      0 | 2867.30        8.70
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1170     0(0.00%) |   5482       5   38598    380 |   11.40        0.00
+WebSocket  Player_Disconnected                                                              315 315(100.00%) |      0       0       0      0 |    6.90        6.90
+WebSocket  Player_Input_Move_Shoot                                                       175658     0(0.00%) |      0       0      13      0 | 2628.80        0.00
+WebSocket  Player_Ping_RTT                                                                21595     0(0.00%) |     74       0    8934      1 |  312.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    198738   315(0.16%) |     40       0   38598      0 | 2960.00        6.90
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1173     0(0.00%) |   5469       5   38598    380 |   12.30        0.00
+WebSocket  Player_Disconnected                                                              326 326(100.00%) |      0       0       0      0 |    6.50        6.50
+WebSocket  Player_Input_Move_Shoot                                                       178591     0(0.00%) |      0       0      13      0 | 2708.10        0.00
+WebSocket  Player_Ping_RTT                                                                21953     0(0.00%) |     74       0    8934      1 |  333.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    202043   326(0.16%) |     39       0   38598      0 | 3060.70        6.50
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1180     0(0.00%) |   5436       5   38598    380 |    5.20        0.00
+WebSocket  Player_Disconnected                                                              328 328(100.00%) |      0       0       0      0 |    5.00        5.00
+WebSocket  Player_Input_Move_Shoot                                                       186839     0(0.00%) |      0       0      13      0 | 2749.80        0.00
+WebSocket  Player_Ping_RTT                                                                22974     0(0.00%) |     71       0    8934      1 |  335.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    211321   328(0.16%) |     38       0   38598      0 | 3095.30        5.00
+
+[2026-11-16 02:55:58,022] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1282     0(0.00%) |   5083       5   38598    320 |    4.80        0.00
+WebSocket  Player_Disconnected                                                              334 334(100.00%) |      0       0       0      0 |    4.50        4.50
+WebSocket  Player_Input_Move_Shoot                                                       193724     0(0.00%) |      0       0      13      0 | 2827.70        0.00
+WebSocket  Player_Ping_RTT                                                                23812     0(0.00%) |     71       0    8934      1 |  352.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    219152   334(0.15%) |     37       0   38598      0 | 3189.00        4.50
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1330     0(0.00%) |   4912       5   38598    320 |   14.40        0.00
+WebSocket  Player_Disconnected                                                              335 335(100.00%) |      0       0       0      0 |    3.10        3.10
+WebSocket  Player_Input_Move_Shoot                                                       196116     0(0.00%) |      0       0      13      0 | 2842.60        0.00
+WebSocket  Player_Ping_RTT                                                                24092     0(0.00%) |     71       0    8934      1 |  350.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    221873   335(0.15%) |     37       0   38598      0 | 3211.00        3.10
+
+[2026-11-16 02:56:03,025] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:56:03,340] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1342     0(0.00%) |   4939       5   38598    320 |   18.30        0.00
+WebSocket  Player_Disconnected                                                              354 354(100.00%) |      0       0       0      0 |    3.10        3.10
+WebSocket  Player_Input_Move_Shoot                                                       203344     0(0.00%) |      0       0      13      0 | 2915.50        0.00
+WebSocket  Player_Ping_RTT                                                                25043     0(0.00%) |     71       0    8934      1 |  365.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    230083   354(0.15%) |     36       0   38598      0 | 3302.10        3.10
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1348     0(0.00%) |   4918       5   38598    320 |   17.40        0.00
+WebSocket  Player_Disconnected                                                              371 371(100.00%) |      0       0       0      0 |    2.70        2.70
+WebSocket  Player_Input_Move_Shoot                                                       211016     0(0.00%) |      0       0      13      0 | 3061.70        0.00
+WebSocket  Player_Ping_RTT                                                                26010     0(0.00%) |     73       0    8934      1 |  374.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    238745   371(0.16%) |     35       0   38598      0 | 3456.30        2.70
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1350     0(0.00%) |   4911       5   38598    320 |   16.90        0.00
+WebSocket  Player_Disconnected                                                              395 395(100.00%) |      0       0       0      0 |    4.00        4.00
+WebSocket  Player_Input_Move_Shoot                                                       212625     0(0.00%) |      0       0      13      0 | 2857.70        0.00
+WebSocket  Player_Ping_RTT                                                                26231     0(0.00%) |     75       0    8934      1 |  354.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    240601   395(0.16%) |     35       0   38598      0 | 3233.00        4.00
+
+[2026-11-16 02:56:08,030] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1407     0(0.00%) |   4743       5   38598    310 |   17.10        0.00
+WebSocket  Player_Disconnected                                                              406 406(100.00%) |      0       0       0      0 |    7.00        7.00
+WebSocket  Player_Input_Move_Shoot                                                       218986     0(0.00%) |      0       0      13      0 | 2739.70        0.00
+WebSocket  Player_Ping_RTT                                                                26995     0(0.00%) |     73       0    8934      1 |  345.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    247794   406(0.16%) |     35       0   38598      0 | 3109.70        7.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1488     0(0.00%) |   4513       5   38598    300 |   17.00        0.00
+WebSocket  Player_Disconnected                                                              414 414(100.00%) |      0       0       0      0 |    7.50        7.50
+WebSocket  Player_Input_Move_Shoot                                                       224962     0(0.00%) |      0       0      13      0 | 2782.50        0.00
+WebSocket  Player_Ping_RTT                                                                27700     0(0.00%) |     74       0    8934      1 |  349.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    254564   414(0.16%) |     34       0   38598      0 | 3156.20        7.50
+
+[2026-11-16 02:56:13,033] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+[2026-11-16 02:56:13,118] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 self-healed with heartbeat, setting state to running.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1511     0(0.00%) |   4470       5   38598    310 |   16.90        0.00
+WebSocket  Player_Disconnected                                                              435 435(100.00%) |      0       0       0      0 |    7.60        7.60
+WebSocket  Player_Input_Move_Shoot                                                       228699     0(0.00%) |      0       0      13      0 | 2450.90        0.00
+WebSocket  Player_Ping_RTT                                                                28102     0(0.00%) |     76       0    8934      1 |  296.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    258747   435(0.17%) |     34       0   38598      0 | 2771.40        7.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1513     0(0.00%) |   4464       5   38598    310 |   16.90        0.00
+WebSocket  Player_Disconnected                                                              447 447(100.00%) |      0       0       0      0 |    8.50        8.50
+WebSocket  Player_Input_Move_Shoot                                                       234896     0(0.00%) |      0       0      20      0 | 2532.20        0.00
+WebSocket  Player_Ping_RTT                                                                28825     0(0.00%) |     76       0    8934      1 |  310.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    265681   447(0.17%) |     33       0   38598      0 | 2867.60        8.50
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1522     0(0.00%) |   4506       5   38598    310 |   17.10        0.00
+WebSocket  Player_Disconnected                                                              468 468(100.00%) |      0       0       0      0 |    8.30        8.30
+WebSocket  Player_Input_Move_Shoot                                                       239486     0(0.00%) |      0       0      20      0 | 2552.10        0.00
+WebSocket  Player_Ping_RTT                                                                29453     0(0.00%) |     78       0    8934      1 |  308.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    270929   468(0.17%) |     33       0   38598      0 | 2886.40        8.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1525     0(0.00%) |   4497       5   38598    310 |   17.00        0.00
+WebSocket  Player_Disconnected                                                              481 481(100.00%) |      0       0       0      0 |    8.00        8.00
+WebSocket  Player_Input_Move_Shoot                                                       241883     0(0.00%) |      0       0      20      0 | 2435.10        0.00
+WebSocket  Player_Ping_RTT                                                                29729     0(0.00%) |     78       0    8934      1 |  291.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    273618   481(0.18%) |     33       0   38598      0 | 2751.70        8.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1537     0(0.00%) |   4502       5   38598    310 |    7.90        0.00
+WebSocket  Player_Disconnected                                                              497 497(100.00%) |      0       0       0      0 |    8.30        8.30
+WebSocket  Player_Input_Move_Shoot                                                       248489     0(0.00%) |      0       0      20      0 | 2400.80        0.00
+WebSocket  Player_Ping_RTT                                                                30475     0(0.00%) |     79       0    8934      1 |  286.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    280998   497(0.18%) |     33       0   38598      0 | 2703.70        8.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1541     0(0.00%) |   4491       5   38598    310 |    3.00        0.00
+WebSocket  Player_Disconnected                                                              500 500(100.00%) |      0       0       0      0 |    7.80        7.80
+WebSocket  Player_Input_Move_Shoot                                                       253904     0(0.00%) |      0       0      20      0 | 2416.80        0.00
+WebSocket  Player_Ping_RTT                                                                31128     0(0.00%) |     78       0    8934      1 |  285.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    287073   500(0.17%) |     32       0   38598      0 | 2713.10        7.80
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1544     0(0.00%) |   4483       5   38598    310 |    2.80        0.00
+WebSocket  Player_Disconnected                                                              505 505(100.00%) |      0       0       0      0 |    7.00        7.00
+WebSocket  Player_Input_Move_Shoot                                                       255947     0(0.00%) |      0       0      20      0 | 2211.20        0.00
+WebSocket  Player_Ping_RTT                                                                31388     0(0.00%) |     78       0    8934      1 |  262.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    289384   505(0.17%) |     32       0   38598      0 | 2483.90        7.00
+
+[2026-11-16 02:56:26,042] epsinc-locust-rampa-d8gck/INFO/locust.runners: Worker epsinc-locust-workers-5f8cb7bb8f-vr7jf_5c66c65fcb4941868b4b06f3b86f1ab7 failed to send heartbeat, setting state to missing.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1550     0(0.00%) |   4467       5   38598    310 |    2.80        0.00
+WebSocket  Player_Disconnected                                                              511 511(100.00%) |      0       0       0      0 |    6.10        6.10
+WebSocket  Player_Input_Move_Shoot                                                       260592     0(0.00%) |      0       0      20      0 | 2221.30        0.00
+WebSocket  Player_Ping_RTT                                                                31931     0(0.00%) |     78       0    8934      1 |  265.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    294584   511(0.17%) |     32       0   38598      0 | 2496.10        6.10
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1713     0(0.00%) |   4066       5   38598    240 |   16.90        0.00
+WebSocket  Player_Disconnected                                                              521 521(100.00%) |      0       0       0      0 |    3.80        3.80
+WebSocket  Player_Input_Move_Shoot                                                       268167     0(0.00%) |      0       0      20      0 | 2374.20        0.00
+WebSocket  Player_Ping_RTT                                                                32812     0(0.00%) |     78       0    8934      1 |  274.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    303213   521(0.17%) |     31       0   38598      0 | 2669.00        3.80
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1722     0(0.00%) |   4144       5   38598    250 |   19.00        0.00
+WebSocket  Player_Disconnected                                                              530 530(100.00%) |      0       0       0      0 |    2.70        2.70
+WebSocket  Player_Input_Move_Shoot                                                       269575     0(0.00%) |      0       0      23      0 | 2327.40        0.00
+WebSocket  Player_Ping_RTT                                                                32937     0(0.00%) |     80       0    8934      1 |  273.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    304764   530(0.17%) |     32       0   38598      0 | 2622.30        2.70
+

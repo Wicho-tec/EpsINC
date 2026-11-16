@@ -1,0 +1,6 @@
+{
+  "image": "911797457485.dkr.ecr.us-east-1.amazonaws.com/epsinc/server:loadtest-faa56288eadb37f6d9d188704b3d94dd37e875a5",
+  "capturedAt": "2026-11-15T21:16:45.2657192-06:00",
+  "sha256": "47F70A1BED917D859C1FC4B850F396FC364C51B3BB95E97904FCD9B2F3971B6E",
+  "workers": 8
+}

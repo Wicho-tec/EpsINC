@@ -11,7 +11,7 @@ spec:
     matchLabels:
       agones.dev/role: gameserver
   podMetricsEndpoints:
-    - port: default
+    - portNumber: 8081
       path: /metrics
       interval: 5s
       scrapeTimeout: 3s

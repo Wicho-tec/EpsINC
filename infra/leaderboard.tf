@@ -52,7 +52,6 @@ resource "aws_lambda_function" "leaderboard" {
   source_code_hash               = data.archive_file.leaderboard.output_base64sha256
   memory_size                    = 256
   timeout                        = 5
-  reserved_concurrent_executions = 2
   environment {
     variables = { TABLE_NAME = aws_dynamodb_table.leaderboard.name }
   }

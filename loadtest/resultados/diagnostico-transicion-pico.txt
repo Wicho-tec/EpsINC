@@ -1,0 +1,413 @@
+[2026-11-16 03:08:34,882] epsinc-locust-pico-96h6n/INFO/locust.main: Starting Locust 2.47.0
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                         0     0(0.00%) |      0       0       0      0 |    0.00        0.00
+
+[2026-11-16 03:08:35,081] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-7fc8c4dfdb-4sjwj_7006bc61ee1f441882c7e208170bf13c (index 0) reported as ready. 1 workers connected.
+[2026-11-16 03:08:35,082] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-7fc8c4dfdb-w5kbm_f244186ab931461bbf0148d78d0dcca1 (index 1) reported as ready. 2 workers connected.
+[2026-11-16 03:08:35,083] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-7fc8c4dfdb-vmbrj_0885e2bf60f8437a9d488c460f13a1a3 (index 2) reported as ready. 3 workers connected.
+[2026-11-16 03:08:35,083] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-7fc8c4dfdb-p9nl2_81cfbd042c9642eb93d0391ad8f33b93 (index 3) reported as ready. 4 workers connected.
+[2026-11-16 03:08:35,092] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-7fc8c4dfdb-86j57_734d7120bfde4a7899bd386ab01e1a15 (index 4) reported as ready. 5 workers connected.
+[2026-11-16 03:08:35,093] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-7fc8c4dfdb-v6tjc_4a14fd09baad4d7096cca1613adbe09f (index 5) reported as ready. 6 workers connected.
+[2026-11-16 03:08:35,093] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-7fc8c4dfdb-6f54b_9371e84b1ea142eea188a1346a2c7070 (index 6) reported as ready. 7 workers connected.
+[2026-11-16 03:08:35,129] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-7fc8c4dfdb-l6gv4_5949dd3dba73487e92b4a185665754e6 (index 7) reported as ready. 8 workers connected.
+[2026-11-16 03:08:35,897] epsinc-locust-pico-96h6n/INFO/locust.main: Run time limit set to 300 seconds
+[2026-11-16 03:08:35,897] epsinc-locust-pico-96h6n/INFO/locust.runners: Sending spawn jobs of 1000 users at 66.60 spawn rate to 8 ready workers
+[2026-11-16 03:08:36,078] epsinc-locust-pico-96h6n/INFO/locust.runners: Worker 'epsinc-locust-workers-7fc8c4dfdb-v6tjc_4a14fd09baad4d7096cca1613adbe09f' (index 5) quit. 0 workers ready.
+[2026-11-16 03:08:36,086] epsinc-locust-pico-96h6n/INFO/locust.runners: Worker 'epsinc-locust-workers-7fc8c4dfdb-6f54b_9371e84b1ea142eea188a1346a2c7070' (index 6) quit. 0 workers ready.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                         0     0(0.00%) |      0       0       0      0 |    0.00        0.00
+
+[2026-11-16 03:08:36,901] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-666bdf8457-gm2kr_cf525626228f4d79939631f85927c0d2 (index 8) reported as ready. 7 workers connected.
+[2026-11-16 03:08:36,920] epsinc-locust-pico-96h6n/INFO/locust.runners: Worker 'epsinc-locust-workers-7fc8c4dfdb-w5kbm_f244186ab931461bbf0148d78d0dcca1' (index 1) quit. 1 workers ready.
+[2026-11-16 03:08:36,960] epsinc-locust-pico-96h6n/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-7fc8c4dfdb-w5kbm_f244186ab931461bbf0148d78d0dcca1. Asking worker to quit.
+[2026-11-16 03:08:37,052] epsinc-locust-pico-96h6n/WARNING/locust.runners: Got spawning message from unknown worker epsinc-locust-workers-7fc8c4dfdb-w5kbm_f244186ab931461bbf0148d78d0dcca1. Asking worker to quit.
+[2026-11-16 03:08:37,171] epsinc-locust-pico-96h6n/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-7fc8c4dfdb-w5kbm_f244186ab931461bbf0148d78d0dcca1
+[2026-11-16 03:08:37,227] epsinc-locust-pico-96h6n/INFO/locust.runners: Worker 'epsinc-locust-workers-7fc8c4dfdb-vmbrj_0885e2bf60f8437a9d488c460f13a1a3' (index 2) quit. 1 workers ready.
+[2026-11-16 03:08:37,247] epsinc-locust-pico-96h6n/INFO/locust.runners: Worker 'epsinc-locust-workers-7fc8c4dfdb-86j57_734d7120bfde4a7899bd386ab01e1a15' (index 4) quit. 1 workers ready.
+[2026-11-16 03:08:37,285] epsinc-locust-pico-96h6n/INFO/locust.runners: Worker 'epsinc-locust-workers-7fc8c4dfdb-p9nl2_81cfbd042c9642eb93d0391ad8f33b93' (index 3) quit. 1 workers ready.
+[2026-11-16 03:08:37,318] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-666bdf8457-5fwpk_3b7ed31cd0984430a2ecad758776fd04 (index 9) reported as ready. 4 workers connected.
+[2026-11-16 03:08:37,562] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-666bdf8457-l4ns7_1dd719dae77f466482d103368480abb3 (index 10) reported as ready. 5 workers connected.
+[2026-11-16 03:08:37,612] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-666bdf8457-4t9qh_d15331ca67e24a54a6b6fb6c9e971333 (index 11) reported as ready. 6 workers connected.
+[2026-11-16 03:08:37,973] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-666bdf8457-shq7d_ab4efbdce5e74dd9b7f5da8b0343a3b0 (index 12) reported as ready. 7 workers connected.
+[2026-11-16 03:08:38,144] epsinc-locust-pico-96h6n/INFO/locust.runners: Worker 'epsinc-locust-workers-7fc8c4dfdb-l6gv4_5949dd3dba73487e92b4a185665754e6' (index 7) quit. 1 workers ready.
+[2026-11-16 03:08:38,155] epsinc-locust-pico-96h6n/INFO/locust.runners: Worker 'epsinc-locust-workers-7fc8c4dfdb-4sjwj_7006bc61ee1f441882c7e208170bf13c' (index 0) quit. 1 workers ready.
+[2026-11-16 03:08:38,210] epsinc-locust-pico-96h6n/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-7fc8c4dfdb-4sjwj_7006bc61ee1f441882c7e208170bf13c
+[2026-11-16 03:08:38,214] epsinc-locust-pico-96h6n/INFO/locust.runners: Discarded report from unrecognized worker epsinc-locust-workers-7fc8c4dfdb-l6gv4_5949dd3dba73487e92b4a185665754e6
+[2026-11-16 03:08:38,224] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-666bdf8457-hf4zc_06e97e82e791483b9abb928745477122 (index 13) reported as ready. 6 workers connected.
+[2026-11-16 03:08:38,275] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-666bdf8457-jg7fg_97a42a43671148f8ac86d482573f2fd2 (index 14) reported as ready. 7 workers connected.
+[2026-11-16 03:08:38,793] epsinc-locust-pico-96h6n/INFO/locust.runners: epsinc-locust-workers-666bdf8457-v8kqj_635065dfe7fd4798947ff199b7791620 (index 15) reported as ready. 8 workers connected.
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                    52     0(0.00%) |     78      25     184     68 |    3.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                          536     0(0.00%) |      0       0       4      0 |    3.00        0.00
+WebSocket  Player_Ping_RTT                                                                   60     0(0.00%) |     12       1     130      2 |    0.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                       648     0(0.00%) |      7       0     184      0 |    6.00        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   201     0(0.00%) |    173      25     590    140 |   17.33        0.00
+WebSocket  Player_Input_Move_Shoot                                                         2290     0(0.00%) |      0       0       4      0 |  162.67        0.00
+WebSocket  Player_Ping_RTT                                                                  181     0(0.00%) |    137       1    1234     10 |   20.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      2672     0(0.00%) |     22       0    1234      0 |  200.00        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   362     0(0.00%) |    260      15     850    180 |   46.00        0.00
+WebSocket  Player_Input_Move_Shoot                                                         3562     0(0.00%) |      0       0      10      0 |  320.25        0.00
+WebSocket  Player_Ping_RTT                                                                  232     0(0.00%) |    249       1    1563     28 |   33.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      4156     0(0.00%) |     36       0    1563      0 |  399.75        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   528     0(0.00%) |    473      15    1575    310 |   58.57        0.00
+WebSocket  Player_Input_Move_Shoot                                                         7820     0(0.00%) |      0       0      10      0 |  707.43        0.00
+WebSocket  Player_Ping_RTT                                                                  518     0(0.00%) |    489       1    4298    120 |   43.57        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      8866     0(0.00%) |     56       0    4298      0 |  809.57        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   614     0(0.00%) |    515      15    1575    370 |   59.22        0.00
+WebSocket  Player_Input_Move_Shoot                                                        11682     0(0.00%) |      0       0      20      0 |  928.89        0.00
+WebSocket  Player_Ping_RTT                                                                  881     0(0.00%) |    489       1    5677     38 |   63.67        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     13177     0(0.00%) |     56       0    5677      0 | 1051.78        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   720     0(0.00%) |    625      15    2128    520 |   66.30        0.00
+WebSocket  Player_Input_Move_Shoot                                                        15411     0(0.00%) |      0       0      20      0 | 1276.70        0.00
+WebSocket  Player_Ping_RTT                                                                 1172     0(0.00%) |    719       1    7036    250 |   94.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     17303     0(0.00%) |     74       0    7036      0 | 1437.50        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   841     0(0.00%) |    741      15    2466    670 |   71.80        0.00
+WebSocket  Player_Input_Move_Shoot                                                        20595     0(0.00%) |      0       0      20      0 | 1642.50        0.00
+WebSocket  Player_Ping_RTT                                                                 1722     0(0.00%) |    726       1    9457    210 |  125.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     23158     0(0.00%) |     80       0    9457      0 | 1840.20        0.00
+
+[2026-11-16 03:08:51,387] epsinc-locust-pico-96h6n/INFO/locust.runners: All users spawned: {"EpsIncPlayerUser": 1000, "EpsIncSpectatorUser": 0} (1000 total users)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                   929     0(0.00%) |    827      15    3271    710 |   55.70        0.00
+WebSocket  Player_Input_Move_Shoot                                                        26414     0(0.00%) |      0       0      20      0 | 1945.20        0.00
+WebSocket  Player_Ping_RTT                                                                 2407     0(0.00%) |    632       1   10166     96 |  167.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     29750     0(0.00%) |     77       0   10166      0 | 2168.70        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1009     0(0.00%) |    916      15    3370    780 |   57.10        0.00
+WebSocket  Player_Input_Move_Shoot                                                        32903     0(0.00%) |      0       0      20      0 | 2412.40        0.00
+WebSocket  Player_Ping_RTT                                                                 3143     0(0.00%) |    609       1   12629    140 |  242.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     37055     0(0.00%) |     76       0   12629      0 | 2712.00        0.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1049     0(0.00%) |    983      15    3914    820 |   51.50        0.00
+WebSocket  Player_Disconnected                                                                1   1(100.00%) |      0       0       0      0 |    0.10        0.10
+WebSocket  Player_Input_Move_Shoot                                                        40877     0(0.00%) |      0       0      20      0 | 2695.00        0.00
+WebSocket  Player_Ping_RTT                                                                 4064     0(0.00%) |    575       1   13988    100 |  281.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     45991     1(0.00%) |     73       0   13988      0 | 3027.60        0.10
+
+[2026-11-16 03:08:58,530] epsinc-locust-pico-96h6n/WARNING/locust.runners: Worker epsinc-locust-workers-666bdf8457-5fwpk_3b7ed31cd0984430a2ecad758776fd04 (index 9) exceeded cpu threshold (will only log this once per worker)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |   38.60        0.00
+WebSocket  Player_Disconnected                                                                1   1(100.00%) |      0       0       0      0 |    0.10        0.10
+WebSocket  Player_Input_Move_Shoot                                                        49441     0(0.00%) |      0       0      20      0 | 3111.50        0.00
+WebSocket  Player_Ping_RTT                                                                 5089     0(0.00%) |    526       1   14259     65 |  348.70        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     55583     1(0.00%) |     67       0   14259      0 | 3498.90        0.10
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |   28.20        0.00
+WebSocket  Player_Disconnected                                                                8   8(100.00%) |      0       0       0      0 |    0.30        0.30
+WebSocket  Player_Input_Move_Shoot                                                        59192     0(0.00%) |      0       0      20      0 | 3608.50        0.00
+WebSocket  Player_Ping_RTT                                                                 6157     0(0.00%) |    512       1   18617     49 |  418.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     66409     8(0.01%) |     63       0   18617      0 | 4055.30        0.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |   23.90        0.00
+WebSocket  Player_Disconnected                                                                8   8(100.00%) |      0       0       0      0 |    0.60        0.60
+WebSocket  Player_Input_Move_Shoot                                                        62031     0(0.00%) |      0       0      20      0 | 3860.10        0.00
+WebSocket  Player_Ping_RTT                                                                 6564     0(0.00%) |    483       1   18617     36 |  446.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     69655     8(0.01%) |     60       0   18617      0 | 4330.60        0.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    5.50        0.00
+WebSocket  Player_Disconnected                                                               19  19(100.00%) |      0       0       0      0 |    1.70        1.70
+WebSocket  Player_Input_Move_Shoot                                                        73554     0(0.00%) |      0       0      20      0 | 3845.10        0.00
+WebSocket  Player_Ping_RTT                                                                 7935     0(0.00%) |    488       1   18808     41 |  446.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     82560    19(0.02%) |     59       0   18808      0 | 4298.80        1.70
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.40        0.00
+WebSocket  Player_Disconnected                                                               21  21(100.00%) |      0       0       0      0 |    2.00        2.00
+WebSocket  Player_Input_Move_Shoot                                                        81138     0(0.00%) |      0       0      20      0 | 3913.60        0.00
+WebSocket  Player_Ping_RTT                                                                 8835     0(0.00%) |    446       1   18808     34 |  470.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     91046    21(0.02%) |     54       0   18808      0 | 4386.80        2.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               23  23(100.00%) |      0       0       0      0 |    2.10        2.10
+WebSocket  Player_Input_Move_Shoot                                                        87443     0(0.00%) |      0       0      20      0 | 4061.30        0.00
+WebSocket  Player_Ping_RTT                                                                 9543     0(0.00%) |    481       1   24079     32 |  479.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     98061    23(0.02%) |     57       0   24079      0 | 4543.30        2.10
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               25  25(100.00%) |      0       0       0      0 |    2.20        2.20
+WebSocket  Player_Input_Move_Shoot                                                        97373     0(0.00%) |      0       0      20      0 | 3694.30        0.00
+WebSocket  Player_Ping_RTT                                                                10758     0(0.00%) |    448       1   24079     27 |  437.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    109208    25(0.02%) |     53       0   24079      0 | 4133.60        2.20
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               26  26(100.00%) |      0       0       0      0 |    1.30        1.30
+WebSocket  Player_Input_Move_Shoot                                                       102278     0(0.00%) |      0       0      20      0 | 3831.80        0.00
+WebSocket  Player_Ping_RTT                                                                11260     0(0.00%) |    473       1   25715     30 |  454.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    114616    26(0.02%) |     55       0   25715      0 | 4288.00        1.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               26  26(100.00%) |      0       0       0      0 |    1.00        1.00
+WebSocket  Player_Input_Move_Shoot                                                       108871     0(0.00%) |      0       0      20      0 | 3813.00        0.00
+WebSocket  Player_Ping_RTT                                                                12111     0(0.00%) |    448       1   25715     25 |  444.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    122060    26(0.02%) |     53       0   25715      0 | 4258.00        1.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               27  27(100.00%) |      0       0       0      0 |    0.60        0.60
+WebSocket  Player_Input_Move_Shoot                                                       121280     0(0.00%) |      0       0      20      0 | 3754.60        0.00
+WebSocket  Player_Ping_RTT                                                                13573     0(0.00%) |    454       1   25715     22 |  437.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    135932    27(0.02%) |     53       0   25715      0 | 4192.60        0.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               27  27(100.00%) |      0       0       0      0 |    0.50        0.50
+WebSocket  Player_Input_Move_Shoot                                                       126160     0(0.00%) |      0       0      20      0 | 3620.70        0.00
+WebSocket  Player_Ping_RTT                                                                14116     0(0.00%) |    439       1   25715     19 |  429.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    141355    27(0.02%) |     51       0   25715      0 | 4050.70        0.50
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               33  33(100.00%) |      0       0       0      0 |    0.70        0.70
+WebSocket  Player_Input_Move_Shoot                                                       135783     6(0.00%) |      0       0      20      0 | 4032.50        0.00
+WebSocket  Player_Ping_RTT                                                                15245     0(0.00%) |    449       1   29454     11 |  476.00        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    152113    39(0.03%) |     51       0   29454      0 | 4509.20        0.70
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               34  34(100.00%) |      0       0       0      0 |    0.90        0.90
+WebSocket  Player_Input_Move_Shoot                                                       148466     6(0.00%) |      0       0      20      0 | 4102.00        0.00
+WebSocket  Player_Ping_RTT                                                                16802     0(0.00%) |    412       1   29454      5 |  481.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    166354    40(0.02%) |     48       0   29454      0 | 4584.20        0.90
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               42  42(100.00%) |      0       0       0      0 |    1.00        1.00
+WebSocket  Player_Input_Move_Shoot                                                       154638    21(0.01%) |      0       0      20      0 | 4325.40        1.10
+WebSocket  Player_Ping_RTT                                                                17473     2(0.01%) |    442       0   29454      4 |  517.80        0.10
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    173205    65(0.04%) |     50       0   29454      0 | 4844.20        2.20
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               44  44(100.00%) |      0       0       0      0 |    1.20        1.20
+WebSocket  Player_Input_Move_Shoot                                                       161689    21(0.01%) |      0       0      20      0 | 4511.70        1.70
+WebSocket  Player_Ping_RTT                                                                18334     2(0.01%) |    425       0   29454      4 |  537.60        0.10
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    181119    67(0.04%) |     48       0   29454      0 | 5050.50        3.00
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               63  63(100.00%) |      0       0       0      0 |    2.50        2.50
+WebSocket  Player_Input_Move_Shoot                                                       174061    29(0.02%) |      0       0      20      0 | 4495.90        2.60
+WebSocket  Player_Ping_RTT                                                                19823     2(0.01%) |    432       0   29454      4 |  526.50        0.20
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    194999    94(0.05%) |     49       0   29454      0 | 5024.90        5.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               71  71(100.00%) |      0       0       0      0 |    3.20        3.20
+WebSocket  Player_Input_Move_Shoot                                                       179448    29(0.02%) |      0       0      20      0 | 4297.70        2.90
+WebSocket  Player_Ping_RTT                                                                20476     2(0.01%) |    419       0   29454      3 |  513.30        0.20
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    201047   102(0.05%) |     47       0   29454      0 | 4814.20        6.30
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                               94  94(100.00%) |      0       0       0      0 |    4.10        4.10
+WebSocket  Player_Input_Move_Shoot                                                       189087    31(0.02%) |      0       0      20      0 | 4437.90        3.10
+WebSocket  Player_Ping_RTT                                                                21591     2(0.01%) |    423       0   29454      3 |  537.00        0.20
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    211824   127(0.06%) |     48       0   29454      0 | 4979.00        7.40
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              126 126(100.00%) |      0       0       0      0 |    5.80        5.80
+WebSocket  Player_Input_Move_Shoot                                                       202974    31(0.02%) |      0       0      20      0 | 4353.50        2.00
+WebSocket  Player_Ping_RTT                                                                23366     2(0.01%) |    408       0   29454      3 |  520.50        0.10
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    227518   159(0.07%) |     46       0   29454      0 | 4879.80        7.90
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              136 136(100.00%) |      0       0       0      0 |    8.30        8.30
+WebSocket  Player_Input_Move_Shoot                                                       208324    31(0.01%) |      0       0      20      0 | 4330.50        0.90
+WebSocket  Player_Ping_RTT                                                                23950     2(0.01%) |    406       0   29454      2 |  525.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    233462   169(0.07%) |     46       0   29454      0 | 4863.90        9.20
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              162 162(100.00%) |      0       0       0      0 |    9.30        9.30
+WebSocket  Player_Input_Move_Shoot                                                       217719    31(0.01%) |      0       0      20      0 | 4543.80        0.50
+WebSocket  Player_Ping_RTT                                                                25117     2(0.01%) |    400       0   29454      2 |  555.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    244050   195(0.08%) |     45       0   29454      0 | 5109.00        9.80
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              177 177(100.00%) |      0       0       0      0 |   10.30       10.30
+WebSocket  Player_Input_Move_Shoot                                                       227134    31(0.01%) |      0       0      20      0 | 4690.80        0.20
+WebSocket  Player_Ping_RTT                                                                26244     2(0.01%) |    390       0   29454      2 |  569.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    254607   210(0.08%) |     44       0   29454      0 | 5270.70       10.50
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              198 198(100.00%) |      0       0       0      0 |   10.70       10.70
+WebSocket  Player_Input_Move_Shoot                                                       236458    31(0.01%) |      0       0      20      0 | 4631.80        0.00
+WebSocket  Player_Ping_RTT                                                                27299     2(0.01%) |    385       0   29454      2 |  555.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    265007   231(0.09%) |     43       0   29454      0 | 5198.00       10.70
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              214 214(100.00%) |      0       0       0      0 |   10.60       10.60
+WebSocket  Player_Input_Move_Shoot                                                       245701    31(0.01%) |      0       0      20      0 | 4618.30        0.00
+WebSocket  Player_Ping_RTT                                                                28453     2(0.01%) |    376       0   29454      2 |  555.50        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    275420   247(0.09%) |     42       0   29454      0 | 5184.40       10.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              224 224(100.00%) |      0       0       0      0 |    8.80        8.80
+WebSocket  Player_Input_Move_Shoot                                                       254788    31(0.01%) |      0       0      20      0 | 4642.90        0.00
+WebSocket  Player_Ping_RTT                                                                29543     2(0.01%) |    367       0   29454      2 |  556.30        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    285607   257(0.09%) |     41       0   29454      0 | 5208.00        8.80
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              238 238(100.00%) |      0       0       0      0 |    9.20        9.20
+WebSocket  Player_Input_Move_Shoot                                                       259399    31(0.01%) |      0       0      20      0 | 4598.50        0.00
+WebSocket  Player_Ping_RTT                                                                30089     2(0.01%) |    362       0   29454      2 |  553.20        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    290778   271(0.09%) |     41       0   29454      0 | 5160.90        9.20
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              275 275(100.00%) |      0       0       0      0 |    8.10        8.10
+WebSocket  Player_Input_Move_Shoot                                                       271977    31(0.01%) |      0       0      20      0 | 4508.60        0.00
+WebSocket  Player_Ping_RTT                                                                31640     2(0.01%) |    353       0   29454      2 |  537.40        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    304944   308(0.10%) |     40       0   29454      0 | 5054.10        8.10
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              288 288(100.00%) |      0       0       0      0 |    9.40        9.40
+WebSocket  Player_Input_Move_Shoot                                                       280109    31(0.01%) |      0       0      20      0 | 4290.80        0.00
+WebSocket  Player_Ping_RTT                                                                32629     2(0.01%) |    348       0   29454      2 |  522.80        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    314078   321(0.10%) |     39       0   29454      0 | 4823.00        9.40
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              294 294(100.00%) |      0       0       0      0 |    8.90        8.90
+WebSocket  Player_Input_Move_Shoot                                                       284538    31(0.01%) |      0       0      20      0 | 4224.60        0.00
+WebSocket  Player_Ping_RTT                                                                33151     2(0.01%) |    343       0   29454      2 |  503.90        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    319035   327(0.10%) |     39       0   29454      0 | 4737.40        8.90
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              313 313(100.00%) |      0       0       0      0 |    8.60        8.60
+WebSocket  Player_Input_Move_Shoot                                                       296199    31(0.01%) |      0       0      20      0 | 4187.60        0.00
+WebSocket  Player_Ping_RTT                                                                34606     2(0.01%) |    335       0   29454      2 |  506.10        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    332170   346(0.10%) |     38       0   29454      0 | 4702.30        8.60
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              321 321(100.00%) |      0       0       0      0 |    7.90        7.90
+WebSocket  Player_Input_Move_Shoot                                                       303256    31(0.01%) |      0       0      20      0 | 4028.80        0.00
+WebSocket  Player_Ping_RTT                                                                35417     2(0.01%) |    329       0   29454      2 |  488.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    340046   354(0.10%) |     37       0   29454      0 | 4525.30        7.90
+
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+WebSocket  Player_Connect                                                                  1052     0(0.00%) |    992      15    4160    820 |    0.00        0.00
+WebSocket  Player_Disconnected                                                              331 331(100.00%) |      0       0       0      0 |    8.00        8.00
+WebSocket  Player_Input_Move_Shoot                                                       309509    31(0.01%) |      0       0      20      0 | 4101.30        0.00
+WebSocket  Player_Ping_RTT                                                                36138     2(0.01%) |    326       0   29454      2 |  494.60        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                    347030   364(0.10%) |     37       0   29454      0 | 4603.90        8.00
+

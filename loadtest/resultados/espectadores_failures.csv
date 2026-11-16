@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+WebSocket,Spectator_Receive_Snapshot,ConnectionError('Spectator socket closed'),1,2026-11-16T03:18:00Z,2026-11-16T03:18:00Z
+WebSocket,Spectator_Receive_Snapshot,WebSocketTimeoutException('Connection timed out'),254,2026-11-16T03:17:26Z,2026-11-16T03:19:59Z
+WebSocket,Spectator_Receive_Snapshot,"ConnectionResetError(104, 'Connection reset by peer')",13,2026-11-16T03:17:43Z,2026-11-16T03:18:08Z

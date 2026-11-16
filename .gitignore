@@ -10,4 +10,4 @@ venv/
 .env.*
 !.env.example
 loadtest/*_report.html
-loadtest/*_results*
+loadtest/*_results*.csv

@@ -1,0 +1,9 @@
+apiVersion: allocation.agones.dev/v1
+kind: GameServerAllocation
+metadata:
+  generateName: epsinc-scale-probe-
+  namespace: default
+spec:
+  required:
+    matchLabels:
+      agones.dev/fleet: epsinc-fleet

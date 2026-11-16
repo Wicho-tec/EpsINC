@@ -24,8 +24,10 @@ jobs:
           cache-dependency-path: server/requirements.txt
       - run: python -m pip install -r server/requirements.txt
       - run: python -m pip install -r serverless/requirements.txt
+      - run: python -m pip install -r loadtest/requirements.txt
       - run: python run_tests.py
       - run: python -m unittest serverless.test_leaderboard
+      - run: python -m unittest loadtest.test_locustfile
 
   aws-ready:
     name: Comprobar configuración AWS

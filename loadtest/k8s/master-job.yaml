@@ -22,7 +22,7 @@ spec:
           command: [/bin/sh, -c]
           args:
             - >-
-              locust -f /mnt/locust/locustfile.py --master --expect-workers 4
+              locust -f /mnt/locust/locustfile.py --master --expect-workers 8
               --headless --users __USERS__ --spawn-rate __RATE__ --run-time __DURATION__
               --host http://epsinc-service.default.svc.cluster.local
               --html /tmp/__RUN_ID___report.html --csv /tmp/__RUN_ID__

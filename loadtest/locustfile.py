@@ -62,15 +62,16 @@ class EpsIncPlayerUser(User):
     def _receive_messages(self):
         while self.connected:
             try:
-                message = json.loads(self.ws.recv())
-                if message.get("type") == "pong" and self.ping_started is not None:
+                raw = self.ws.recv()
+                gevent.sleep(0.001)  # Let input tasks and worker heartbeats run during continuous broadcasts.
+                if raw.startswith(('{"type":"pong"', '{"type": "pong"')) and self.ping_started is not None:
                     elapsed = (time.perf_counter() - self.ping_started) * 1000
                     self.ping_started = None
                     events.request.fire(
                         request_type="WebSocket",
                         name="Player_Ping_RTT",
                         response_time=elapsed,
-                        response_length=len(json.dumps(message)),
+                        response_length=len(raw),
                         context=None,
                         exception=None
                     )
@@ -156,7 +157,7 @@ class EpsIncPlayerUser(User):
 
 class EpsIncSpectatorUser(User):
     """Simulates passive spectators consuming match broadcasts."""
-    wait_time = between(0.03, 0.05)
+    wait_time = between(0, 0)
 
     def on_start(self):
         self.host_ws = self.environment.host.replace("http://", "ws://").replace("https://", "wss://")
@@ -201,6 +202,9 @@ class EpsIncSpectatorUser(User):
         t0 = time.perf_counter()
         try:
             raw = self.ws.recv()
+            if not raw:
+                raise ConnectionError("Spectator socket closed")
+            gevent.sleep(0.001)
             elapsed = (time.perf_counter() - t0) * 1000
             events.request.fire(
                 request_type="WebSocket",
@@ -211,6 +215,7 @@ class EpsIncSpectatorUser(User):
                 exception=None
             )
         except Exception as e:
+            self.connected = False
             events.request.fire(
                 request_type="WebSocket",
                 name="Spectator_Receive_Snapshot",
