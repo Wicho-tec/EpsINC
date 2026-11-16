@@ -14,7 +14,7 @@ Las capturas 09-23 se tomaron al ejecutar o consultar el trabajo real. Grafana y
 | 500 espectadores | [17 durante ejecución](17-espectadores-en-vivo.png), [18 reporte](18-espectadores-reporte-real.png) | [HTML completo](../loadtest/resultados/espectadores_report.html), CSV y logs contiguos |
 | Extrapolación 20,000 | [23](23-extrapolacion-medida.png) | [Modelo con tamaño medido](extrapolacion-medida.json). No se ejecutaron 20,000 conexiones |
 | Reacción del escalado | [20](20-escalado-real.png) | fleet-escalado.json y cluster-autoscaler-live.txt |
-| Reporte técnico, máximo seis páginas | [21](21-reporte-tecnico-renderizado.png) | [PDF](../REPORTE_TECNICO.pdf) y fuente Markdown |
+| Reporte técnico, máximo seis páginas | [21](21-reporte-tecnico-renderizado.png) | [Fuente Markdown](../REPORTE_TECNICO.md); PDF conservado localmente, sin versionar |
 | Destrucción del laboratorio | [22](22-cierre-verificado.png) | cierre-verificado.json y terraform-destroy-final.txt |
 
 ## Resultados y límites

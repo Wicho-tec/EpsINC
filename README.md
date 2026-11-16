@@ -2,7 +2,7 @@
 
 ## Entrega del proyecto integrador
 
-- [Reporte técnico PDF, 5 páginas](REPORTE_TECNICO.pdf) y [fuente Markdown](REPORTE_TECNICO.md).
+- [Reporte técnico en Markdown](REPORTE_TECNICO.md). El PDF de cinco páginas se conserva localmente y no se versiona.
 - [Índice de capturas y fuentes reales](evidencias/README.md).
 - Resultados completos: [rampa 1,000](loadtest/resultados/rampa-final_report.html), [pico 1,000](loadtest/resultados/pico_report.html), [500 espectadores](loadtest/resultados/espectadores_report.html).
 - [Análisis medido y extrapolación 20,000](loadtest/resultados/analysis.json).

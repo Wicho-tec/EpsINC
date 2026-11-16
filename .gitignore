@@ -11,3 +11,4 @@ venv/
 !.env.example
 loadtest/*_report.html
 loadtest/*_results*.csv
+/REPORTE_TECNICO.pdf
