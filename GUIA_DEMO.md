@@ -97,7 +97,7 @@ Esta guía propone una presentación de 10 minutos de la jugabilidad local y los
 1. **Mostrar los entregables del repositorio:**
    - `infra/`: Terraform para EKS, VPC y ECR.
    - `k8s/`: Fleet, FleetAutoscaler, PodMonitor y Service.
-   - `serverless/`: Microservicio de Leaderboard con Serverless Framework.
+   - `serverless/`: Lambda de clasificación persistente en DynamoDB, desplegada con Terraform.
    - `.github/workflows/ci-cd.yml`: Pipeline que prueba (`run_tests.py`), construye Docker, publica y actualiza la flota.
    - `REPORTE_TECNICO.md`: arquitectura, supuestos de costo y extrapolación matemática; resultados reales pendientes.
 2. **Conclusión final:**

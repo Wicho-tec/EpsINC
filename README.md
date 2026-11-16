@@ -84,7 +84,7 @@ epsinc/
 │   └── service.yaml            # LoadBalancer y enrutamiento
 ├── serverless/                 # Microservicio de Tabla de Líderes
 │   ├── leaderboard_function.py # AWS Lambda para clasificación
-│   └── serverless.yml          # Manifiesto de Serverless Framework
+│   └── test_leaderboard.py     # Validación y ranking de Lambda
 ├── loadtest/                   # Pruebas de Carga con Locust
 │   ├── locustfile.py           # Usuarios WebSocket (jugadores WASD/tiro y espectadores)
 │   ├── ramp_test.conf          # Configuración de prueba de rampa (1,000 jugadores)
@@ -144,3 +144,24 @@ El servidor expone métricas en formato estándar de Prometheus:
   - `epsinc_active_rooms`: Número de salas activas en ejecución.
   - `epsinc_total_kills`: Contador total de eliminaciones registradas.
   - `epsinc_ws_messages_total`: Tasa de mensajes WebSocket entrantes.
+
+## Tabla de líderes persistente
+
+Terraform despliega Lambda Python 3.12, Function URL y DynamoDB mediante `infra/leaderboard.tf`.
+`terraform -chdir=infra output -raw leaderboard_url` muestra la URL base.
+GET `/leaderboard/top?limit=25` consulta clasificación; POST `/leaderboard/submit` recibe
+`{"player_id":"demo","name":"Demo","score":100,"kills":5,"streak":2}`.
+Los valores son totales; repetir el envío reemplaza el registro sin duplicar puntos.
+El endpoint público es para la demostración: no autentica puntuaciones. Antes de uso competitivo,
+restringir escritura a servidores autorizados. La interfaz del juego conserva su marcador de sala;
+la API de clasificación se demuestra de forma independiente.
+
+## Carga distribuida reproducible
+
+`loadtest/Dockerfile` fija Locust 2.47.0 y websocket-client 1.9.0. CI publica
+`epsinc/server:loadtest-SHA` junto a la imagen del juego. Los manifiestos en `loadtest/k8s/`
+ejecutan cuatro workers y un master. Sustituir `__LOCUST_IMAGE__` por la URI publicada y los
+marcadores del Job por la clase, usuarios, tasa y duración del perfil. Crear ConfigMap `epsinc-locust`
+con `locustfile.py`. Los workers leen snapshots continuamente; el ping mide solamente mensajes pong.
+El master conserva HTML/CSV en `/tmp` durante diez minutos tras terminar para extraerlos con `kubectl cp`.
+Esta modalidad comparte el clúster bajo prueba: informar CPU del generador y tráfico interno.

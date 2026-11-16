@@ -100,8 +100,9 @@ jobs:
           helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
           helm repo add autoscaler https://kubernetes.github.io/autoscaler
           helm repo update
-          helm upgrade --install agones agones/agones --version 1.60.0 --server-side=false --set agones.controller.persistentLogsSizeLimitMB=512 --set agones.extensions.persistentLogsSizeLimitMB=512 --namespace agones-system --create-namespace --wait
-          helm upgrade --install epsinc-monitoring prometheus-community/kube-prometheus-stack --version 92.21.2 --namespace monitoring --create-namespace --wait
+          helm upgrade --install agones agones/agones --version 1.60.0 --server-side=false --set agones.controller.persistentLogsSizeLimitMB=512 --set agones.extensions.persistentLogsSizeLimitMB=512 --set agones.ping.install=false --set agones.allocator.service.serviceType=ClusterIP --namespace agones-system --create-namespace --wait
+          helm upgrade --install epsinc-monitoring prometheus-community/kube-prometheus-stack --version 92.21.2 -f grafana/helm-values.yaml --namespace monitoring --create-namespace --wait
+          helm upgrade agones agones/agones --version 1.60.0 --server-side=false --reuse-values --set agones.metrics.serviceMonitor.enabled=true --set agones.metrics.serviceMonitor.additionalLabels.release=epsinc-monitoring --namespace agones-system --wait
           aws_account_id=$(aws sts get-caller-identity --query Account --output text)
           sed "s|__AWS_ACCOUNT_ID__|$aws_account_id|g" k8s/cluster_autoscaler_service_account.yaml | kubectl apply -f -
           helm upgrade --install cluster-autoscaler autoscaler/cluster-autoscaler --version 9.51.0 --namespace kube-system --set cloudProvider=aws --set awsRegion="$AWS_REGION" --set autoDiscovery.clusterName="$EKS_CLUSTER" --set image.tag=v1.34.6 --set rbac.serviceAccount.create=false --set rbac.serviceAccount.name=cluster-autoscaler --wait
