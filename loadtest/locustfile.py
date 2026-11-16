@@ -7,6 +7,7 @@ import math
 import random
 import time
 import websocket
+import gevent
 from locust import User, task, between, events
 
 class EpsIncPlayerUser(User):
@@ -20,6 +21,8 @@ class EpsIncPlayerUser(User):
         self.player_id = None
         self.ws = None
         self.connected = False
+        self.receiver = None
+        self.ping_started = None
         self.angle = random.uniform(0, 2 * math.pi)
         started = time.perf_counter()
 
@@ -32,9 +35,12 @@ class EpsIncPlayerUser(User):
                 "is_spectator": False
             }))
             resp = json.loads(self.ws.recv())
+            if resp.get("type") != "init_success":
+                raise RuntimeError(f"Join rejected: {resp.get('message', resp.get('type'))}")
             if resp.get("type") == "init_success":
                 self.player_id = resp.get("player_id")
                 self.connected = True
+                self.receiver = gevent.spawn(self._receive_messages)
                 events.request.fire(
                     request_type="WebSocket",
                     name="Player_Connect",
@@ -52,6 +58,29 @@ class EpsIncPlayerUser(User):
                 context=None,
                 exception=e
             )
+
+    def _receive_messages(self):
+        while self.connected:
+            try:
+                message = json.loads(self.ws.recv())
+                if message.get("type") == "pong" and self.ping_started is not None:
+                    elapsed = (time.perf_counter() - self.ping_started) * 1000
+                    self.ping_started = None
+                    events.request.fire(
+                        request_type="WebSocket",
+                        name="Player_Ping_RTT",
+                        response_time=elapsed,
+                        response_length=len(json.dumps(message)),
+                        context=None,
+                        exception=None
+                    )
+            except Exception as error:
+                events.request.fire(
+                    request_type="WebSocket", name="Player_Disconnected",
+                    response_time=0, response_length=0, context=None, exception=error
+                )
+                self.connected = False
+                break
 
     @task(8)
     def send_gameplay_input(self):
@@ -97,22 +126,14 @@ class EpsIncPlayerUser(User):
     def ping_latency(self):
         if not self.connected or not self.ws:
             return
+        if self.ping_started is not None:
+            return
         t0 = time.perf_counter()
         try:
-            sent_at = time.time()
-            self.ws.send(json.dumps({"type": "ping", "t": sent_at}))
-            msg = json.loads(self.ws.recv())
-            rtt = (time.perf_counter() - t0) * 1000
-
-            events.request.fire(
-                request_type="WebSocket",
-                name="Player_Ping_RTT",
-                response_time=rtt,
-                response_length=len(json.dumps(msg)),
-                context=None,
-                exception=None
-            )
+            self.ping_started = t0
+            self.ws.send(json.dumps({"type": "ping", "t": time.time()}))
         except Exception as e:
+            self.connected = False
             events.request.fire(
                 request_type="WebSocket",
                 name="Player_Ping_RTT",
@@ -123,6 +144,9 @@ class EpsIncPlayerUser(User):
             )
 
     def on_stop(self):
+        self.connected = False
+        if self.receiver:
+            self.receiver.kill(block=False)
         if self.ws:
             try:
                 self.ws.close()
@@ -149,6 +173,8 @@ class EpsIncSpectatorUser(User):
                 "is_spectator": True
             }))
             resp = json.loads(self.ws.recv())
+            if resp.get("type") != "init_success":
+                raise RuntimeError(f"Join rejected: {resp.get('message', resp.get('type'))}")
             self.connected = True
             events.request.fire(
                 request_type="WebSocket",

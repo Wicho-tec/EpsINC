@@ -1,0 +1,49 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: epsinc-locust-__RUN_ID__
+  namespace: default
+  labels:
+    app: epsinc-locust
+    role: master
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 1800
+  template:
+    metadata:
+      labels:
+        app: epsinc-locust
+        role: master
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: locust
+          image: __LOCUST_IMAGE__
+          command: [/bin/sh, -c]
+          args:
+            - >-
+              locust -f /mnt/locust/locustfile.py --master --expect-workers 4
+              --headless --users __USERS__ --spawn-rate __RATE__ --run-time __DURATION__
+              --host http://epsinc-service.default.svc.cluster.local
+              --html /tmp/__RUN_ID___report.html --csv /tmp/__RUN_ID__
+              __USER_CLASS__; echo $? > /tmp/finished; sleep 600
+          ports:
+            - name: master
+              containerPort: 5557
+            - name: events
+              containerPort: 5558
+          resources:
+            requests:
+              cpu: 250m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+          volumeMounts:
+            - name: locustfile
+              mountPath: /mnt/locust
+              readOnly: true
+      volumes:
+        - name: locustfile
+          configMap:
+            name: epsinc-locust

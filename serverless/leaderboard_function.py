@@ -1,87 +1,68 @@
-"""
-EpsInc - Serverless Leaderboard Function
-Handles high-concurrency score submission, ranking retrieval, and caching via serverless compute.
-"""
+"""Persistent leaderboard for the EpsINC classroom deployment."""
+import base64
 import json
-import time
 import os
-from typing import Dict, Any, List
+import re
+import time
+from decimal import Decimal
 
-# In-memory mock/fallback storage for serverless runtime (can integrate Redis/DynamoDB/Firestore)
-_MEMORY_STORE: Dict[str, Dict[str, Any]] = {
-    "p_demo_1": {"name": "TerminatorBaby", "score": 1420, "kills": 284, "streak_record": 12, "updated_at": 1700000000},
-    "p_demo_2": {"name": "LegoSniper", "score": 1180, "kills": 236, "streak_record": 9, "updated_at": 1700000100},
-    "p_demo_3": {"name": "ChuponFeroz", "score": 950, "kills": 190, "streak_record": 8, "updated_at": 1700000200},
-}
+import boto3
+from boto3.dynamodb.conditions import Key
+from botocore.exceptions import ClientError
 
-def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
-    """AWS Lambda / Cloud Function entrypoint."""
-    http_method = event.get("httpMethod", "GET")
-    path = event.get("path", "/leaderboard")
-    
-    headers = {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type"
-    }
+_TABLE = None
 
-    if http_method == "OPTIONS":
-        return {"statusCode": 200, "headers": headers, "body": json.dumps({"status": "ok"})}
 
-    # GET /leaderboard/top
-    if http_method == "GET" and "/top" in path:
-        limit = int(event.get("queryStringParameters", {}).get("limit", 25)) if event.get("queryStringParameters") else 25
-        sorted_players = sorted(
-            [{"id": pid, **data} for pid, data in _MEMORY_STORE.items()],
-            key=lambda x: (x["score"], x["kills"]),
-            reverse=True
-        )[:limit]
+def get_table():
+    global _TABLE
+    if _TABLE is None:
+        _TABLE = boto3.resource("dynamodb").Table(os.environ["TABLE_NAME"])
+    return _TABLE
 
-        return {
-            "statusCode": 200,
-            "headers": headers,
-            "body": json.dumps({
-                "leaderboard": sorted_players,
-                "total_tracked": len(_MEMORY_STORE),
-                "generated_at": time.time()
-            })
-        }
 
-    # POST /leaderboard/submit
-    if http_method == "POST" and "/submit" in path:
-        try:
-            body = json.loads(event.get("body", "{}"))
-            player_id = body.get("player_id", f"p_{int(time.time())}")
-            name = body.get("name", "BiberonAnónimo")[:20]
-            score_delta = int(body.get("score", 0))
-            kills_delta = int(body.get("kills", 0))
-            streak = int(body.get("streak", 0))
+def handler(event, context):
+    method = event.get("requestContext", {}).get("http", {}).get("method", event.get("httpMethod", "GET"))
+    path = event.get("rawPath", event.get("path", "/leaderboard/top"))
+    headers = {"Content-Type": "application/json"}
 
-            if player_id in _MEMORY_STORE:
-                _MEMORY_STORE[player_id]["score"] += score_delta
-                _MEMORY_STORE[player_id]["kills"] += kills_delta
-                _MEMORY_STORE[player_id]["streak_record"] = max(_MEMORY_STORE[player_id]["streak_record"], streak)
-                _MEMORY_STORE[player_id]["updated_at"] = time.time()
-            else:
-                _MEMORY_STORE[player_id] = {
-                    "name": name,
-                    "score": score_delta,
-                    "kills": kills_delta,
-                    "streak_record": streak,
-                    "updated_at": time.time()
-                }
+    def response(status, body):
+        return {"statusCode": status, "headers": headers,
+                "body": json.dumps(body, default=lambda value: int(value) if isinstance(value, Decimal) else str(value))}
 
-            return {
-                "statusCode": 200,
-                "headers": headers,
-                "body": json.dumps({"status": "success", "player": _MEMORY_STORE[player_id]})
-            }
-        except Exception as e:
-            return {"statusCode": 400, "headers": headers, "body": json.dumps({"error": str(e)})}
-
-    return {
-        "statusCode": 404,
-        "headers": headers,
-        "body": json.dumps({"message": "Ruta de tabla de líderes no encontrada"})
-    }
+    try:
+        if method == "GET" and path == "/leaderboard/top":
+            limit = int((event.get("queryStringParameters") or {}).get("limit", 25))
+            if not 1 <= limit <= 100:
+                raise ValueError("limit must be between 1 and 100")
+            # shortcut: query/sort suits a small classroom board; add a score index for large boards.
+            result = get_table().query(KeyConditionExpression=Key("board").eq("main"), ConsistentRead=True)
+            if result.get("LastEvaluatedKey"):
+                return response(503, {"error": "Board exceeds demo query capacity"})
+            items = sorted(result["Items"], key=lambda item: (item["score"], item["kills"]), reverse=True)
+            return response(200, {"leaderboard": items[:limit], "total_tracked": len(items), "generated_at": int(time.time())})
+        if method == "POST" and path == "/leaderboard/submit":
+            raw = event.get("body") or "{}"
+            if event.get("isBase64Encoded"):
+                raw = base64.b64decode(raw).decode("utf-8")
+            body = json.loads(raw)
+            if not isinstance(body, dict):
+                raise ValueError("Expected JSON object")
+            player_id = body.get("player_id", "")
+            name = body.get("name", "")
+            if not isinstance(player_id, str) or not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", player_id):
+                raise ValueError("Invalid player_id")
+            if not isinstance(name, str) or not 1 <= len(name) <= 20:
+                raise ValueError("name must contain 1 to 20 characters")
+            values = {key: body.get(key, 0) for key in ("score", "kills", "streak")}
+            if any(type(value) is not int or not 0 <= value <= 1000000 for value in values.values()):
+                raise ValueError("Scores must be integers between 0 and 1000000")
+            item = {"board": "main", "player_id": player_id, "name": name,
+                    **values, "updated_at": int(time.time())}
+            # Replacing a submitted total makes retries idempotent.
+            get_table().put_item(Item=item)
+            return response(200, {"status": "success", "player": item})
+        return response(404, {"error": "Route not found"})
+    except (ValueError, TypeError, UnicodeError) as error:
+        return response(400, {"error": str(error)})
+    except ClientError:
+        return response(503, {"error": "Leaderboard storage unavailable"})
