@@ -182,8 +182,8 @@ module "eks" {
 
   addons = {
     vpc-cni    = { before_compute = true, addon_version = "v1.22.4-eksbuild.14" }
-    kube-proxy = { before_compute = true, addon_version = "v1.34.6-eksbuild.69" }
-    coredns    = { before_compute = true, addon_version = "v1.12.4-eksbuild.82" }
+    kube-proxy = { addon_version = "v1.34.6-eksbuild.69" }
+    coredns    = { addon_version = "v1.12.4-eksbuild.82" }
   }
 
   vpc_id     = module.vpc.vpc_id
